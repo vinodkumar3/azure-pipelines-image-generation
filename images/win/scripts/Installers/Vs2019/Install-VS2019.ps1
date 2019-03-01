@@ -130,9 +130,9 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Microsoft.VisualStudio.Workload.VisualStudioExtension'
 
 
-$ReleaseInPath = 'Preview'
+$ReleaseInPath = 'Enterprise'
 $Sku = 'Enterprise'
-$VSBootstrapperURL = 'https://aka.ms/vs/16/pre/vs_Enterprise.exe'
+$VSBootstrapperURL = 'https://aka.ms/vs/16/release/vs_Enterprise.exe'
 
 $ErrorActionPreference = 'Stop'
 
