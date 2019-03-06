@@ -15,9 +15,9 @@ else
     exit 1
 }
 
-$Python3Verison = $(python --version)
+$Python3Version = $(python --version)
 
-if ($Python3Verison -notlike "Python 3.*")
+if ($Python3Version -notlike "Python 3.*")
 {
     Write-Error "Python 3 is not in the PATH"
 }
@@ -31,7 +31,7 @@ $Python2Version = & $env:comspec "/s /c python --version 2>&1"
 $SoftwareName = "Python (64 bit)"
 
 $Description = @"
-#### $Python3Verison
+#### $Python3Version
 _Environment:_
 * PATH: contains location of python.exe
 
