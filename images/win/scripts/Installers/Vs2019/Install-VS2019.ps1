@@ -63,7 +63,6 @@ Function InstallVS
 
 $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Component.CPython2.x64 ' + `
-              '--add Component.CPython3.x64 ' + `
               '--add Component.Linux.CMake ' + `
               '--add Component.UnityEngine.x64 ' + `
               '--add Component.UnityEngine.x86 ' + `
