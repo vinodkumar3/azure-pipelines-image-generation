@@ -1,6 +1,6 @@
-# Azure DevOps Windows Container(1803) image
+# Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure DevOps **Windows Container(1803)** pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 18.09.2<br/>
+_Version:_ 18.09.3<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -23,23 +23,29 @@ _Version:_ 1.23.2<br/>
 _Environment:_
 * PATH: contains location of docker-compose.exe
 
+## Powershell Core
+
+_Version:_ 6.1.3
+<br/>
+
 ## Docker images
 
 The following container images have been cached:
+* microsoft/aspnet:(sha256:2a82b74969741eb3a8744c17c92cd1ac48cf477cb864b951220fb3e88fb88d71)
 * microsoft/dotnet-framework:(sha256:f09783c4727b7b378027e73f9ea7c25d1339abf5244de57f59e44ae52e6cfd6c)
 * microsoft/windowsservercore:(sha256:f64ba9ff2219073f553b2e9f148002a726e31c3b69a811d74e7e405826fa27bb)
+* mcr.microsoft.com/windows/servercore:(sha256:f64ba9ff2219073f553b2e9f148002a726e31c3b69a811d74e7e405826fa27bb)
 * microsoft/nanoserver:(sha256:01cc42375a4adcf7215ba5073e496e9a14e9a006efb2973e6db9e755841f44e7)
-* microsoft/aspnet:(sha256:8a8580b556a22e3cbd5f3796386f202784df8603a120db67c07555edaaaf297b)
-* mcr.microsoft.com/windows/servercore:(sha256:260689daae3d9fb5bfca2881cab21e7ca07ae83849bb0511220b83ec6fe99bd5)
-* mcr.microsoft.com/windows/nanoserver:(sha256:0e9755d3a3a46ebbfa8a8d91eefa7d8caa3d407dc6041c0863bb05c57e9bdda8)
+* mcr.microsoft.com/windows/nanoserver:(sha256:01cc42375a4adcf7215ba5073e496e9a14e9a006efb2973e6db9e755841f44e7)
 * microsoft/aspnetcore-build:(sha256:82ad5218bb554d0b44ca54c21aba78b5ae10b92cead389d71328614b99fc47af)
 
 ## Node.js
 
-_Version:_ 10.15.1<br/>
+_Version:_ 10.15.2<br/>
+_Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
-* Gulp [[90m16:06:23[39m] CLI version 2.0.1<br/>
+* Gulp [[90m23:01:14[39m] CLI version 2.0.1<br/>
 * Grunt grunt-cli v1.3.2<br/>
 * Bower 1.8.8<br/>
 * Yarn 1.13.0<br/>
@@ -48,7 +54,7 @@ _Environment:_
 
 ## npm
 
-_Version:_ 6.7.0<br/>
+_Version:_ 6.8.0<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -142,13 +148,13 @@ _Runtime:_
 
 ## Git
 
-_Version:_ 2.20.1<br/>
+_Version:_ 2.21.0<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git Large File Storage (LFS)
 
-_Version:_ 2.6.1<br/>
+_Version:_ 2.7.1<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
