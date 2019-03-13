@@ -1,9 +1,11 @@
-# Hosted Ubuntu 1604 Image (Ubuntu 16.04.5 LTS)
+# Hosted Ubuntu 1604 Image (Ubuntu 16.04.6 LTS)
 The following software is installed on machines in the Hosted Ubuntu 1604 pool
 ***
+- 7-Zip 9.20
 - Ansible (ansible 2.0.0.2)
 - AzCopy (azcopy 7.3.0-netcore)
-- Azure CLI (azure-cli                         2.0.58)
+- Azure CLI (azure-cli                         2.0.59)
+- Azure CLI (azure-devops                       0.3.0)
 - Basic CLI:
   - curl
   - dnsutils
@@ -30,8 +32,8 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - build-essential
 - Clang 6.0 (clang version 6.0.1-svn334776-1~exp1~20190124082834.118 (branches/release_60))
 - CMake (cmake version 3.12.4)
-- Docker (Docker version 18.09.2, build 6247962)
 - Docker Compose (docker-compose version 1.22.0, build f46880fe)
+- Docker (Docker version 3.0.3, build 48bd4c6d)
 - .NET Core SDK 1.0.1
 - .NET Core SDK 1.0.4
 - .NET Core SDK 1.1.10
@@ -71,18 +73,18 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - .NET Core SDK 2.2.102
 - .NET Core SDK 2.2.103
 - .NET Core SDK 2.2.104
-- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.2.3)
-- Firefox (Mozilla Firefox 65.0)
+- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.2.4)
+- Firefox (Mozilla Firefox 65.0.1)
 - GNU C++ 7.4.0
-- Git (2.20.1)
-- Git Large File Storage (LFS) (2.6.1)
+- Git (2.21.0)
+- Git Large File Storage (LFS) (2.7.1)
 - Go 1.9 (go version go1.9.7 linux/amd64)
 - Go 1.10 (go version go1.10.8 linux/amd64)
 - Go 1.11 (go version go1.11.5 linux/amd64)
-- Google Chrome (Google Chrome 72.0.3626.96 )
+- Google Chrome (Google Chrome 72.0.3626.121 )
 - Haskell (The Glorious Glasgow Haskell Compilation System, version 7.10.3)
-- Heroku (heroku/7.21.0 linux-x64 node-v11.9.0)
-- HHVM (HipHop VM 4.0.0 (rel))
+- Heroku (heroku/7.22.4 linux-x64 node-v11.10.1)
+- HHVM (HipHop VM 4.0.3 (rel))
 - ImageMagick
 - Azul JDK (7) (openjdk version "1.7.0_211")
 - Azul JDK (8) (openjdk version "1.8.0_202")
@@ -90,35 +92,35 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - Ant (Apache Ant(TM) version 1.9.6 compiled on July 20 2018)
 - Gradle 5.2.1
 - Maven (Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z))
-- kubectl (Client Version: v1.13.3)
+- kubectl (Client Version: v1.13.4)
 - helm (Client: v2.11.0+g2e55dbe)
-- Leiningen (Leiningen 2.9.0 on Java 1.8.0_202 OpenJDK 64-Bit Server VM)
+- Leiningen (Leiningen 2.9.1 on Java 1.8.0_202 OpenJDK 64-Bit Server VM)
 - Mercurial (Mercurial Distributed SCM (version 4.4.1))
 - Miniconda (conda 4.5.12)
-- Mono (Mono JIT compiler version 5.18.0.240 (tarball Wed Jan 16 09:13:03 UTC 2019))
+- Mono (Mono JIT compiler version 5.18.0.268 (tarball Thu Feb 28 15:29:06 UTC 2019))
 - MySQL (mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper)
 - MySQL Server (user:root password:root)
 - MS SQL Server Client Tools
-- Node.js (v10.15.1)
+- Node.js (v10.15.3)
 - Bower (1.8.8)
 - Grunt (grunt-cli v1.2.0)
-- Gulp ([00:12:03] CLI version 2.0.1)
+- Gulp ([17:44:03] CLI version 2.0.1)
 - n (2.1.12)
 - Parcel (1.11.0)
-- TypeScript (Version 3.3.3)
-- Webpack (4.29.3)
+- TypeScript (Version 3.3.3333)
+- Webpack (4.29.6)
 - Webpack CLI (3.2.3)
 - Yarn (1.13.0)
 - PhantomJS (2.1.1)
-- PHP 5.6 (PHP 5.6.40-1+ubuntu16.04.1+deb.sury.org+1 (cli) )
-- PHP 7.0 (PHP 7.0.33-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Dec  7 2018 08:27:52) ( NTS ))
+- PHP 5.6 (PHP 5.6.40-1+ubuntu16.04.1+deb.sury.org+2+will+reach+end+of+life+in+april+2019 (cli) )
+- PHP 7.0 (PHP 7.0.33-2+ubuntu16.04.1+deb.sury.org+2+will+reach+end+of+life+in+april+2019 (cli) (built: Mar  2 2019 20:52:33) ( NTS ))
 - PHP 7.1 (PHP 7.1.26-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Jan 11 2019 14:13:16) ( NTS ))
 - PHP 7.2 (PHP 7.2.15-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Feb  8 2019 15:37:29) ( NTS ))
 - PHP 7.3 (PHP 7.3.2-3+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Feb  8 2019 15:43:26) ( NTS ))
 - Composer  (Composer version 1.8.4 2019-02-11 10:52:10)
-- PHPUnit (PHPUnit 7.5.4 by Sebastian Bergmann and contributors.)
+- PHPUnit (PHPUnit 7.5.6 by Sebastian Bergmann and contributors.)
 - Pollinate
-- Powershell (PowerShell 6.1.2)
+- Powershell (PowerShell 6.1.3)
 - Python (Python 2.7.12)
 - pip (pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7))
 - Python3 (Python 3.5.2)
@@ -182,11 +184,12 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - Android SDK Build-Tools 20.0.0
 - Android SDK Build-Tools 19.1.0
 - Android SDK Build-Tools 17.0.0
-- Android NDK 19.0.5232133
+- Android NDK 19.1.5304403
 - Android ConstraintLayout 1.0.2
 - Android ConstraintLayour 1.0.1
+- Az Module (1.0.0)
 ## Cached container images
-- jekyll/builder:latest (Digest: sha256:5726e389182023605ffabd05ba71f19ba203bf925394e8aca3710b91a46cf2de)
+- jekyll/builder:latest (Digest: sha256:ad7f69011de3c8266efacb8241c923ffaa2fa86111e140e79dfed291e3db9062)
 - mcr.microsoft.com/azure-pipelines/node8-typescript:latest (Digest: sha256:e52e60b9f71183969830a3664279b5d8c799b4b0ec2c25a0686f7c02f6a9669a)
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
   - Python 2.7.15
@@ -198,3 +201,4 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
   - Ruby 2.3.7
   - Ruby 2.4.4
   - Ruby 2.5.1
+- Boost C++ Libraries 1.69.0
