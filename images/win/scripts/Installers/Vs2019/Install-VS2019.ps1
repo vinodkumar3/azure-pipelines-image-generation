@@ -125,7 +125,7 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Microsoft.VisualStudio.Workload.Node ' + `
               '--add Microsoft.VisualStudio.Workload.Office ' + `
               '--add Microsoft.VisualStudio.Workload.Python ' + `
-              '–-remove Component.CPython3.x64 ' + `
+              '--remove Component.CPython3.x64 ' + `
               '--add Microsoft.VisualStudio.Workload.Universal ' + `
               '--add Microsoft.VisualStudio.Workload.VisualStudioExtension'
 
