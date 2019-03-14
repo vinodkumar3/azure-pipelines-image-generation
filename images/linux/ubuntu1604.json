@@ -124,7 +124,6 @@
                 "{{template_dir}}/scripts/installers/php.sh",
                 "{{template_dir}}/scripts/installers/pollinate.sh",
                 "{{template_dir}}/scripts/installers/powershellcore.sh",
-                "{{template_dir}}/scripts/installers/python.sh",
                 "{{template_dir}}/scripts/installers/ruby.sh",
                 "{{template_dir}}/scripts/installers/scala.sh",
                 "{{template_dir}}/scripts/installers/sphinx.sh",
@@ -145,7 +144,8 @@
                 "{{template_dir}}/scripts/installers/android.sh",
                 "{{template_dir}}/scripts/installers/azpowershell.sh",
                 "{{template_dir}}/scripts/helpers/containercache.sh",
-                "{{template_dir}}/scripts/installers/hosted-tool-cache.sh"
+                "{{template_dir}}/scripts/installers/hosted-tool-cache.sh",
+                "{{template_dir}}/scripts/installers/python.sh"
             ],
             "environment_vars": [
                 "METADATA_FILE={{user `metadata_file`}}",
