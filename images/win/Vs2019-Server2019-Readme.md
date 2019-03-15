@@ -25,7 +25,8 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.1.3<br/>
+_Version:_ 6.1.3
+<br/>
 
 ## Docker images
 
@@ -285,7 +286,8 @@ _Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-19
 
 #### 2.1.0
 
-This version is installed and is available via Get-Module -ListAvailable
+This version is installed and is available via Get-Module -ListAvailable
+
 #### 3.8.0
 
 This version is saved but not installed
