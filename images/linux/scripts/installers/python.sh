@@ -11,33 +11,35 @@ source $HELPER_SCRIPTS/document.sh
 # Install Python, Python 3, pip, pip3
 apt-get install -y --no-install-recommends python python-dev python-pip python3 python3-dev python3-pip
 
-# Install PyPy2 to $AGENT_TOOLSDIRECTORY
-wget -q -P /tmp https://bitbucket.org/pypy/pypy/downloads/pypy2-v6.0.0-linux64.tar.bz2
-tar -x -C /tmp -f /tmp/pypy2-v6.0.0-linux64.tar.bz2
-rm /tmp/pypy2-v6.0.0-linux64.tar.bz2
-mv /tmp/pypy2-v6.0.0-linux64 $AGENT_TOOLSDIRECTORY/PyPy2/6.0.0/x64
-touch $AGENT_TOOLSDIRECTORY/PyPy2/6.0.0/x64.complete
+# Install PyPy 2.7 to $AGENT_TOOLSDIRECTORY
+wget -q -P /tmp https://bitbucket.org/pypy/pypy/downloads/pypy2.7-v7.1.0-linux64.tar.bz2
+tar -x -C /tmp -f /tmp/pypy2.7-v7.1.0-linux64.tar.bz2
+rm /tmp/pypy2.7-v7.1.0-linux64.tar.bz2
+mkdir -p $AGENT_TOOLSDIRECTORY/PyPy/2.7.13
+mv /tmp/pypy2.7-v7.1.0-linux64 $AGENT_TOOLSDIRECTORY/PyPy/2.7.13/x64
+touch $AGENT_TOOLSDIRECTORY/PyPy/2.7.13/x64.complete
 
 # add pypy to PATH by default
-ln -s $AGENT_TOOLSDIRECTORY/PyPy2/6.0.0/x64/bin/pypy /usr/local/bin/pypy
+ln -s $AGENT_TOOLSDIRECTORY/PyPy/2.7.13/x64/bin/pypy /usr/local/bin/pypy
 # pypy will be the python in PATH when its tools cache directory is prepended to PATH
 # PEP 394-style symlinking; don't bother with minor version
-ln -s $AGENT_TOOLSDIRECTORY/PyPy2/6.0.0/x64/bin/pypy $AGENT_TOOLSDIRECTORY/PyPy2/6.0.0/x64/bin/python2
-ln -s $AGENT_TOOLSDIRECTORY/PyPy2/6.0.0/x64/bin/python2 $AGENT_TOOLSDIRECTORY/PyPy2/6.0.0/x64/bin/python
+ln -s $AGENT_TOOLSDIRECTORY/PyPy/2.7.13/x64/bin/pypy $AGENT_TOOLSDIRECTORY/PyPy/2.7.13/x64/bin/python2
+ln -s $AGENT_TOOLSDIRECTORY/PyPy/2.7.13/x64/bin/python2 $AGENT_TOOLSDIRECTORY/PyPy/2.7.13/x64/bin/python
 
-# Install PyPy3 to $AGENT_TOOLSDIRECTORY
-wget -q -P /tmp https://bitbucket.org/pypy/pypy/downloads/pypy3-v6.0.0-linux64.tar.bz2
-tar -x -C /tmp -f /tmp/pypy3-v6.0.0-linux64.tar.bz2
-rm /tmp/pypy3-v6.0.0-linux64.tar.bz2
-mv /tmp/pypy3-v6.0.0-linux64 $AGENT_TOOLSDIRECTORY/PyPy3/6.0.0/x64
-touch $AGENT_TOOLSDIRECTORY/PyPy3/6.0.0/x64.complete
+# Install PyPy 3.5 to $AGENT_TOOLSDIRECTORY
+wget -q -P /tmp https://bitbucket.org/pypy/pypy/downloads/pypy3.5-v7.0.0-linux64.tar.bz2
+tar -x -C /tmp -f /tmp/pypy3.5-v7.0.0-linux64.tar.bz2
+rm /tmp/pypy3.5-v7.0.0-linux64.tar.bz2
+mkdir -p $AGENT_TOOLSDIRECTORY/PyPy/3.5.3
+mv /tmp/pypy3.5-v7.0.0-linux64 $AGENT_TOOLSDIRECTORY/PyPy/3.5.3/x64
+touch $AGENT_TOOLSDIRECTORY/PyPy/3.5.3/x64.complete
 
 # add pypy3 to PATH by default
-ln -s $AGENT_TOOLSDIRECTORY/PyPy3/6.0.0/x64/bin/pypy3 /usr/local/bin/pypy3
+ln -s $AGENT_TOOLSDIRECTORY/PyPy/3.5.3/x64/bin/pypy3 /usr/local/bin/pypy3
 # pypy3 will be the python in PATH when its tools cache directory is prepended to PATH
 # PEP 394-style symlinking; don't bother with minor version
-ln -s $AGENT_TOOLSDIRECTORY/PyPy3/6.0.0/x64/bin/pypy3 $AGENT_TOOLSDIRECTORY/PyPy3/6.0.0/x64/bin/python3
-ln -s $AGENT_TOOLSDIRECTORY/PyPy3/6.0.0/x64/bin/python3 $AGENT_TOOLSDIRECTORY/PyPy3/6.0.0/x64/bin/python
+ln -s $AGENT_TOOLSDIRECTORY/PyPy/3.5.3/x64/bin/pypy3 $AGENT_TOOLSDIRECTORY/PyPy/3.5.3/x64/bin/python3
+ln -s $AGENT_TOOLSDIRECTORY/PyPy/3.5.3/x64/bin/python3 $AGENT_TOOLSDIRECTORY/PyPy/3.5.3/x64/bin/python
 
 # Run tests to determine that the software installed as expected
 echo "Testing to make sure that script performed as expected, and basic scenarios work"
