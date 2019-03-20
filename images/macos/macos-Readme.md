@@ -19,14 +19,14 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - Java 9.0.4
 - Java 10.0.2
 - Java 11.0.2
-- Node.js 6.16.0
+- Node.js 6.17.0
 - Node.js 8.11.3
 - NVM 0.33.11
 - PowerShell 6.1.3
-- Python 2.7.15
+- Python 2.7.16
 - Python 3.7.2
 - Ruby 2.6.1p33
-- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 1.1.12, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502, 2.1.504, 2.2.101, 2.2.102, 2.2.103, 2.2.104
+- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 1.1.12, 1.1.13, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.504, 2.1.505, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502, 2.1.504, 2.2.101, 2.2.102, 2.2.103, 2.2.104, 2.2.105
 - Go 1.12
 
 ### Package Management
@@ -34,11 +34,11 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - Bundler 2.0.1
 - Carthage 0.32.0
 - CocoaPods 1.5.3
-- Homebrew 2.0.2
+- Homebrew 2.0.4
 - NPM 3.10.10
 - Yarn 1.13.0
 - NuGet 4.7.0.5148
-- pip 18.0
+- pip 19.0.2
 - Miniconda 4.5.11
 
 ### Project Management
@@ -50,15 +50,15 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 - curl 7.63.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
 - Git 2.21.0
-- Git LFS 2.7.0
+- Git LFS 2.7.1
 - GNU Wget 1.20.1
 - Subversion (SVN) 1.11.1
 
 ### Tools
 
-- fastlane 2.116.1
-- App Center CLI 1.1.12
-- Azure-CLI 2.0.58
+- fastlane 2.117.1
+- App Center CLI 1.1.13
+- Azure-CLI 2.0.60
 
 ### Pre-cached tools
 - Python 2.7.15 3.4.8 3.5.5 3.6.5 3.7.0
@@ -421,7 +421,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 28.0.1 |
+| platform-tools        | Android SDK Platform-tools, revision 28.0.2 |
 
 ### Android SDK Platforms
 
