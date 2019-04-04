@@ -1,9 +1,11 @@
-# Hosted Ubuntu 1604 Image (Ubuntu 16.04.5 LTS)
+# Hosted Ubuntu 1604 Image (Ubuntu 16.04.6 LTS)
 The following software is installed on machines in the Hosted Ubuntu 1604 pool
 ***
+- 7-Zip 9.20
 - Ansible (ansible 2.0.0.2)
 - AzCopy (azcopy 7.3.0-netcore)
-- Azure CLI (azure-cli                         2.0.58)
+- Azure CLI (azure-cli                         2.0.61)
+- Azure CLI (azure-devops                       0.4.0)
 - Basic CLI:
   - curl
   - dnsutils
@@ -28,15 +30,16 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
   - zip
   - tzdata
 - build-essential
-- Clang 6.0 (clang version 6.0.1-svn334776-1~exp1~20190124082834.118 (branches/release_60))
+- Clang 6.0 (clang version 6.0.1-svn334776-1~exp1~20190309042730.123 (branches/release_60))
 - CMake (cmake version 3.12.4)
-- Docker (Docker version 18.09.2, build 6247962)
 - Docker Compose (docker-compose version 1.22.0, build f46880fe)
+- Docker (Docker version 3.0.3, build 48bd4c6d)
 - .NET Core SDK 1.0.1
 - .NET Core SDK 1.0.4
 - .NET Core SDK 1.1.10
 - .NET Core SDK 1.1.11
 - .NET Core SDK 1.1.12
+- .NET Core SDK 1.1.13
 - .NET Core SDK 1.1.4
 - .NET Core SDK 1.1.5
 - .NET Core SDK 1.1.7
@@ -66,69 +69,67 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - .NET Core SDK 2.1.502
 - .NET Core SDK 2.1.503
 - .NET Core SDK 2.1.504
+- .NET Core SDK 2.1.505
 - .NET Core SDK 2.2.100
 - .NET Core SDK 2.2.101
 - .NET Core SDK 2.2.102
 - .NET Core SDK 2.2.103
 - .NET Core SDK 2.2.104
-- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.2.3)
-- Firefox (Mozilla Firefox 65.0)
+- .NET Core SDK 2.2.105
+- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.3.2)
+- Firefox (Mozilla Firefox 66.0.2)
 - GNU C++ 7.4.0
-- Git (2.20.1)
-- Git Large File Storage (LFS) (2.6.1)
+- Git (2.21.0)
+- Git Large File Storage (LFS) (2.7.1)
 - Go 1.9 (go version go1.9.7 linux/amd64)
 - Go 1.10 (go version go1.10.8 linux/amd64)
-- Go 1.11 (go version go1.11.5 linux/amd64)
-- Google Chrome (Google Chrome 72.0.3626.96 )
+- Go 1.11 (go version go1.11.6 linux/amd64)
+- Go 1.12.1 (go version go1.12.1 linux/amd64)
+- Google Chrome (Google Chrome 73.0.3683.86 )
 - Haskell (The Glorious Glasgow Haskell Compilation System, version 7.10.3)
-- Heroku (heroku/7.21.0 linux-x64 node-v11.9.0)
-- HHVM (HipHop VM 4.0.0 (rel))
+- Heroku (heroku/7.22.7 linux-x64 node-v11.10.1)
+- HHVM (HipHop VM 4.0.3 (rel))
 - ImageMagick
-- Azul JDK (7) (openjdk version "1.7.0_211")
-- Azul JDK (8) (openjdk version "1.8.0_202")
-- Azul JDK (11) (openjdk version "11.0.2" 2019-01-15 LTS)
+- Azul Zulu OpenJDK (7) (openjdk version "1.7.0_211")
+- Azul Zulu OpenJDK (8) (openjdk version "1.8.0_202")
+- Azul Zulu OpenJDK (11) (openjdk version "11.0.2" 2019-01-15 LTS)
+- Azul Zulu OpenJDK (12) (openjdk version "12" 2019-03-19)
 - Ant (Apache Ant(TM) version 1.9.6 compiled on July 20 2018)
-- Gradle 5.2.1
+- Gradle 5.3.1
 - Maven (Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z))
-- kubectl (Client Version: v1.13.3)
+- kubectl (Client Version: v1.14.0)
 - helm (Client: v2.11.0+g2e55dbe)
-- Leiningen (Leiningen 2.9.0 on Java 1.8.0_202 OpenJDK 64-Bit Server VM)
+- Leiningen (Leiningen 2.9.1 on Java 1.8.0_202 OpenJDK 64-Bit Server VM)
 - Mercurial (Mercurial Distributed SCM (version 4.4.1))
 - Miniconda (conda 4.5.12)
-- Mono (Mono JIT compiler version 5.18.0.240 (tarball Wed Jan 16 09:13:03 UTC 2019))
+- Mono (Mono JIT compiler version 5.18.1.0 (tarball Fri Mar 15 20:45:47 UTC 2019))
 - MySQL (mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper)
 - MySQL Server (user:root password:root)
 - MS SQL Server Client Tools
-- Node.js (v10.15.1)
+- Node.js (v10.15.3)
 - Bower (1.8.8)
 - Grunt (grunt-cli v1.2.0)
-- Gulp ([00:12:03] CLI version 2.0.1)
-- n (2.1.12)
-- Parcel (1.11.0)
-- TypeScript (Version 3.3.3)
-- Webpack (4.29.3)
-- Webpack CLI (3.2.3)
-- Yarn (1.13.0)
+- Gulp (CLI version 2.1.0)
+- n (3.0.0)
+- Parcel (1.12.3)
+- TypeScript (Version 3.4.1)
+- Webpack (4.29.6)
+- Webpack CLI (3.3.0)
+- Yarn (1.15.2)
 - PhantomJS (2.1.1)
-- PHP 5.6 (PHP 5.6.40-1+ubuntu16.04.1+deb.sury.org+1 (cli) )
-- PHP 7.0 (PHP 7.0.33-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Dec  7 2018 08:27:52) ( NTS ))
-- PHP 7.1 (PHP 7.1.26-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Jan 11 2019 14:13:16) ( NTS ))
-- PHP 7.2 (PHP 7.2.15-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Feb  8 2019 15:37:29) ( NTS ))
-- PHP 7.3 (PHP 7.3.2-3+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Feb  8 2019 15:43:26) ( NTS ))
+- PHP 5.6 (PHP 5.6.40-5+ubuntu16.04.1+deb.sury.org+1 (cli) )
+- PHP 7.0 (PHP 7.0.33-5+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Mar  8 2019 09:48:51) ( NTS ))
+- PHP 7.1 (PHP 7.1.27-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Mar  7 2019 20:02:03) ( NTS ))
+- PHP 7.2 (PHP 7.2.16-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Mar  7 2019 20:23:06) ( NTS ))
+- PHP 7.3 (PHP 7.3.3-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Mar  7 2019 20:31:26) ( NTS ))
 - Composer  (Composer version 1.8.4 2019-02-11 10:52:10)
-- PHPUnit (PHPUnit 7.5.4 by Sebastian Bergmann and contributors.)
+- PHPUnit (PHPUnit 7.5.8 by Sebastian Bergmann and contributors.)
 - Pollinate
-- Powershell (PowerShell 6.1.2)
-- Python (Python 2.7.12)
-- pip (pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7))
-- Python3 (Python 3.5.2)
-- pip3 (pip 8.1.1 from /usr/lib/python3/dist-packages (python 3.5))
-- PyPy2 ([PyPy 6.0.0 with GCC 6.2.0 20160901])
-- PyPy3 ([PyPy 6.0.0 with GCC 6.2.0 20160901])
+- Powershell (PowerShell 6.2.0)
 - Scala
 - Sphinx Open Source Search Server
 - Subversion (svn, version 1.9.3 (r1718519))
-- Terraform (Terraform v0.11.11)
+- Terraform (Terraform v0.11.13)
 - Vcpkg 2018.11.23-unknownhash
 - Google Repository 58
 - Google Play services 49
@@ -140,7 +141,7 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - Android Support Repository 47.0.0
 - Android Solver for ConstraintLayout 1.0.2
 - Android Solver for ConstraintLayout 1.0.1
-- Android SDK Platform-Tools 28.0.1
+- Android SDK Platform-Tools 28.0.2
 - Android SDK Platform 28
 - Android SDK Platform 27
 - Android SDK Platform 26
@@ -182,19 +183,27 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - Android SDK Build-Tools 20.0.0
 - Android SDK Build-Tools 19.1.0
 - Android SDK Build-Tools 17.0.0
-- Android NDK 19.0.5232133
+- Android NDK 19.2.5345600
 - Android ConstraintLayout 1.0.2
 - Android ConstraintLayour 1.0.1
+- Az Module (1.0.0)
 ## Cached container images
-- jekyll/builder:latest (Digest: sha256:5726e389182023605ffabd05ba71f19ba203bf925394e8aca3710b91a46cf2de)
+- jekyll/builder:latest (Digest: sha256:e8986db08783394cd77687bbfda4dc0e66d1f0d47786f0a4626b35f767d47943)
 - mcr.microsoft.com/azure-pipelines/node8-typescript:latest (Digest: sha256:e52e60b9f71183969830a3664279b5d8c799b4b0ec2c25a0686f7c02f6a9669a)
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
   - Python 2.7.15
   - Python 3.4.8
   - Python 3.5.5
-  - Python 3.6.5
-  - Python 3.7.0
+  - Python 3.6.8
+  - Python 3.7.2
 - Ruby (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
   - Ruby 2.3.7
   - Ruby 2.4.4
   - Ruby 2.5.1
+- Python (Python 2.7.12)
+- pip (pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7))
+- Python3 (Python 3.5.2)
+- pip3 (pip 8.1.1 from /usr/lib/python3/dist-packages (python 3.5))
+- PyPy2 ([PyPy 7.1.0 with GCC 6.2.0 20160901])
+- PyPy3 ([PyPy 7.0.0 with GCC 6.2.0 20160901])
+- Boost C++ Libraries 1.69.0
