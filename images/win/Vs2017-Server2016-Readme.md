@@ -7,39 +7,38 @@ Components marked with **\*** have been upgraded since the previous version of t
 
 ## Chocolatey
 
-_Version:_ 0.10.11<br/>
+_Version:_ 0.10.13<br/>
 _Environment:_
 * PATH: contains location for choco.exe
 
 ## Docker
 
-_Version:_ 18.09.3<br/>
+_Version:_ 18.09.4<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
 ## Docker-compose
 
-_Version:_ 1.23.2<br/>
+_Version:_ 1.24.0<br/>
 _Environment:_
 * PATH: contains location of docker-compose.exe
 
 ## Powershell Core
 
-_Version:_ 6.1.3
-<br/>
+_Version:_ 6.2.0<br/>
 
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnet@sha256:958114016f74f4ffc10b7f065ca4f340e0a0c390cb276c3659d5f8af43d388c7
-* microsoft/dotnet-framework@sha256:3c3fe0db41aa3500539a9667e0f1c2f6c2cc411bb658502bef8629f01f78b70e
+* microsoft/dotnet-framework@sha256:9bd1bad4f3861d014ab403e06159c529bcd8f6e12e5ada38d293ab200f3411e4
+* microsoft/aspnet@sha256:51fdd2a971dcc07d670da477a2f0d6d3c0a6872ea3f0f89226b98b62ccb1c2a1
 * microsoft/windowsservercore@sha256:05de0a0ac13d3652bd1f2281b8589459ebb611092e3fe4d8f1be91f1f6984266
 * microsoft/nanoserver@sha256:2b783310e6c82de737e893abd53ae238ca56b5a96e2861558fb9a111d6691ddb
 * microsoft/aspnetcore-build@sha256:9ecc7c5a8a7a11dca5f08c860165646cb30d084606360a3a72b9cbe447241c0c
 
 ## Visual Studio 2017 Enterprise
 
-_Version:_ VisualStudio/15.9.7+28307.423<br/>
+_Version:_ VisualStudio/15.9.11+28307.586<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
 
 The following workloads including required and recommended components are installed with Visual Studio 2017:
@@ -126,7 +125,7 @@ In addition the following optional components are installed:
 
 ## SQL Server Data Tools for VS 2017
 
-_Version:_ 15.1.61901.24070<br/>
+_Version:_ 15.1.61903.1040<br/>
 
 The following components are installed:
 
@@ -154,16 +153,6 @@ _Version:_ 10.0.17763.0<br/>
 
 _SDK Version:_ 3.3.617.9590<br/>
 _Runtime Version:_ 6.4.617.9590
-
-## Python (64 bit)
-
-#### Python 3.6.6
-_Environment:_
-* PATH: contains location of python.exe
-
-#### Python 2.7.14
-
-_Location:_ C:\Python27amd64
 
 ## WinAppDriver
 
@@ -323,27 +312,26 @@ _Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-19
 
 #### 2.1.0
 
-This version is installed and is available via Get-Module -ListAvailable
-
+This version is installed and is available via Get-Module -ListAvailable
 #### 3.8.0
 
 This version is saved but not installed
-_Location:_ C:\Modules\azurerm_3.8.0\AzureRM\3.8.0\AzureRM.psd1
+_Location:_ C:\Modules\AzurePSModules.m150.20190403.1424\azurerm_3.8.0\AzureRM\3.8.0\AzureRM.psd1
 
 #### 4.2.1
 
 This version is saved but not installed
-_Location:_ C:\Modules\azurerm_4.2.1\AzureRM\4.2.1\AzureRM.psd1
+_Location:_ C:\Modules\AzurePSModules.m150.20190403.1424\azurerm_4.2.1\AzureRM\4.2.1\AzureRM.psd1
 
 #### 5.1.1
 
 This version is saved but not installed
-_Location:_ C:\Modules\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1
+_Location:_ C:\Modules\AzurePSModules.m150.20190403.1424\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1
 
 #### 6.7.0
 
 This version is saved but not installed
-_Location:_ C:\Modules\azurerm_6.7.0\AzureRM\6.7.0\AzureRM.psd1
+_Location:_ C:\Modules\AzurePSModules.m150.20190403.1424\azurerm_6.7.0\AzureRM\6.7.0\AzureRM.psd1
 
 
 ## TLS12
@@ -359,12 +347,27 @@ _Environment:_
 
 ## Azure DevOps Cli extension
 
-_Version:_ azure-devops                       0.3.0
+_Version:_ azure-devops                       0.4.0
 
 ## Python
 
-_Version:_ 2.7.14 (x86)<br/>_Version:_ 3.4.4 (x86)<br/>_Version:_ 3.5.4 (x86)<br/>_Version:_ 3.6.8 (x86)<br/>_Version:_ 3.7.2 (x86)<br/>_Version:_ 2.7.14 (x64)<br/>_Version:_ 3.4.4 (x64)<br/>_Version:_ 3.5.4 (x64)<br/>_Version:_ 3.6.8 (x64)<br/>_Version:_ 3.7.2 (x64)<br/><br/>
+_Version:_ 2.7.14 (x64)<br/>_Version:_ 2.7.14 (x86)<br/>_Version:_ 3.4.4 (x64)<br/>_Version:_ 3.4.4 (x86)<br/>_Version:_ 3.5.4 (x64)<br/>_Version:_ 3.5.4 (x86)<br/>_Version:_ 3.6.8 (x64)<br/>_Version:_ 3.6.8 (x86)<br/>_Version:_ 3.7.2 (x64)<br/>_Version:_ 3.7.2 (x86)<br/><br/>
 > Note: These versions of Python are available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task.
+
+## Ruby
+
+_Version:_ 2.4.3 (x64)<br/>_Version:_ 2.5.0 (x64)<br/><br/>
+> Note: These versions of Ruby are available through the [Use Ruby Version](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/use-ruby-version) task.
+
+## Python (64 bit)
+
+#### 
+_Environment:_
+* PATH: contains location of python.exe
+
+#### Python 2.7.14
+
+_Location:_ C:\Python27amd64
 
 ## Git
 
@@ -391,12 +394,17 @@ _Environment:_
 _Environment:_
 * GOROOT_1_10_X64: root directory of the Go 1.10.8 installation
 
-#### 1.11.5
+#### 1.11.6
 
 _Environment:_
-* PATH: contains the location of go.exe version 1.11.5
-* GOROOT: root directory of the Go 1.11.5 installation
-* GOROOT_1_11_X64: root directory of the Go 1.11.5 installation
+* GOROOT_1_11_X64: root directory of the Go 1.11.6 installation
+
+#### 1.12.1
+
+_Environment:_
+* PATH: contains the location of go.exe version 1.12.1
+* GOROOT: root directory of the Go 1.12.1 installation
+* GOROOT_1_12_X64: root directory of the Go 1.12.1 installation
 
 
 ## Boost
@@ -410,11 +418,11 @@ _Environment:_
 
 ## PHP (x64)
 
-#### 7.3.1
+#### 7.3.4
 
 _Environment:_
-* PATH: contains the location of php.exe version 7.3.1
-* PHPROOT: root directory of the PHP 7.3.1 installation
+* PATH: contains the location of php.exe version 7.3.4
+* PHPROOT: root directory of the PHP 7.3.4 installation
 
 ## Ruby (x64)
 
@@ -474,20 +482,20 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 10.15.2<br/>
+_Version:_ 10.15.3<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
-* Gulp [[90m21:46:04[39m] CLI version 2.0.1<br/>
+* Gulp CLI version 2.1.0<br/>
 * Grunt grunt-cli v1.3.2<br/>
 * Bower 1.8.8<br/>
-* Yarn 1.13.0<br/>
+* Yarn 1.15.2<br/>
 
 > Note: You can install and use another version of Node.js on Microsoft-hosted agent pools using the [Node tool installer](https://docs.microsoft.com/vsts/pipelines/tasks/tool/node-js) task.
 
 ## npm
 
-_Version:_ 6.8.0<br/>
+_Version:_ 6.9.0<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -520,19 +528,19 @@ _Environment:_
 
 ## Gradle
 
-_Version:_ 5.2.1<br/>
+_Version:_ 5.3.1<br/>
 _Environment:_
 * PATH: contains location of gradle
 
 ## Cmake
 
-_Version:_ 3.13.4<br/>
+_Version:_ 3.14.1<br/>
 _Environment:_
 * PATH: contains location of cmake.exe
 
 ## SQL Server Data Tier Application Framework (x64)
 
-_Version:_ 15.0.4200.1<br/>
+_Version:_ 15.0.4316.1<br/>
 
 ## .NET Core
 
@@ -542,11 +550,13 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
+* 2.2.105 C:\Program Files\dotnet\sdk\2.2.105
 * 2.2.104 C:\Program Files\dotnet\sdk\2.2.104
 * 2.2.103 C:\Program Files\dotnet\sdk\2.2.103
 * 2.2.102 C:\Program Files\dotnet\sdk\2.2.102
 * 2.2.101 C:\Program Files\dotnet\sdk\2.2.101
 * 2.2.100 C:\Program Files\dotnet\sdk\2.2.100
+* 2.1.505 C:\Program Files\dotnet\sdk\2.1.505
 * 2.1.504 C:\Program Files\dotnet\sdk\2.1.504
 * 2.1.503 C:\Program Files\dotnet\sdk\2.1.503
 * 2.1.502 C:\Program Files\dotnet\sdk\2.1.502
@@ -576,6 +586,7 @@ _SDK:_
 * 1.1.7 C:\Program Files\dotnet\sdk\1.1.7
 * 1.1.5 C:\Program Files\dotnet\sdk\1.1.5
 * 1.1.4 C:\Program Files\dotnet\sdk\1.1.4
+* 1.1.13 C:\Program Files\dotnet\sdk\1.1.13
 * 1.1.12 C:\Program Files\dotnet\sdk\1.1.12
 * 1.1.11 C:\Program Files\dotnet\sdk\1.1.11
 * 1.1.10 C:\Program Files\dotnet\sdk\1.1.10
@@ -583,9 +594,11 @@ _SDK:_
 * 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
+* 2.2.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.3
 * 2.2.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.2
 * 2.2.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.1
 * 2.2.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.0
+* 2.1.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.9
 * 2.1.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8
 * 2.1.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.7
 * 2.1.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6
@@ -608,6 +621,7 @@ _Runtime:_
 * 1.1.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.5
 * 1.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.4
 * 1.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.2
+* 1.1.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.12
 * 1.1.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.11
 * 1.1.10 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.10
 * 1.1.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.1
@@ -616,6 +630,7 @@ _Runtime:_
 * 1.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.7
 * 1.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.5
 * 1.0.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.4
+* 1.0.15 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.15
 * 1.0.14 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.14
 * 1.0.13 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.13
 * 1.0.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.12
@@ -634,7 +649,7 @@ _Version:_ 1.0
 
 ## SQLServer PS
 
-_Version:_ 21.1.18080
+_Version:_ 21.1.18102
 
 ## MinGW
 
@@ -644,7 +659,7 @@ _Environment:_
 
 ## TypeScript
 
-_Version:_ Version 3.3.3333<br/>
+_Version:_ Version 3.4.2<br/>
 
 ## Miniconda
 
@@ -663,7 +678,7 @@ _Version:_ 19.00<br/>
 
 ## Mercurial
 
-_Version:_ <br/>
+_Version:_ 4.9.1<br/>
 
 ## jq
 
@@ -694,4 +709,4 @@ _Version:_ 6.43.0<br/>
 _Version:_ 2018.11.23-nohash<br/>
 _Environment:_
 * PATH: contains location of the vcpkg directory
-* VCPKG_ROOT: root directory of the vcpkg installation
+* VCPKG_INSTALLATION_ROOT: root directory of the vcpkg installation
