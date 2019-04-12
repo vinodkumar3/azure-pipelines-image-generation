@@ -30,7 +30,7 @@ _Version:_ 6.2.0<br/>
 ## Docker images
 
 The following container images have been cached:
-* microsoft/dotnet-framework@sha256:9bd1bad4f3861d014ab403e06159c529bcd8f6e12e5ada38d293ab200f3411e4
+* microsoft/dotnet-framework@sha256:d976b25e3a480afbb1290152773c9f78ec1715e0db615a37cedc571498572297
 * microsoft/aspnet@sha256:51fdd2a971dcc07d670da477a2f0d6d3c0a6872ea3f0f89226b98b62ccb1c2a1
 * microsoft/windowsservercore@sha256:05de0a0ac13d3652bd1f2281b8589459ebb611092e3fe4d8f1be91f1f6984266
 * microsoft/nanoserver@sha256:2b783310e6c82de737e893abd53ae238ca56b5a96e2861558fb9a111d6691ddb
@@ -316,22 +316,22 @@ This version is installed and is available via Get-Module -ListAvailable
 #### 3.8.0
 
 This version is saved but not installed
-_Location:_ C:\Modules\AzurePSModules.m150.20190403.1424\azurerm_3.8.0\AzureRM\3.8.0\AzureRM.psd1
+_Location:_ C:\Modules\azurerm_3.8.0\AzureRM\3.8.0\AzureRM.psd1
 
 #### 4.2.1
 
 This version is saved but not installed
-_Location:_ C:\Modules\AzurePSModules.m150.20190403.1424\azurerm_4.2.1\AzureRM\4.2.1\AzureRM.psd1
+_Location:_ C:\Modules\azurerm_4.2.1\AzureRM\4.2.1\AzureRM.psd1
 
 #### 5.1.1
 
 This version is saved but not installed
-_Location:_ C:\Modules\AzurePSModules.m150.20190403.1424\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1
+_Location:_ C:\Modules\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1
 
 #### 6.7.0
 
 This version is saved but not installed
-_Location:_ C:\Modules\AzurePSModules.m150.20190403.1424\azurerm_6.7.0\AzureRM\6.7.0\AzureRM.psd1
+_Location:_ C:\Modules\azurerm_6.7.0\AzureRM\6.7.0\AzureRM.psd1
 
 
 ## TLS12
@@ -659,7 +659,7 @@ _Environment:_
 
 ## TypeScript
 
-_Version:_ Version 3.4.2<br/>
+_Version:_ Version 3.4.3<br/>
 
 ## Miniconda
 
