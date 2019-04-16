@@ -19,7 +19,6 @@
         "install_user": "installer",
         "install_password": null
     },
-    "sensitive-variables": ["install_password", "ssh_password", "client_secret"],
     "builders": [
         {
             "name": "vhd",
