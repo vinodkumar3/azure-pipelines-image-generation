@@ -27,14 +27,14 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - Python 3.7.3
 - Ruby 2.6.2p47
 - .NET Core SDK 1.0.1 1.0.4 1.1.10 1.1.11 1.1.12 1.1.13 1.1.4 1.1.5 1.1.7 1.1.8 1.1.9 2.0.0 2.0.3 2.1.100 2.1.101 2.1.102 2.1.103 2.1.104 2.1.105 2.1.2 2.1.200 2.1.201 2.1.202 2.1.300 2.1.301 2.1.302 2.1.4 2.1.400 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105
-- Go 1.12.1
+- Go 1.12.3
 
 ### Package Management
 
 - Bundler 2.0.1
-- Carthage 0.32.0
+- Carthage 0.33.0
 - CocoaPods 1.6.1
-- Homebrew 2.0.6
+- Homebrew 2.1.0
 - NPM 3.10.10
 - Yarn 1.15.2
 - NuGet 4.7.0.5148
@@ -51,14 +51,14 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - curl 7.64.1 (libcurl/7.64.1 SecureTransport zlib/1.2.11)
 - Git 2.21.0
 - Git LFS 2.7.1
-- GNU Wget 1.20.1
+- GNU Wget 1.20.3
 - Subversion (SVN) 1.11.1
 
 ### Tools
 
-- fastlane 2.119.0
-- App Center CLI 1.1.14
-- Azure-CLI 2.0.61
+- fastlane 2.120.0
+- App Center CLI 1.1.15
+- Azure-CLI 2.0.62
 
 ### Pre-cached tools
 - Python 2.7.15 3.4.8 3.5.5 3.6.8 3.7.2
@@ -480,10 +480,11 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Visual Studio for Mac
 
-- 7.8.3.2
+- 8.0.2.23
 
 ### Mono
 
+- 5.18.1
 - 5.16.1
 - 5.12.0
 - 5.10.1
@@ -497,6 +498,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Xamarin.iOS SDK
 
+- 12.6.0.25
 - 12.2.1.16
 - 12.2.1.11
 - 12.0.0.15
@@ -513,6 +515,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Xamarin.Android SDK
 
+- 9.2.0-5
 - 9.1.8-0
 - 9.0.0-20
 - 9.0.0-18
@@ -527,6 +530,8 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Xamarin.Mac SDK
 
+- 5.8.0.0
+- 5.6.0.25
 - 5.3.1.28
 - 5.2.1.16
 - 5.2.1.9
