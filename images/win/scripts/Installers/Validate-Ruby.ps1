@@ -40,7 +40,7 @@ else
 # Default Ruby Version on Path
 $rubyExeOnPath = (Get-Command -Name 'ruby').Path
 $rubyBinOnPath = Split-Path -Path $rubyExeOnPath
-$rubyVersionOnPath = Get-RubyVersion -rubyRootPath $rubyBinPath
+$rubyVersionOnPath = Get-RubyVersion -rubyRootPath $rubyBinOnPath
 
 # Add details of available versions in Markdown
 $SoftwareName = "Ruby (x64)"
