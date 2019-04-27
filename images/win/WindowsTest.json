@@ -82,16 +82,6 @@
             ]
         },
         {
-            "type": "windows-restart",
-            "restart_timeout": "30m"
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "{{ template_dir }}/scripts/Installers/Vs2017/Run-Antivirus.ps1"
-            ]
-        },
-        {
             "type": "powershell",
             "inline": [
                 "if( Test-Path $Env:SystemRoot\\System32\\Sysprep\\unattend.xml ){ rm $Env:SystemRoot\\System32\\Sysprep\\unattend.xml -Force}",
