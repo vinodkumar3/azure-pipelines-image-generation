@@ -13,7 +13,8 @@
         "metadata_file": "/imagegeneration/metadatafile",
         "installer_script_folder": "/imagegeneration/installers",
         "helper_script_folder": "/imagegeneration/helpers",
-        "vm_size": "Standard_DS2_v2"
+        "vm_size": "Standard_DS2_v2",
+        "ssh_disable_agent_forwarding": "true"
     },
     "builders": [
         {
