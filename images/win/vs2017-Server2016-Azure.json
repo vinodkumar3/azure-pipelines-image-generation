@@ -34,7 +34,7 @@
             "resource_group_name": "{{user `resource_group`}}",
             "storage_account": "{{user `storage_account`}}",
             "capture_container_name": "images",
-            "capture_name_prefix": "packer",
+            "capture_name_prefix": "{{user `capture_name_prefix`}}",
             "os_type": "Windows",
             "image_publisher": "MicrosoftWindowsServer",
             "image_offer": "WindowsServer",
