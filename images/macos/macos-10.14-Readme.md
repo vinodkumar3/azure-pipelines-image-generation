@@ -65,8 +65,19 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Azure-CLI 2.0.63
 
 ### Pre-cached tools
-- Python 2.7.16 3.4.8 3.5.7 3.6.8 3.7.3
-- Ruby 2.3.8 2.4.6 2.5.5 2.6.2
+- Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
+  - 2.7.16
+  - 3.4.8
+  - 3.5.7
+  - 3.6.8
+  - 3.7.3
+  - pypy2
+  - pypy3
+- Ruby (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
+  - 2.3.8
+  - 2.4.6
+  - 2.5.5
+  - 2.6.2
 
 ### Xcode
 | Version                | Build   | Path                            |
