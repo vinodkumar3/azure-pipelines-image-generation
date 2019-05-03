@@ -143,11 +143,15 @@ if($instanceFolders -is [array])
 $catalogContent = Get-Content -Path ($instanceFolders.FullName + '\catalog.json')
 $catalog = $catalogContent | ConvertFrom-Json
 $version = $catalog.info.id
+$VSInstallRoot = "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise"
 Write-Host "Visual Studio version" $version "installed"
+
+# Initialize Visual Studio Experimental Instance for integration testing
+&"$VSInstallRoot\Common7\IDE\devenv.exe" /RootSuffix Exp /ResetSettings General.vssettings /Command File.Exit | Wait-Process
 
 # Updating content of MachineState.json file to disable autoupdate of VSIX extensions
 $newContent = '{"Extensions":[{"Key":"1e906ff5-9da8-4091-a299-5c253c55fdc9","Value":{"ShouldAutoUpdate":false}},{"Key":"Microsoft.VisualStudio.Web.AzureFunctions","Value":{"ShouldAutoUpdate":false}}],"ShouldAutoUpdate":false,"ShouldCheckForUpdates":false}'
-Set-Content -Path "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\MachineState.json" -Value $newContent
+Set-Content -Path "$VSInstallRoot\Common7\IDE\Extensions\MachineState.json" -Value $newContent
 
 
 # Adding description of the software to Markdown
@@ -156,7 +160,7 @@ $SoftwareName = "Visual Studio 2017 Enterprise"
 
 $Description = @"
 _Version:_ $version<br/>
-_Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
+_Location:_ $VSInstallRoot
 
 The following workloads including required and recommended components are installed with Visual Studio 2017:
 
