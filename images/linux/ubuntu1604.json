@@ -13,7 +13,8 @@
         "metadata_file": "/imagegeneration/metadatafile",
         "installer_script_folder": "/imagegeneration/installers",
         "helper_script_folder": "/imagegeneration/helpers",
-        "vm_size": "Standard_DS2_v2"
+        "vm_size": "Standard_DS2_v2",
+        "capture_name_prefix": "packer"
     },
     "builders": [
         {
@@ -28,7 +29,7 @@
             "resource_group_name": "{{user `resource_group`}}",
             "storage_account": "{{user `storage_account`}}",
             "capture_container_name": "images",
-            "capture_name_prefix": "packer",
+            "capture_name_prefix": "{{user `capture_name_prefix`}}",
             "os_type": "Linux",
             "image_publisher": "Canonical",
             "image_offer": "UbuntuServer",
