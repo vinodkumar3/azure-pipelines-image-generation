@@ -7,54 +7,54 @@ Components marked with **\*** have been upgraded since the previous version of t
 
 ## Chocolatey
 
-_Version:_ 0.10.11<br/>
+_Version:_ 0.10.13<br/>
 _Environment:_
 * PATH: contains location for choco.exe
 
 ## Docker
 
-_Version:_ 18.09.3<br/>
+_Version:_ 18.09.5<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
 ## Docker-compose
 
-_Version:_ 1.23.2<br/>
+_Version:_ 1.24.0<br/>
 _Environment:_
 * PATH: contains location of docker-compose.exe
 
 ## Powershell Core
 
-_Version:_ 6.1.3
+_Version:_ 6.2.0
 <br/>
 
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnet:(sha256:2a82b74969741eb3a8744c17c92cd1ac48cf477cb864b951220fb3e88fb88d71)
-* microsoft/dotnet-framework:(sha256:f09783c4727b7b378027e73f9ea7c25d1339abf5244de57f59e44ae52e6cfd6c)
-* microsoft/windowsservercore:(sha256:f64ba9ff2219073f553b2e9f148002a726e31c3b69a811d74e7e405826fa27bb)
-* mcr.microsoft.com/windows/servercore:(sha256:f64ba9ff2219073f553b2e9f148002a726e31c3b69a811d74e7e405826fa27bb)
-* microsoft/nanoserver:(sha256:01cc42375a4adcf7215ba5073e496e9a14e9a006efb2973e6db9e755841f44e7)
-* mcr.microsoft.com/windows/nanoserver:(sha256:01cc42375a4adcf7215ba5073e496e9a14e9a006efb2973e6db9e755841f44e7)
+* microsoft/aspnet:(sha256:723a020fc39c649619cecac367f4097362d2adcded30df778ac0c73694426821)
+* microsoft/dotnet-framework:(sha256:58a653c1e3437c164cc65aea6bef29ccf1f1ba51a836079cf266dc65a862ff70)
+* microsoft/windowsservercore:(sha256:5d6ed58d7f27598db7a61b7a38cd755fa8165ae726aff39f14aa52468f0248dd)
+* mcr.microsoft.com/windows/servercore:(sha256:5d6ed58d7f27598db7a61b7a38cd755fa8165ae726aff39f14aa52468f0248dd)
+* microsoft/nanoserver:(sha256:616085ca3a9b5ad23a93598348d118f7e4e86e0b26d3d7b43180ee7170efcf5e)
+* mcr.microsoft.com/windows/nanoserver:(sha256:616085ca3a9b5ad23a93598348d118f7e4e86e0b26d3d7b43180ee7170efcf5e)
 * microsoft/aspnetcore-build:(sha256:82ad5218bb554d0b44ca54c21aba78b5ae10b92cead389d71328614b99fc47af)
 
 ## Node.js
 
-_Version:_ 10.15.2<br/>
+_Version:_ 10.15.3<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
-* Gulp [[90m23:01:14[39m] CLI version 2.0.1<br/>
+* Gulp CLI version: 2.2.0 Local version: Unknown<br/>
 * Grunt grunt-cli v1.3.2<br/>
 * Bower 1.8.8<br/>
-* Yarn 1.13.0<br/>
+* Yarn 1.15.2<br/>
 
 > Note: You can install and use another version of Node.js on Microsoft-hosted agent pools using the [Node tool installer](https://docs.microsoft.com/vsts/pipelines/tasks/tool/node-js) task.
 
 ## npm
 
-_Version:_ 6.8.0<br/>
+_Version:_ 6.9.0<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -66,11 +66,13 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
+* 2.2.105 C:\Program Files\dotnet\sdk\2.2.105
 * 2.2.104 C:\Program Files\dotnet\sdk\2.2.104
 * 2.2.103 C:\Program Files\dotnet\sdk\2.2.103
 * 2.2.102 C:\Program Files\dotnet\sdk\2.2.102
 * 2.2.101 C:\Program Files\dotnet\sdk\2.2.101
 * 2.2.100 C:\Program Files\dotnet\sdk\2.2.100
+* 2.1.505 C:\Program Files\dotnet\sdk\2.1.505
 * 2.1.504 C:\Program Files\dotnet\sdk\2.1.504
 * 2.1.503 C:\Program Files\dotnet\sdk\2.1.503
 * 2.1.502 C:\Program Files\dotnet\sdk\2.1.502
@@ -100,6 +102,7 @@ _SDK:_
 * 1.1.7 C:\Program Files\dotnet\sdk\1.1.7
 * 1.1.5 C:\Program Files\dotnet\sdk\1.1.5
 * 1.1.4 C:\Program Files\dotnet\sdk\1.1.4
+* 1.1.13 C:\Program Files\dotnet\sdk\1.1.13
 * 1.1.12 C:\Program Files\dotnet\sdk\1.1.12
 * 1.1.11 C:\Program Files\dotnet\sdk\1.1.11
 * 1.1.10 C:\Program Files\dotnet\sdk\1.1.10
@@ -107,9 +110,11 @@ _SDK:_
 * 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
+* 2.2.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.3
 * 2.2.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.2
 * 2.2.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.1
 * 2.2.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.0
+* 2.1.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.9
 * 2.1.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8
 * 2.1.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.7
 * 2.1.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6
@@ -132,6 +137,7 @@ _Runtime:_
 * 1.1.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.5
 * 1.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.4
 * 1.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.2
+* 1.1.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.12
 * 1.1.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.11
 * 1.1.10 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.10
 * 1.1.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.1
@@ -140,6 +146,7 @@ _Runtime:_
 * 1.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.7
 * 1.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.5
 * 1.0.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.4
+* 1.0.15 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.15
 * 1.0.14 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.14
 * 1.0.13 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.13
 * 1.0.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.12
