@@ -19,8 +19,8 @@ function DockerPull {
     $results
 }
 
-DockerPull microsoft/windowsservercore:1809
-DockerPull microsoft/nanoserver:1809
+DockerPull mcr.microsoft.com/windows/servercore:1809
+DockerPull mcr.microsoft.com/windows/nanoserver:1809
 DockerPull microsoft/aspnetcore-build:1.0-2.0
 DockerPull microsoft/aspnet
 DockerPull microsoft/dotnet-framework
