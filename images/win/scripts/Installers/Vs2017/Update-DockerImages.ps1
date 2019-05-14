@@ -19,12 +19,11 @@ function DockerPull {
     $results
 }
 
-DockerPull microsoft/windowsservercore:1809
-DockerPull microsoft/nanoserver:1809
+DockerPull microsoft/windowsservercore:ltsc2016
+DockerPull microsoft/nanoserver:10.0.14393.953
 DockerPull microsoft/aspnetcore-build:1.0-2.0
 DockerPull microsoft/aspnet
 DockerPull microsoft/dotnet-framework
-
 
 # Adding description of the software to Markdown
 
