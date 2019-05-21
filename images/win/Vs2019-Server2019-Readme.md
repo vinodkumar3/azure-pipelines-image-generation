@@ -650,7 +650,7 @@ _Version:_ 19.00<br/>
 
 ## Mercurial
 
-_Version:_ <br/>
+_Version:_ 5.0<br/>
 
 ## jq
 
