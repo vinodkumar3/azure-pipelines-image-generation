@@ -33,11 +33,13 @@ _Version:_ 6.2.0
 The following container images have been cached:
 * microsoft/aspnet@sha256:3c386c22b1a0aee1e0aa1ca11ad66b388d588861be0e3d5b506b74b0cdef5756
 * microsoft/dotnet-framework@sha256:99376414054ca4e8b053207be3e81778d6bcacae4f8a77f928a210c1c3325125
+* microsoft/windowsservercore@sha256:95d3522dd8791704aa1f8f212500d96258b35d2b9eae07f6f002bb93222e322e
 * microsoft/aspnetcore-build@sha256:9ecc7c5a8a7a11dca5f08c860165646cb30d084606360a3a72b9cbe447241c0c
+* microsoft/nanoserver@sha256:fc60bd5ae0e61b334ce1cf1bcbf20c10c36b4c5482a01da319c9c989f9e6e268
 
 ## Visual Studio 2017 Enterprise
 
-_Version:_ VisualStudio/15.9.11+28307.586<br/>
+_Version:_ VisualStudio/15.9.12+28307.665<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
 
 The following workloads including required and recommended components are installed with Visual Studio 2017:
@@ -438,7 +440,7 @@ _Environment:_
 
 ## Rust (64-bit)
 
-#### 1.34.1
+#### 1.34.2
 _Location:_ C:\Program Files\Rust\.cargo\bin
 _Environment:_
 * PATH: contains the location of rustc.exe
@@ -454,7 +456,7 @@ _Environment:_
 ## Google Chrome
 
 _version:_
-71.0.3578.98
+74.0.3729.131
 
 ## Mozilla Firefox
 
@@ -467,7 +469,7 @@ _version:_
 #### Chrome Driver
 
 _version:_
-2.45
+74.0.3729.6
 
 _Environment:_
 * ChromeWebDriver: location of chromedriver.exe
@@ -498,7 +500,7 @@ _Environment:_
 * Gulp CLI version: 2.2.0 Local version: Unknown<br/>
 * Grunt grunt-cli v1.3.2<br/>
 * Bower 1.8.8<br/>
-* Yarn 1.15.2<br/>
+* Yarn 1.16.0<br/>
 
 > Note: You can install and use another version of Node.js on Microsoft-hosted agent pools using the [Node tool installer](https://docs.microsoft.com/vsts/pipelines/tasks/tool/node-js) task.
 
@@ -565,6 +567,7 @@ _SDK:_
 * 2.2.102 C:\Program Files\dotnet\sdk\2.2.102
 * 2.2.101 C:\Program Files\dotnet\sdk\2.2.101
 * 2.2.100 C:\Program Files\dotnet\sdk\2.2.100
+* 2.1.507 C:\Program Files\dotnet\sdk\2.1.507
 * 2.1.505 C:\Program Files\dotnet\sdk\2.1.505
 * 2.1.504 C:\Program Files\dotnet\sdk\2.1.504
 * 2.1.503 C:\Program Files\dotnet\sdk\2.1.503
@@ -595,6 +598,7 @@ _SDK:_
 * 1.1.7 C:\Program Files\dotnet\sdk\1.1.7
 * 1.1.5 C:\Program Files\dotnet\sdk\1.1.5
 * 1.1.4 C:\Program Files\dotnet\sdk\1.1.4
+* 1.1.14 C:\Program Files\dotnet\sdk\1.1.14
 * 1.1.13 C:\Program Files\dotnet\sdk\1.1.13
 * 1.1.12 C:\Program Files\dotnet\sdk\1.1.12
 * 1.1.11 C:\Program Files\dotnet\sdk\1.1.11
@@ -615,6 +619,7 @@ _Runtime:_
 * 2.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.4
 * 2.1.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.3
 * 2.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.2
+* 2.1.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.11
 * 2.1.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.1
 * 2.1.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.0
 * 2.0.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.9
@@ -630,6 +635,7 @@ _Runtime:_
 * 1.1.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.5
 * 1.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.4
 * 1.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.2
+* 1.1.13 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.13
 * 1.1.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.12
 * 1.1.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.11
 * 1.1.10 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.10
@@ -639,6 +645,7 @@ _Runtime:_
 * 1.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.7
 * 1.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.5
 * 1.0.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.4
+* 1.0.16 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.16
 * 1.0.15 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.15
 * 1.0.14 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.14
 * 1.0.13 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.13
@@ -678,7 +685,7 @@ _Environment:_
 
 ## Azure CosmosDb Emulator
 
-_Version:_ 2.2.1.0<br/>
+_Version:_ 2.2.2.0<br/>
 _Location:_ C:\Program Files\Azure Cosmos DB Emulator\
 
 ## 7zip
@@ -687,7 +694,7 @@ _Version:_ 19.00<br/>
 
 ## Mercurial
 
-_Version:_ 4.9.1<br/>
+_Version:_ 5.0<br/>
 
 ## jq
 
@@ -711,7 +718,7 @@ _Version:_ 1.1.1a at C:\Program Files\Git\usr\bin\openssl.exe<br/>_Version:_ 1.1
 
 ## Cloud Foundry CLI
 
-_Version:_ 6.44.0<br/>
+_Version:_ 6.44.1<br/>
 
 ## Vcpkg
 
