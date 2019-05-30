@@ -40,6 +40,13 @@
     "provisioners": [
         {
             "type": "shell",
+            "scripts":[
+                "ls -al /"
+            ],
+            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+        },
+        {
+            "type": "shell",
             "inline": [
                 "mkdir {{user `image_folder`}}",
                 "chmod 777 {{user `image_folder`}}",
@@ -85,6 +92,13 @@
             "environment_vars": [
                 "METADATA_FILE={{user `metadata_file`}}",
                 "HELPER_SCRIPTS={{user `helper_script_folder`}}"
+            ],
+            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+        },
+        {
+            "type": "shell",
+            "scripts":[
+                "ls -al /"
             ],
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },
@@ -143,6 +157,13 @@
         {
             "type": "shell",
             "scripts":[
+                "ls -al /"
+            ],
+            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+        },
+        {
+            "type": "shell",
+            "scripts":[
                 "{{template_dir}}/scripts/installers/android.sh",
                 "{{template_dir}}/scripts/installers/azpowershell.sh",
                 "{{template_dir}}/scripts/helpers/containercache.sh",
@@ -159,6 +180,13 @@
         {
             "type": "shell",
             "scripts":[
+                "ls -al /"
+            ],
+            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+        },
+        {
+            "type": "shell",
+            "scripts":[
                 "{{template_dir}}/scripts/installers/boost.sh"
             ],
             "environment_vars": [
@@ -166,6 +194,13 @@
                 "HELPER_SCRIPTS={{user `helper_script_folder`}}",
                 "BOOST_VERSIONS=1.69.0",
                 "BOOST_DEFAULT=1.69.0"
+            ],
+            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+        },
+        {
+            "type": "shell",
+            "scripts":[
+                "ls -al /"
             ],
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },
@@ -192,9 +227,23 @@
         },
         {
             "type": "shell",
+            "scripts":[
+                "ls -al /"
+            ],
+            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+        },        
+        {
+            "type": "shell",
             "inline": [
                 "mkdir -p /etc/vsts",
                 "cp /tmp/ubuntu1604.conf /etc/vsts/machine_instance.conf"
+            ],
+            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+        },
+        {
+            "type": "shell",
+            "scripts":[
+                "ls -al /"
             ],
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },
