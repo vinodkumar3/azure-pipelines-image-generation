@@ -40,10 +40,7 @@
     "provisioners": [
         {
             "type": "shell",
-            "scripts":[
-                "ls -al /"
-            ],
-            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+            "inline": ["ls -al /"]
         },
         {
             "type": "shell",
@@ -97,10 +94,7 @@
         },
         {
             "type": "shell",
-            "scripts":[
-                "ls -al /"
-            ],
-            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+            "inline": ["ls -al /"]
         },
         {
             "type": "shell",
@@ -156,10 +150,7 @@
         },
         {
             "type": "shell",
-            "scripts":[
-                "ls -al /"
-            ],
-            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+            "inline": ["ls -al /"]
         },
         {
             "type": "shell",
@@ -179,10 +170,7 @@
         },
         {
             "type": "shell",
-            "scripts":[
-                "ls -al /"
-            ],
-            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+            "inline": ["ls -al /"]
         },
         {
             "type": "shell",
@@ -199,10 +187,7 @@
         },
         {
             "type": "shell",
-            "scripts":[
-                "ls -al /"
-            ],
-            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+            "inline": ["ls -al /"]
         },
         {
             "type": "file",
@@ -227,10 +212,7 @@
         },
         {
             "type": "shell",
-            "scripts":[
-                "ls -al /"
-            ],
-            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+            "inline": ["ls -al /"]
         },        
         {
             "type": "shell",
@@ -242,10 +224,7 @@
         },
         {
             "type": "shell",
-            "scripts":[
-                "ls -al /"
-            ],
-            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+            "inline": ["ls -al /"]
         },
         {
             "type": "shell",
