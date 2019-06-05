@@ -23,7 +23,7 @@ if [ -d "$AGENT_TOOLSDIRECTORY/Python" ]; then
       do
          echo "Test $AGENT_TOOLSDIRECTORY/Python/$version_dir:"
          expected_ver=$(echo $version_dir | egrep -o '[0-9]+\.[0-9]+')
-         actual_ver=$($AGENT_TOOLSDIRECTORY/Python/$version_dir/x64/bin/python -c 'import sys;print(sys.version)'| head -1 | egrep -o '[0-9]+\.[0-9]+')
+         actual_ver=$($AGENT_TOOLSDIRECTORY/Python/$version_dir/x64/python -c 'import sys;print(sys.version)'| head -1 | egrep -o '[0-9]+\.[0-9]+')
 
          if [ "$expected_ver" = "$actual_ver" ]; then
                echo "Passed!"
