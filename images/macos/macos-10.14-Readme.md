@@ -26,7 +26,12 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Node.js 6.17.0
 - Node.js 8.11.3
 - NVM 0.33.11
-- PowerShell 6.2.0
+- NVM - Installed node versions:
+v6.17.1
+v8.16.0
+v10.16.0
+v12.3.1
+- PowerShell 6.2.1
 - Python 2.7.16
 - Python 3.7.3
 - Ruby 2.6.3p62
@@ -37,8 +42,8 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 - Bundler 2.0.1
 - Carthage 0.33.0
-- CocoaPods 1.6.1
-- Homebrew 2.1.1
+- CocoaPods 1.7.0 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to CocoaPods 1.5.3 using this [post-clone script](https://github.com/microsoft/appcenter/blob/master/sample-build-scripts/general/cocoapods-rollback/appcenter-post-clone.sh))
+- Homebrew 2.1.4
 - NPM 3.10.10
 - Yarn 1.15.2
 - NuGet 4.7.0.5148
@@ -52,7 +57,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Utilities
 
-- curl 7.64.1 (libcurl/7.64.1 SecureTransport zlib/1.2.11)
+- curl 7.65.0 (x86_64-apple-darwin18.6.0) libcurl/7.65.0 SecureTransport zlib/1.2.11
 - Git 2.21.0
 - Git LFS 2.7.2
 - GNU Wget 1.20.3
@@ -61,8 +66,8 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 ### Tools
 
 - fastlane 2.121.1
-- App Center CLI 1.1.15
-- Azure-CLI 2.0.63
+- App Center CLI 1.1.18
+- Azure-CLI 2.0.64
 
 ### Pre-cached tools
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
@@ -93,7 +98,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Nomad CLI 3.0.3
 - Nomad CLI IPA 0.14.3
 - xcpretty 0.3.0
-- xctool 0.3.5
+- xctool 0.3.6
 
 ### Installed SDKs
 | SDK                       | SDK name    |
@@ -507,7 +512,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 | lldb                  | 2.3.3614996                               |
 | ndk-bundle            | 18.1.5063045                              |
 | ProGuard              | 5.3.3                                     |
-| Android Emulator      | 28.0.25                                    |
+| Android Emulator      | 29.0.11                                    |
 
 ### Google APIs
 
@@ -531,7 +536,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Visual Studio for Mac
 
-- 8.0.4.0
+- 8.0.8.2
 
 ### Mono
 
