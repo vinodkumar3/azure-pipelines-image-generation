@@ -24,7 +24,6 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Java 11: OpenJDK RE Zulu11.31+11-CA (build 11.0.3+7-LTS)
 - Java 12: OpenJDK RE Zulu12.2+3-CA (build 12.0.1+12)
 - Node.js 6.17.0
-- Node.js 8.11.3
 - NVM 0.33.11
 - NVM - Installed node versions:
 v6.17.1
