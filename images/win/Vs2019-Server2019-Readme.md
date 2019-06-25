@@ -1,34 +1,5 @@
 # Azure Pipelines Hosted Windows 2019 with VS2019 image
 
-## Known issues
-
-**Xamarin Android** builds might fail with to find Java
-
-`Error XA5300: The Java SDK Directory could not be found. Please set via /p:JavaSdkDirectory.`
-
-The [Xamarin Android task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/xamarin-android?view=azure-devops) allows specifying the Java version.
-We recommend setting this to ensure the pipelines are not relying on the JAVA version in the PATH on the Hosted VMs.
-
-**YAML**
-```json
-task: XamarinAndroid@1
-  inputs:
-    projectFile: '**/*droid*.csproj'
-    outputDirectory: '$(outputDirectory)'
-    configuration: '$(buildConfiguration)'
-    msbuildArguments: '/p:AndroidNdkDirectory=$(ANDROID_NDK_HOME)'
-    jdkVersionOption: 1.8
-```
-
-**Designer**
-
-![jdk options](/images/win/readme_img/xa_jdkversion.png)
-
-If you are using a script to run `msbuild` or the [MSBuild task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/msbuild?view=azure-devops), pass the msbuild argument
-`/p:JavaSdkDirectory="$(JAVA_HOME_8_X64)"`
-
-## Software
-
 The following software is installed on machines in the Azure Pipelines **Hosted Windows 2019 with VS2019** pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
@@ -36,7 +7,7 @@ Components marked with **\*** have been upgraded since the previous version of t
 
 ## Chocolatey
 
-_Version:_ 0.10.13<br/>
+_Version:_ 0.10.15<br/>
 _Environment:_
 * PATH: contains location for choco.exe
 
@@ -54,25 +25,25 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.2.0
-<br/>
+_Version:_ 6.2.1<br/>
 
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnet@sha256:3c386c22b1a0aee1e0aa1ca11ad66b388d588861be0e3d5b506b74b0cdef5756
-* microsoft/dotnet-framework@sha256:99376414054ca4e8b053207be3e81778d6bcacae4f8a77f928a210c1c3325125
-* mcr.microsoft.com/windows/nanoserver@sha256:618899238737d4f2a78d87f91d5599de220ca076797523c1118a2fc6a1acb82c
-* mcr.microsoft.com/windows/servercore@sha256:8d9b3f92bf3ca6660df64537753788d589d401ff088ac6f492505c7bfa98733b
+* microsoft/aspnet@sha256:bd608d401e88301692f3f5233bc9f527a41836b1648e9382723bcbed6489e6e6
+* microsoft/dotnet-framework@sha256:42fb6c5f2980c5206c51975712db95ffc4217abcbf328b06f62d6578b2ad17dc
+* mcr.microsoft.com/windows/nanoserver@sha256:535887492a56d570a018063d259a99e576cf6092204f87c0d2937fb160e5b090
+* mcr.microsoft.com/windows/servercore@sha256:370afa846b124b4674257e193352b38c65790ef75bce27418da0738fa208e66a
 * microsoft/aspnetcore-build@sha256:9ecc7c5a8a7a11dca5f08c860165646cb30d084606360a3a72b9cbe447241c0c
 
 ## Visual Studio 2019 Enterprise
 
-_Version:_ VisualStudio/16.0.3+28803.352<br/>
+_Version:_ VisualStudio/16.1.3+29009.5<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 
 The following workloads and components are installed with Visual Studio 2019:
 * Component.CPython2.x64
+* Component.Dotfuscator
 * Component.Linux.CMake
 * Component.UnityEngine.x64
 * Component.UnityEngine.x86
@@ -115,8 +86,10 @@ The following workloads and components are installed with Visual Studio 2019:
 * Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest
 * Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest
 * Microsoft.VisualStudio.Component.VC.v141
+* Microsoft.VisualStudio.Component.Windows10SDK.16299
 * Microsoft.VisualStudio.Component.Windows10SDK.17134
 * Microsoft.VisualStudio.Component.Windows10SDK.17763
+* Microsoft.VisualStudio.Component.Windows10SDK.18362
 * Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices
 * Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools
 * Microsoft.VisualStudio.ComponentGroup.Web.CloudTools
@@ -144,9 +117,9 @@ _Toolset Version:_ 3.11.2318<br/>
 _Environment:_
 * WIX: Installation root of WIX
 
-## .NET 4.7.2
+## .NET 4.8
 
-_Version:_ 4.7.03190
+_Version:_ 4.8.03761
 
 ## Windows Driver Kit
 
@@ -315,8 +288,7 @@ _Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-19
 
 #### 2.1.0
 
-This version is installed and is available via Get-Module -ListAvailable
-
+This version is installed and is available via Get-Module -ListAvailable
 #### 3.8.0
 
 This version is saved but not installed
@@ -337,6 +309,7 @@ _Location:_ C:\Modules\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1
 This version is saved but not installed
 _Location:_ C:\Modules\azurerm_6.7.0\AzureRM\6.7.0\AzureRM.psd1
 
+
 ## TLS12
 
 _Version:_ 1.2<br/>
@@ -344,13 +317,13 @@ _Description:_ .NET has been configured to use TLS 1.2 by default
 
 ## Azure CLI
 
-_Version:_ 2.0.64
+_Version:_ 2.0.67
 _Environment:_
 * PATH: contains location of az.cmd
 
 ## Azure DevOps Cli extension
 
-_Version:_ azure-devops                       0.8.0
+_Version:_ azure-devops                      0.11.0
 
 ## Python
 
@@ -369,23 +342,23 @@ _Version:_ 2.4.5 (x64)<br/>_Version:_ 2.5.3 (x64)<br/>_Version:_ 2.6.1 (x64)<br/
 
 ## Python (64 bit)
 
-####
+#### 
 _Environment:_
 * PATH: contains location of python.exe
 
-#### Python 2.7.15
+#### Python 2.7.16
 
 _Location:_ C:\Python27amd64
 
 ## Git
 
-_Version:_ 2.21.0<br/>
+_Version:_ 2.22.0<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git Large File Storage (LFS)
 
-_Version:_ 2.7.1<br/>
+_Version:_ 2.7.2<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
@@ -412,20 +385,20 @@ _Environment:_
 
 ## Boost
 
-####
+#### 
 
-* PATH: contains the location of Boost version
+* PATH: contains the location of Boost version 
 * BOOST_ROOT: root directory of the Boost version  installation
 * BOOST_ROOT_1_69_0: root directory of the Boost version  installation
 
 
 ## PHP (x64)
 
-#### 7.3.5
+#### 7.3.6
 
 _Environment:_
-* PATH: contains the location of php.exe version 7.3.5
-* PHPROOT: root directory of the PHP 7.3.5 installation
+* PATH: contains the location of php.exe version 7.3.6
+* PHPROOT: root directory of the PHP 7.3.6 installation
 
 ## Ruby (x64)
 
@@ -436,7 +409,7 @@ _Environment:_
 
 ## Rust (64-bit)
 
-#### 1.34.2
+#### 1.35.0
 _Location:_ C:\Program Files\Rust\.cargo\bin
 _Environment:_
 * PATH: contains the location of rustc.exe
@@ -452,12 +425,12 @@ _Environment:_
 ## Google Chrome
 
 _version:_
-74.0.3729.131
+75.0.3770.100
 
 ## Mozilla Firefox
 
 _version:_
-66.0.3
+67.0.3
 
 ## Selenium Web Drivers
 
@@ -465,7 +438,7 @@ _version:_
 #### Chrome Driver
 
 _version:_
-74.0.3729.6
+75.0.3770.90
 
 _Environment:_
 * ChromeWebDriver: location of chromedriver.exe
@@ -489,7 +462,7 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 10.15.3<br/>
+_Version:_ 10.16.0<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
@@ -541,7 +514,7 @@ _Environment:_
 
 ## Cmake
 
-_Version:_ 3.14.3<br/>
+_Version:_ 3.14.5<br/>
 _Environment:_
 * PATH: contains location of cmake.exe
 
@@ -563,7 +536,7 @@ _SDK:_
 * 2.2.102 C:\Program Files\dotnet\sdk\2.2.102
 * 2.2.101 C:\Program Files\dotnet\sdk\2.2.101
 * 2.2.100 C:\Program Files\dotnet\sdk\2.2.100
-* 2.1.602 C:\Program Files\dotnet\sdk\2.1.602
+* 2.1.700 C:\Program Files\dotnet\sdk\2.1.700
 * 2.1.505 C:\Program Files\dotnet\sdk\2.1.505
 * 2.1.504 C:\Program Files\dotnet\sdk\2.1.504
 * 2.1.503 C:\Program Files\dotnet\sdk\2.1.503
@@ -614,6 +587,7 @@ _Runtime:_
 * 2.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.4
 * 2.1.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.3
 * 2.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.2
+* 2.1.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.11
 * 2.1.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.1
 * 2.1.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.0
 * 2.0.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.9
@@ -659,7 +633,7 @@ _Environment:_
 
 ## TypeScript
 
-_Version:_ Version 3.4.5<br/>
+_Version:_ Version 3.5.2<br/>
 
 ## Miniconda
 
@@ -669,7 +643,7 @@ _Environment:_
 
 ## Azure CosmosDb Emulator
 
-_Version:_ 2.2.2.0<br/>
+_Version:_ 2.4.3.0<br/>
 _Location:_ C:\Program Files\Azure Cosmos DB Emulator\
 
 ## 7zip
@@ -678,7 +652,7 @@ _Version:_ 19.00<br/>
 
 ## Mercurial
 
-_Version:_ 5.0<br/>
+_Version:_ <br/>
 
 ## jq
 
@@ -686,7 +660,7 @@ _Version:_ jq-1.5<br/>
 
 ## Inno Setup
 
-_Version:_ 5.6.1<br/>
+_Version:_ 6.0.2<br/>
 
 ## Perl
 
@@ -698,15 +672,15 @@ _Version:_ 4.0.0.0<br/>
 
 ## OpenSSL
 
-_Version:_ 1.1.1a at C:\Program Files\Git\usr\bin\openssl.exe<br/>_Version:_ 1.1.1a at C:\Program Files\Git\mingw64\bin\openssl.exe<br/>_Version:_ 1.0.2j at C:\Program Files (x86)\Subversion\bin\openssl.exe<br/>_Version:_ 1.1.0j at C:\Strawberry\c\bin\openssl.exe<br/>_Version:_ 1.1.1 at C:\Program Files\OpenSSL\bin\openssl.exe<br/>
+_Version:_ 1.1.1c at C:\Program Files\Git\usr\bin\openssl.exe<br/>_Version:_ 1.1.1c at C:\Program Files\Git\mingw64\bin\openssl.exe<br/>_Version:_ 1.0.2j at C:\Program Files (x86)\Subversion\bin\openssl.exe<br/>_Version:_ 1.1.1b at C:\Strawberry\c\bin\openssl.exe<br/>_Version:_ 1.1.1 at C:\Program Files\OpenSSL\bin\openssl.exe<br/>
 
 ## Cloud Foundry CLI
 
-_Version:_ 6.44.1<br/>
+_Version:_ 6.45.0<br/>
 
 ## Vcpkg
 
-_Version:_ 2018.11.23-nohash<br/>
+_Version:_ 2019.06.21-nohash<br/>
 _Environment:_
 * PATH: contains location of the vcpkg directory
 * VCPKG_INSTALLATION_ROOT: root directory of the vcpkg installation
