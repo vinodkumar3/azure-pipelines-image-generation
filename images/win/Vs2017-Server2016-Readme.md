@@ -7,39 +7,38 @@ Components marked with **\*** have been upgraded since the previous version of t
 
 ## Chocolatey
 
-_Version:_ 0.10.11<br/>
+_Version:_ 0.10.15<br/>
 _Environment:_
 * PATH: contains location for choco.exe
 
 ## Docker
 
-_Version:_ 18.09.3<br/>
+_Version:_ 18.09.6<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
 ## Docker-compose
 
-_Version:_ 1.23.2<br/>
+_Version:_ 1.24.0<br/>
 _Environment:_
 * PATH: contains location of docker-compose.exe
 
 ## Powershell Core
 
-_Version:_ 6.1.3
-<br/>
+_Version:_ 6.2.1<br/>
 
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnet@sha256:3c386c22b1a0aee1e0aa1ca11ad66b388d588861be0e3d5b506b74b0cdef5756
-* microsoft/dotnet-framework@sha256:99376414054ca4e8b053207be3e81778d6bcacae4f8a77f928a210c1c3325125
-* microsoft/windowsservercore@sha256:95d3522dd8791704aa1f8f212500d96258b35d2b9eae07f6f002bb93222e322e
+* microsoft/aspnet@sha256:bd608d401e88301692f3f5233bc9f527a41836b1648e9382723bcbed6489e6e6
+* microsoft/dotnet-framework@sha256:42fb6c5f2980c5206c51975712db95ffc4217abcbf328b06f62d6578b2ad17dc
+* microsoft/windowsservercore@sha256:91368f3cff77ad42259ccb3bf3d1a4e145cf5fa9e486f23999d32711c2913f3e
 * microsoft/aspnetcore-build@sha256:9ecc7c5a8a7a11dca5f08c860165646cb30d084606360a3a72b9cbe447241c0c
 * microsoft/nanoserver@sha256:fc60bd5ae0e61b334ce1cf1bcbf20c10c36b4c5482a01da319c9c989f9e6e268
 
 ## Visual Studio 2017 Enterprise
 
-_Version:_ VisualStudio/15.9.12+28307.665<br/>
+_Version:_ VisualStudio/15.9.13+28307.718<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
 
 The following workloads including required and recommended components are installed with Visual Studio 2017:
@@ -74,6 +73,7 @@ In addition the following optional components are installed:
 * Microsoft.Net.Component.4.7.1.SDK
 * Microsoft.Net.Component.4.7.1.TargetingPack
 * Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools
+* Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools
 * Microsoft.Net.Core.Component.SDK.1x
 * Microsoft.NetCore.1x.ComponentGroup.Web
 * Microsoft.VisualStudio.Component.Azure.Storage.AzCopy
@@ -95,6 +95,7 @@ In addition the following optional components are installed:
 * Microsoft.VisualStudio.Component.TestTools.WebLoadTest
 * Microsoft.VisualStudio.Web.Mvc4.ComponentGroup
 * Component.CPython2.x64
+* Component.Linux.CMake
 * Microsoft.Component.PythonTools.UWP
 * Microsoft.Component.VC.Runtime.OSSupport
 * Microsoft.VisualStudio.Component.VC.Tools.ARM
@@ -126,7 +127,7 @@ In addition the following optional components are installed:
 
 ## SQL Server Data Tools for VS 2017
 
-_Version:_ 15.1.61901.24070<br/>
+_Version:_ 15.1.61906.3130<br/>
 
 The following components are installed:
 
@@ -142,9 +143,9 @@ _WIX Toolset Studio 2017 Extension Version:_ 0.9.21.62588<br/>
 _Environment:_
 * WIX: Installation root of WIX
 
-## .NET 4.7.2
+## .NET 4.8
 
-_Version:_ 4.7.03062
+_Version:_ 4.8.03761
 
 ## Windows Driver Kit
 
@@ -154,16 +155,6 @@ _Version:_ 10.0.17763.0<br/>
 
 _SDK Version:_ 3.3.617.9590<br/>
 _Runtime Version:_ 6.4.617.9590
-
-## Python (64 bit)
-
-#### Python 3.6.6
-_Environment:_
-* PATH: contains location of python.exe
-
-#### Python 2.7.14
-
-_Location:_ C:\Python27amd64
 
 ## WinAppDriver
 
@@ -323,8 +314,7 @@ _Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-19
 
 #### 2.1.0
 
-This version is installed and is available via Get-Module -ListAvailable
-
+This version is installed and is available via Get-Module -ListAvailable
 #### 3.8.0
 
 This version is saved but not installed
@@ -345,15 +335,6 @@ _Location:_ C:\Modules\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1
 This version is saved but not installed
 _Location:_ C:\Modules\azurerm_6.7.0\AzureRM\6.7.0\AzureRM.psd1
 
-> Note: You can use a specific Azure PowerShell version in Pipeline using [Azure PowerShell](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-powershell?view=azure-devops) task.
-
-## Az Powershell modules
-#### 1.0.0
-
-This version is saved but not installed
-_Location:_ C:\Modules\az_1.0.0\Az\1.0.0\Az.psd1
-
-> Note: You can use a specific Az module version in Pipeline using [Azure PowerShell](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-powershell?view=azure-devops) task.
 
 ## TLS12
 
@@ -362,28 +343,48 @@ _Description:_ .NET has been configured to use TLS 1.2 by default
 
 ## Azure CLI
 
-_Version:_ <br/>
+_Version:_ 2.0.67
 _Environment:_
 * PATH: contains location of az.cmd
 
 ## Azure DevOps Cli extension
 
-_Version:_ azure-devops                       0.3.0
+_Version:_ azure-devops                      0.11.0
 
 ## Python
 
-_Version:_ 2.7.14 (x86)<br/>_Version:_ 3.4.4 (x86)<br/>_Version:_ 3.5.4 (x86)<br/>_Version:_ 3.6.8 (x86)<br/>_Version:_ 3.7.2 (x86)<br/>_Version:_ 2.7.14 (x64)<br/>_Version:_ 3.4.4 (x64)<br/>_Version:_ 3.5.4 (x64)<br/>_Version:_ 3.6.8 (x64)<br/>_Version:_ 3.7.2 (x64)<br/><br/>
+_Version:_ 2.7.16 (x64)<br/>_Version:_ 2.7.16 (x86)<br/>_Version:_ 3.4.4 (x64)<br/>_Version:_ 3.4.4 (x86)<br/>_Version:_ 3.5.4 (x64)<br/>_Version:_ 3.5.4 (x86)<br/>_Version:_ 3.6.8 (x64)<br/>_Version:_ 3.6.8 (x86)<br/>_Version:_ 3.7.3 (x64)<br/>_Version:_ 3.7.3 (x86)<br/><br/>
 > Note: These versions of Python are available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task.
+
+## PyPy
+
+_Version:_ 2.7.13 (x86)<br/>_Version:_ 3.5.3 (x86)<br/><br/>
+> Note: These versions of PyPy are available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task.
+
+## Ruby
+
+_Version:_ 2.4.5 (x64)<br/>_Version:_ 2.5.3 (x64)<br/>_Version:_ 2.6.1 (x64)<br/><br/>
+> Note: These versions of Ruby are available through the [Use Ruby Version](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/use-ruby-version) task.
+
+## Python (64 bit)
+
+#### 
+_Environment:_
+* PATH: contains location of python.exe
+
+#### Python 2.7.14
+
+_Location:_ C:\Python27amd64
 
 ## Git
 
-_Version:_ 2.21.0<br/>
+_Version:_ 2.22.0<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git Large File Storage (LFS)
 
-_Version:_ 2.7.1<br/>
+_Version:_ 2.7.2<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
@@ -400,44 +401,51 @@ _Environment:_
 _Environment:_
 * GOROOT_1_10_X64: root directory of the Go 1.10.8 installation
 
-#### 1.11.5
+#### 1.11.9
 
 _Environment:_
-* PATH: contains the location of go.exe version 1.11.5
-* GOROOT: root directory of the Go 1.11.5 installation
-* GOROOT_1_11_X64: root directory of the Go 1.11.5 installation
+* GOROOT_1_11_X64: root directory of the Go 1.11.9 installation
+
+#### 1.12.4
+
+_Environment:_
+* PATH: contains the location of go.exe version 1.12.4
+* GOROOT: root directory of the Go 1.12.4 installation
+* GOROOT_1_12_X64: root directory of the Go 1.12.4 installation
 
 
 ## Boost
 
-####
+#### 
 
-* PATH: contains the location of Boost version
+* PATH: contains the location of Boost version 
 * BOOST_ROOT: root directory of the Boost version  installation
 * BOOST_ROOT_1_69_0: root directory of the Boost version  installation
 
 
 ## PHP (x64)
 
-#### 7.3.1
+#### 7.3.6
 
 _Environment:_
-* PATH: contains the location of php.exe version 7.3.1
-* PHPROOT: root directory of the PHP 7.3.1 installation
+* PATH: contains the location of php.exe version 7.3.6
+* PHPROOT: root directory of the PHP 7.3.6 installation
 
 ## Ruby (x64)
 
-#### 2.4.3p205
+#### 2.5.3p105
+_Environment:_
+* Location: C:\hostedtoolcache\windows\Ruby\2.5.3\x64\bin
+* PATH: contains the location of ruby.exe version 2.5.3p105
 
-_Location:_ C:\hostedtoolcache\windows\Ruby\2.4.3\x64\bin
+## Rust (64-bit)
 
-#### 2.5.0p0
-
-#### 1.34.2
+#### 1.35.0
 _Location:_ C:\Program Files\Rust\.cargo\bin
 _Environment:_
-* Location: C:\hostedtoolcache\windows\Ruby\2.5.0\x64\bin
-* PATH: contains the location of ruby.exe version 2.5.0p0
+* PATH: contains the location of rustc.exe
+* RUSTUP_HOME: contains the location of rustup
+* CARGO_HOME: contains the location of cargo
 
 ## Subversion
 
@@ -448,12 +456,12 @@ _Environment:_
 ## Google Chrome
 
 _version:_
-74.0.3729.131
+75.0.3770.100
 
 ## Mozilla Firefox
 
 _version:_
-64.0.2
+67.0.3
 
 ## Selenium Web Drivers
 
@@ -461,7 +469,7 @@ _version:_
 #### Chrome Driver
 
 _version:_
-74.0.3729.6
+75.0.3770.90
 
 _Environment:_
 * ChromeWebDriver: location of chromedriver.exe
@@ -469,7 +477,7 @@ _Environment:_
 #### Gecko Driver
 
 _version:_
-0.23.0
+0.24.0
 
 _Environment:_
 * GeckoWebDriver: location of geckodriver.exe
@@ -485,11 +493,11 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 10.15.2<br/>
+_Version:_ 10.16.0<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
-* Gulp [[90m21:46:04[39m] CLI version 2.0.1<br/>
+* Gulp CLI version: 2.2.0 Local version: Unknown<br/>
 * Grunt grunt-cli v1.3.2<br/>
 * Bower 1.8.8<br/>
 * Yarn 1.16.0<br/>
@@ -498,21 +506,21 @@ _Environment:_
 
 ## npm
 
-_Version:_ 6.8.0<br/>
+_Version:_ 6.9.0<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
 ## Java Development Kit
 
-#### 1.8.0_202
+#### 1.8.0_212
 
 _Environment:_
 * JAVA_HOME: location of JDK
 * PATH: contains bin folder of JDK
 
-#### 11.0.2
+#### 11.0.3
 
-_Location:_ C:\Program Files\Java\zulu-11-azure-jdk_11.29.3-11.0.2-win_x64
+_Location:_ C:\Program Files\Java\zulu-11-azure-jdk_11.31.11-11.0.3-win_x64
 
 ## Ant
 
@@ -524,26 +532,26 @@ _Environment:_
 
 ## Maven
 
-_Version:_ 3.6.0<br/>
+_Version:_ 3.6.1<br/>
 _Environment:_
 * PATH: contains location of mvn.bat
 * M2_HOME: Maven installation root
 
 ## Gradle
 
-_Version:_ 5.2.1<br/>
+_Version:_ 5.4.1<br/>
 _Environment:_
 * PATH: contains location of gradle
 
 ## Cmake
 
-_Version:_ 3.13.4<br/>
+_Version:_ 3.14.5<br/>
 _Environment:_
 * PATH: contains location of cmake.exe
 
 ## SQL Server Data Tier Application Framework (x64)
 
-_Version:_ 15.0.4200.1<br/>
+_Version:_ 15.0.4384.2<br/>
 
 ## .NET Core
 
@@ -553,6 +561,7 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
+* 2.2.105 C:\Program Files\dotnet\sdk\2.2.105
 * 2.2.104 C:\Program Files\dotnet\sdk\2.2.104
 * 2.2.103 C:\Program Files\dotnet\sdk\2.2.103
 * 2.2.102 C:\Program Files\dotnet\sdk\2.2.102
@@ -598,9 +607,11 @@ _SDK:_
 * 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
+* 2.2.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.3
 * 2.2.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.2
 * 2.2.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.1
 * 2.2.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.0
+* 2.1.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.9
 * 2.1.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8
 * 2.1.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.7
 * 2.1.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6
@@ -654,7 +665,7 @@ _Version:_ 1.0
 
 ## SQLServer PS
 
-_Version:_ 21.1.18080
+_Version:_ 21.1.18121
 
 ## MinGW
 
@@ -664,17 +675,17 @@ _Environment:_
 
 ## TypeScript
 
-_Version:_ Version 3.3.3333<br/>
+_Version:_ Version 3.5.2<br/>
 
 ## Miniconda
 
-_Version:_ conda 4.5.12<br/>
+_Version:_ conda 4.6.14<br/>
 _Environment:_
 * CONDA: contains location of the root of the Miniconda installation
 
 ## Azure CosmosDb Emulator
 
-_Version:_ 2.2.2.0<br/>
+_Version:_ 2.4.3.0<br/>
 _Location:_ C:\Program Files\Azure Cosmos DB Emulator\
 
 ## 7zip
@@ -683,7 +694,7 @@ _Version:_ 19.00<br/>
 
 ## Mercurial
 
-_Version:_ 5.0<br/>
+_Version:_ <br/>
 
 ## jq
 
@@ -691,7 +702,7 @@ _Version:_ jq-1.5<br/>
 
 ## Inno Setup
 
-_Version:_ 5.6.1<br/>
+_Version:_ 6.0.2<br/>
 
 ## Perl
 
@@ -703,15 +714,15 @@ _Version:_ 4.0.0.0<br/>
 
 ## OpenSSL
 
-_Version:_ 1.1.1a at C:\Program Files\Git\usr\bin\openssl.exe<br/>_Version:_ 1.1.1a at C:\Program Files\Git\mingw64\bin\openssl.exe<br/>_Version:_ 1.0.2j at C:\Program Files (x86)\Subversion\bin\openssl.exe<br/>_Version:_ 1.1.0i at C:\Strawberry\c\bin\openssl.exe<br/>_Version:_ 1.1.1 at C:\Program Files\OpenSSL\bin\openssl.exe<br/>
+_Version:_ 1.1.1c at C:\Program Files\Git\usr\bin\openssl.exe<br/>_Version:_ 1.1.1c at C:\Program Files\Git\mingw64\bin\openssl.exe<br/>_Version:_ 1.0.2j at C:\Program Files (x86)\Subversion\bin\openssl.exe<br/>_Version:_ 1.1.1b at C:\Strawberry\c\bin\openssl.exe<br/>_Version:_ 1.1.1 at C:\Program Files\OpenSSL\bin\openssl.exe<br/>
 
 ## Cloud Foundry CLI
 
-_Version:_ 6.44.1<br/>
+_Version:_ 6.45.0<br/>
 
 ## Vcpkg
 
-_Version:_ 2018.11.23-nohash<br/>
+_Version:_ 2019.06.21-nohash<br/>
 _Environment:_
 * PATH: contains location of the vcpkg directory
 * VCPKG_INSTALLATION_ROOT: root directory of the vcpkg installation
