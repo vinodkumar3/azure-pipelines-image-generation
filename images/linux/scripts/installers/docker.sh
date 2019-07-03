@@ -33,6 +33,21 @@ fi
 echo "Pulling down latest Docker image ($DEFAULT_DOCKER_IMAGE)"
 docker pull $DEFAULT_DOCKER_IMAGE
 
+# Cache popular docker images
+docker pull node:8
+docker pull node:10
+docker pull node:12
+docker pull buildpack-deps:stretch
+docker pull node:8-alpine
+docker pull node:10-alpine
+docker pull node:12-alpine
+docker pull debian:8
+docker pull debian:9
+docker pull alpine:3.7
+docker pull alpine:3.8
+docker pull alpine:3.9
+docker pull alpine:3.10
+
 ## Add version information to the metadata file
 echo "Documenting Docker version"
 DOCKER_VERSION=`docker -v`
