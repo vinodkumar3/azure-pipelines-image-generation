@@ -15,12 +15,12 @@ else
 }
 
 # Adding description of the software to Markdown
-$SoftwareName = "Mercurial"
-$(hg --version).Split([System.Environment]::NewLine)[0] -match "\d+\.\d+\.\d+"
-$MercurialVersion = $matches[0]
+#$SoftwareName = "Mercurial"
+#$(hg --version).Split([System.Environment]::NewLine)[0] -match "\d+\.\d+\.\d+"
+#$MercurialVersion = $matches[0]
 
-$Description = @"
-_Version:_ $MercurialVersion<br/>
-"@
+#$Description = @"
+#_Version:_ $MercurialVersion<br/>
+#"@
 
-Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
+#Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
