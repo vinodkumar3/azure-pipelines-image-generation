@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 18.09.6<br/>
+_Version:_ 18.09.7<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -31,13 +31,13 @@ _Version:_ 6.2.1
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnet:(sha256:267fb321aa67e14a1408de1f3b8bea028fcf458c4a1073af29790d054caa6bfa)
-* microsoft/dotnet-framework:(sha256:4758e579a2f0387b602e3247508ca2d5930519dcbcec5a1e5620e90804d51b04)
-* microsoft/windowsservercore:(sha256:df3783b22075bdeb4111cbba31dc88a6e66e01e409b97f4ec96c83728080ba78)
-* microsoft/nanoserver:(sha256:017e9758bf4b10dceddae3c015d272095bcde726b3bf4552ba407ce224b8cde5)
-* mcr.microsoft.com/windows/servercore:(sha256:2a3d3a6432c34255dc986a674d931a19e4452f59b972c7d7314701262ce9d286)
-* mcr.microsoft.com/windows/nanoserver:(sha256:9960a18287652e10bfb53f8b294cecebdaf12c2c837cf0b09efd933686d685a4)
-* microsoft/aspnetcore-build:(sha256:82ad5218bb554d0b44ca54c21aba78b5ae10b92cead389d71328614b99fc47af)
+* microsoft/aspnet:4.7.2-windowsservercore-1803 (Digest: sha256:42bc7ff1ac8872933a0db8d1ae2a3a26f25c27e30186cf546a72ff475d3c7019)
+* microsoft/dotnet-framework:4.7.2-sdk-windowsservercore-1803 (Digest: sha256:d8164dc257f2d4480194129d8030c95ec6c805adac1ec8c3a03ccd29ddb1fb20)
+* microsoft/windowsservercore:1803 (Digest: sha256:4374dbc78737bfec459fe6e2047466faa7c21a03aec362ce61735692ed54e598)
+* microsoft/nanoserver:1803 (Digest: sha256:bc5c1878a69c4538d55bc74e50b7dbafafff1a373120e624e8bad646a0a505dc)
+* mcr.microsoft.com/windows/servercore:1803 (Digest: sha256:df3783b22075bdeb4111cbba31dc88a6e66e01e409b97f4ec96c83728080ba78)
+* mcr.microsoft.com/windows/nanoserver:1803 (Digest: sha256:017e9758bf4b10dceddae3c015d272095bcde726b3bf4552ba407ce224b8cde5)
+* microsoft/aspnetcore-build:2.0-nanoserver-1803 (Digest: sha256:82ad5218bb554d0b44ca54c21aba78b5ae10b92cead389d71328614b99fc47af)
 
 ## Node.js
 
@@ -54,7 +54,7 @@ _Environment:_
 
 ## npm
 
-_Version:_ 6.9.0<br/>
+_Version:_ 6.10.1<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
