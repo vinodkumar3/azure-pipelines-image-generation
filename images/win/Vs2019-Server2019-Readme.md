@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 18.09.6<br/>
+_Version:_ 18.09.7<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -31,19 +31,18 @@ _Version:_ 6.2.1
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnet@sha256:bd608d401e88301692f3f5233bc9f527a41836b1648e9382723bcbed6489e6e6
-* microsoft/dotnet-framework@sha256:42fb6c5f2980c5206c51975712db95ffc4217abcbf328b06f62d6578b2ad17dc
-* mcr.microsoft.com/windows/nanoserver@sha256:535887492a56d570a018063d259a99e576cf6092204f87c0d2937fb160e5b090
-* mcr.microsoft.com/windows/servercore@sha256:370afa846b124b4674257e193352b38c65790ef75bce27418da0738fa208e66a
-* microsoft/aspnetcore-build@sha256:9ecc7c5a8a7a11dca5f08c860165646cb30d084606360a3a72b9cbe447241c0c
+* mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019 (Digest: sha256:8c850cb553f66ef7ca94ecf53f6bfe92a3f4bdaf990f9172a1aabdf21e8cac74)
+* mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2019 (Digest: sha256:264b6fc7f4842c42725fa78c3deedf360b0288c5dbf937364553dccef3a6df86)
+* mcr.microsoft.com/windows/servercore:ltsc2019 (Digest: sha256:3227eebe00f79b326c1c672190940d8ba9d552f0e40cc4b9135995e46ba1e588)
+* mcr.microsoft.com/windows/nanoserver:1809 (Digest: sha256:f4e90ea2a4fa220edd3db4ab1e22b287c3a7bd9ee2d07c71f92f126b42161634)
+* microsoft/aspnetcore-build:1.0-2.0 (Digest: sha256:9ecc7c5a8a7a11dca5f08c860165646cb30d084606360a3a72b9cbe447241c0c)
 
 ## Visual Studio 2019 Enterprise
 
-_Version:_ VisualStudio/16.1.3+29009.5<br/>
+_Version:_ VisualStudio/16.1.6+29102.190<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 
 The following workloads and components are installed with Visual Studio 2019:
-* Component.CPython2.x64
 * Component.Dotfuscator
 * Component.Linux.CMake
 * Component.UnityEngine.x64
@@ -67,6 +66,7 @@ The following workloads and components are installed with Visual Studio 2019:
 * Microsoft.VisualStudio.Component.EntityFramework
 * Microsoft.VisualStudio.Component.FSharp.Desktop
 * Microsoft.VisualStudio.Component.LinqToSql
+* Microsoft.VisualStudio.Component.PortableLibrary
 * Microsoft.VisualStudio.Component.TeamOffice
 * Microsoft.VisualStudio.Component.TestTools.CodedUITest
 * Microsoft.VisualStudio.Component.TestTools.WebLoadTest
@@ -312,25 +312,6 @@ This version is saved but not installed
 _Location:_ C:\Modules\azurerm_6.7.0\AzureRM\6.7.0\AzureRM.psd1
 
 
-## Az Powershell modules
-#### 1.0.0
-
-This version is saved but not installed
-_Location:_ C:\Modules\az_1.0.0\Az\1.0.0\Az.psd1
-
-#### 1.6.0
-
-This version is saved but not installed
-_Location:_ C:\Modules\az_1.6.0\Az\1.6.0\Az.psd1
-
-#### 2.3.2
-
-This version is saved but not installed
-_Location:_ C:\Modules\az_2.3.2\Az\2.3.2\Az.psd1
-
-> Note: You can use a specific Az module version in Pipeline using [Azure PowerShell](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-powershell?view=azure-devops) task.
-
-
 ## TLS12
 
 _Version:_ 1.2<br/>
@@ -338,7 +319,7 @@ _Description:_ .NET has been configured to use TLS 1.2 by default
 
 ## Azure CLI
 
-_Version:_ 2.0.67
+_Version:_ 2.0.68
 _Environment:_
 * PATH: contains location of az.cmd
 
@@ -348,7 +329,7 @@ _Version:_ azure-devops                      0.11.0
 
 ## Python
 
-_Version:_ 2.7.16 (x64)<br/>_Version:_ 2.7.16 (x86)<br/>_Version:_ 3.4.4 (x64)<br/>_Version:_ 3.4.4 (x86)<br/>_Version:_ 3.5.4 (x64)<br/>_Version:_ 3.5.4 (x86)<br/>_Version:_ 3.6.8 (x64)<br/>_Version:_ 3.6.8 (x86)<br/>_Version:_ 3.7.3 (x64)<br/>_Version:_ 3.7.3 (x86)<br/><br/>
+_Version:_ 2.7.16 (x64)<br/>_Version:_ 2.7.16 (x86)<br/>_Version:_ 3.4.4 (x64)<br/>_Version:_ 3.4.4 (x86)<br/>_Version:_ 3.5.4 (x64)<br/>_Version:_ 3.5.4 (x86)<br/>_Version:_ 3.6.8 (x64)<br/>_Version:_ 3.6.8 (x86)<br/>_Version:_ 3.7.4 (x64)<br/>_Version:_ 3.7.4 (x86)<br/><br/>
 > Note: These versions of Python are available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task.
 
 ## PyPy
@@ -363,13 +344,13 @@ _Version:_ 2.4.5 (x64)<br/>_Version:_ 2.5.3 (x64)<br/>_Version:_ 2.6.1 (x64)<br/
 
 ## Python (64 bit)
 
-####
+#### Python 3.7.4
 _Environment:_
 * PATH: contains location of python.exe
 
 #### Python 2.7.16
 
-_Location:_ C:\Python27amd64
+_Location:_ C:/hostedtoolcache/windows/Python/2.7*/x64
 
 ## Git
 
@@ -415,11 +396,11 @@ _Environment:_
 
 ## PHP (x64)
 
-#### 7.3.6
+#### 7.3.7
 
 _Environment:_
-* PATH: contains the location of php.exe version 7.3.6
-* PHPROOT: root directory of the PHP 7.3.6 installation
+* PATH: contains the location of php.exe version 7.3.7
+* PHPROOT: root directory of the PHP 7.3.7 installation
 
 ## Ruby (x64)
 
@@ -430,12 +411,10 @@ _Environment:_
 
 ## Rust (64-bit)
 
-#### 1.35.0
-_Location:_ C:\Program Files\Rust\.cargo\bin
+#### 1.36.0
+_Location:_ C:\Rust\.cargo\bin
 _Environment:_
 * PATH: contains the location of rustc.exe
-* RUSTUP_HOME: contains the location of rustup
-* CARGO_HOME: contains the location of cargo
 
 ## Subversion
 
@@ -451,7 +430,7 @@ _version:_
 ## Mozilla Firefox
 
 _version:_
-67.0.3
+68.0
 
 ## Selenium Web Drivers
 
@@ -490,13 +469,13 @@ _Environment:_
 * Gulp CLI version: 2.2.0 Local version: Unknown<br/>
 * Grunt grunt-cli v1.3.2<br/>
 * Bower 1.8.8<br/>
-* Yarn 1.16.0<br/>
+* Yarn 1.17.3<br/>
 
 > Note: You can install and use another version of Node.js on Microsoft-hosted agent pools using the [Node tool installer](https://docs.microsoft.com/vsts/pipelines/tasks/tool/node-js) task.
 
 ## npm
 
-_Version:_ 6.9.0<br/>
+_Version:_ 6.10.1<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -507,6 +486,10 @@ _Environment:_
 _Environment:_
 * JAVA_HOME: location of JDK
 * PATH: contains bin folder of JDK
+
+#### 1.7.0_222
+
+_Location:_ C:\Program Files\Java\zulu-7-azure-jdk_7.29.0.5-7.0.222-win_x64
 
 #### 11.0.3
 
@@ -529,7 +512,7 @@ _Environment:_
 
 ## Gradle
 
-_Version:_ 5.4.1<br/>
+_Version:_ 5.5.1<br/>
 _Environment:_
 * PATH: contains location of gradle
 
@@ -557,7 +540,7 @@ _SDK:_
 * 2.2.102 C:\Program Files\dotnet\sdk\2.2.102
 * 2.2.101 C:\Program Files\dotnet\sdk\2.2.101
 * 2.2.100 C:\Program Files\dotnet\sdk\2.2.100
-* 2.1.700 C:\Program Files\dotnet\sdk\2.1.700
+* 2.1.701 C:\Program Files\dotnet\sdk\2.1.701
 * 2.1.505 C:\Program Files\dotnet\sdk\2.1.505
 * 2.1.504 C:\Program Files\dotnet\sdk\2.1.504
 * 2.1.503 C:\Program Files\dotnet\sdk\2.1.503
@@ -608,7 +591,7 @@ _Runtime:_
 * 2.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.4
 * 2.1.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.3
 * 2.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.2
-* 2.1.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.11
+* 2.1.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.12
 * 2.1.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.1
 * 2.1.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.0
 * 2.0.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.9
@@ -654,7 +637,7 @@ _Environment:_
 
 ## TypeScript
 
-_Version:_ Version 3.5.2<br/>
+_Version:_ Version 3.5.3<br/>
 
 ## Miniconda
 
@@ -664,7 +647,7 @@ _Environment:_
 
 ## Azure CosmosDb Emulator
 
-_Version:_ 2.4.3.0<br/>
+_Version:_ 2.4.5.0<br/>
 _Location:_ C:\Program Files\Azure Cosmos DB Emulator\
 
 ## 7zip
@@ -697,11 +680,11 @@ _Version:_ 1.1.1c at C:\Program Files\Git\usr\bin\openssl.exe<br/>_Version:_ 1.1
 
 ## Cloud Foundry CLI
 
-_Version:_ 6.45.0<br/>
+_Version:_ 6.46.0<br/>
 
 ## Vcpkg
 
-_Version:_ 2019.06.21-nohash<br/>
+_Version:_ 2019.06.26-nohash<br/>
 _Environment:_
 * PATH: contains location of the vcpkg directory
 * VCPKG_INSTALLATION_ROOT: root directory of the vcpkg installation
