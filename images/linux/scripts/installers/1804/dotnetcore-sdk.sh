@@ -49,22 +49,17 @@ for release_url in ${release_urls[@]}; do
     sdks=("${sdks[@]}" $(echo "${releases}" | jq '.releases[]' | jq '.sdks[]?' | jq '.version'))
 done
 
-sortedSdks=$(echo ${sdks[@]} | tr ' ' '\n' | grep -v preview | grep -v rc | grep -v display | cut -d\" -f2 | sort -u)
+sortedSdks=$(echo ${sdks[@]} | tr ' ' '\n' | grep -v preview | grep -v rc | grep -v display | cut -d\" -f2 | sort -u -r)
 
 for sdk in $sortedSdks; do
-    echo "$sdk"
-    # Glob matches dotnet-dev-1.x or dotnet-sdk-2.y
-    if ! apt-get install -y --no-install-recommends "dotnet-*-$sdk"; then
-        # Install manually if not in package repo
-        url="https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$sdk/dotnet-sdk-$sdk-linux-x64.tar.gz"
-        echo "$url" >> urls
-        echo "Adding $url to list to download later"
-    fi
+    url="https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$sdk/dotnet-sdk-$sdk-linux-x64.tar.gz"
+    echo "$url" >> urls
+    echo "Adding $url to list to download later"
 done
 
 # Download additional SDKs
 echo "Downloading release tarballs..."
-sort -u urls | xargs -n 1 -P 16 wget -q
+cat urls | xargs -n 1 -P 16 wget -q
 for tarball in *.tar.gz; do
     dest="./tmp-$(basename -s .tar.gz $tarball)"
     echo "Extracting $tarball to $dest"
@@ -77,6 +72,7 @@ for tarball in *.tar.gz; do
 done
 rm urls
 
+DocumentInstalledItem ".NET Core SDK:"
 # Smoke test each SDK
 for sdk in $sortedSdks; do
     mksamples "$sdk" "console"
@@ -85,12 +81,10 @@ for sdk in $sortedSdks; do
     mksamples "$sdk" "web"
     mksamples "$sdk" "mvc"
     mksamples "$sdk" "webapi"
-    DocumentInstalledItem ".NET Core SDK $sdk"
+    DocumentInstalledItemIndent "$sdk"
 done
 
 # NuGetFallbackFolder at /usr/share/dotnet/sdk/NuGetFallbackFolder is warmed up by smoke test
 # Additional FTE will just copy to ~/.dotnet/NuGet which provides no benefit on a fungible machine
 echo "DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1" | tee -a /etc/environment
 echo "PATH=\"/home/vsts/.dotnet/tools:$PATH\"" | tee -a /etc/environment
-
-dotnet --info
