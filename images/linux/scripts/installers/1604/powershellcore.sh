@@ -11,6 +11,10 @@ source $HELPER_SCRIPTS/document.sh
 LSB_RELEASE=$(lsb_release -rs)
 
 # Install Powershell
+wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+dpkg -i packages-microsoft-prod.deb
+apt-get update
+add-apt-repository universe
 apt-get install -y powershell
 
 # Run tests to determine that the software installed as expected
