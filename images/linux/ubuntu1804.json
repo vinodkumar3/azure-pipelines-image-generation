@@ -74,7 +74,10 @@
                 "systemctl disable apt-daily.service",
                 "systemctl disable apt-daily.timer",
                 "systemctl disable apt-daily-upgrade.timer",
-                "systemctl disable apt-daily-upgrade.service"
+                "systemctl disable apt-daily-upgrade.service",
+                "echo '* soft nofile 50000 \n* hard nofile 50000' >> /etc/security/limits.conf",
+                "echo 'session required pam_limits.so' >> /etc/pam.d/common-session",
+                "echo 'session required pam_limits.so' >> /etc/pam.d/common-session-noninteractive"
             ],
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },
@@ -113,6 +116,7 @@
                 "{{template_dir}}/scripts/installers/cmake.sh",
                 "{{template_dir}}/scripts/installers/docker-compose.sh",
                 "{{template_dir}}/scripts/installers/docker-moby.sh",
+                "{{template_dir}}/scripts/installers/docker.sh",
                 "{{template_dir}}/scripts/installers/1804/dotnetcore-sdk.sh",
                 "{{template_dir}}/scripts/installers/erlang.sh",
                 "{{template_dir}}/scripts/installers/firefox.sh",
