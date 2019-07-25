@@ -4,31 +4,31 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - 7-Zip 9.20
 - Ansible (ansible 2.8.2)
 - AzCopy (azcopy 7.3.0-netcore)
-- Azure CLI (azure-cli 2.0.68 *)
-- Azure CLI (azure-devops 0.11.0)
+- Azure CLI (azure-cli                         2.0.69)
+- Azure CLI (azure-devops                      0.11.0)
 - Basic CLI:
-   - curl
-   - dnsutils
-   - file
-   - ftp
-   - iproute2
-   - iputils-ping
-   - jq
-   - libcurl3
-   - libicu55
-   - libunwind8
-   - locales
-   - netcat
-   - openssh-client
-   - rsync
-   - shellcheck
-   - sudo
-   - telnet
-   - time
-   - unzip
-   - wget
-   - zip
-   - tzdata
+  - curl
+  - dnsutils
+  - file
+  - ftp
+  - iproute2
+  - iputils-ping
+  - jq
+  - libcurl3
+  - libicu55
+  - libunwind8
+  - locales
+  - netcat
+  - openssh-client
+  - rsync
+  - shellcheck
+  - sudo
+  - telnet
+  - time
+  - unzip
+  - wget
+  - zip
+  - tzdata
 - build-essential
 - Clang 6.0 (clang version 6.0.1-svn334776-1~exp1~20190309042730.123 (branches/release_60))
 - CMake (cmake version 3.12.4)
@@ -76,56 +76,57 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - .NET Core SDK 2.2.103
 - .NET Core SDK 2.2.104
 - .NET Core SDK 2.2.105
-- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.4.3)
-- Firefox (Mozilla Firefox 68.0)
+- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.4.4)
+- Firefox (Mozilla Firefox 68.0.1)
 - GNU C++ 7.4.0
 - Git (2.22.0)
-- Git Large File Storage (LFS) (2.7.2)
+- Git Large File Storage (LFS) (2.8.0)
 - Go 1.9 (go version go1.9.7 linux/amd64)
 - Go 1.10 (go version go1.10.8 linux/amd64)
 - Go 1.11 (go version go1.11.9 linux/amd64)
 - Go 1.12 (go version go1.12.4 linux/amd64)
-- Google Chrome (Google Chrome 75.0.3770.100 )
+- Google Chrome (Google Chrome 75.0.3770.142 )
 - Haskell (The Glorious Glasgow Haskell Compilation System, version 7.10.3)
 - Heroku (heroku/7.26.2 linux-x64 node-v11.14.0)
-- HHVM (HipHop VM 4.13.0 (rel))
+- HHVM (HipHop VM 4.15.0 (rel))
 - ImageMagick
-- Azul Zulu OpenJDK (7) (openjdk version "1.7.0_222")
-- Azul Zulu OpenJDK (8) (openjdk version "1.8.0_212")
-- Azul Zulu OpenJDK (11) (openjdk version "11.0.3" 2019-04-16 LTS)
-- Azul Zulu OpenJDK (12) (openjdk version "12.0.1" 2019-04-16)
+- Azul Zulu OpenJDK (7) (openjdk version "1.7.0_232")
+- Azul Zulu OpenJDK (8) (openjdk version "1.8.0_222")
+- Azul Zulu OpenJDK (11) (openjdk version "11.0.4" 2019-07-16 LTS)
+- Azul Zulu OpenJDK (12) (openjdk version "12.0.2" 2019-07-16)
 - Ant (Apache Ant(TM) version 1.9.6 compiled on July 20 2018)
-- Gradle 
+- Gradle 5.5.1
 - Maven (Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-04T19:00:29Z))
-- kubectl (Client Version: v1.15.0)
+- kubectl (Client Version: v1.15.1)
 - helm (Client: v2.14.2+ga8b13cc)
-- Leiningen (Leiningen 2.9.1 on Java 1.8.0_212 OpenJDK 64-Bit Server VM)
+- Leiningen (Leiningen 2.9.1 on Java 1.8.0_222 OpenJDK 64-Bit Server VM)
 - Mercurial (Mercurial Distributed SCM (version 4.4.1))
 - Miniconda (conda 4.6.14)
-- Mono (Mono JIT compiler version 5.20.1.19 (tarball Thu Apr 11 09:09:21 UTC 2019))
-- MySQL (mysql  Ver 14.14 Distrib 5.7.26, for Linux (x86_64) using  EditLine wrapper)
+- Mono (Mono JIT compiler version 6.0.0.313 (tarball Sun Jul 14 09:59:19 UTC 2019))
+- MySQL (mysql  Ver 14.14 Distrib 5.7.27, for Linux (x86_64) using  EditLine wrapper)
 - MySQL Server (user:root password:root)
 - MS SQL Server Client Tools
 - Node.js (v10.16.0)
 - Bower (1.8.8)
 - Grunt (grunt-cli v1.2.0)
 - Gulp (CLI version: 2.2.0
-- n (4.1.0)
+Local version: Unknown)
+- n (5.0.1)
 - Parcel (1.12.3)
 - TypeScript (Version 3.5.3)
-- Webpack (4.35.3)
-- Webpack CLI (3.3.5)
-- Yarn (1.16.0)
+- Webpack (4.37.0)
+- Webpack CLI (3.3.6)
+- Yarn (1.17.3)
 - PhantomJS (2.1.1)
 - PHP 5.6 (PHP 5.6.40-8+ubuntu16.04.1+deb.sury.org+1 (cli) )
 - PHP 7.0 (PHP 7.0.33-8+ubuntu16.04.1+deb.sury.org+1 (cli) (built: May 31 2019 11:34:07) ( NTS ))
 - PHP 7.1 (PHP 7.1.30-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: May 31 2019 11:43:14) ( NTS ))
-- PHP 7.2 (PHP 7.2.20-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Jul 10 2019 06:58:43) ( NTS ))
-- PHP 7.3 (PHP 7.3.7-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Jul 10 2019 06:54:26) ( NTS ))
+- PHP 7.2 (PHP 7.2.20-2+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Jul 25 2019 11:42:36) ( NTS ))
+- PHP 7.3 (PHP 7.3.7-2+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Jul 25 2019 11:44:40) ( NTS ))
 - Composer  (Composer version 1.8.6 2019-06-11 15:03:05)
-- PHPUnit (PHPUnit 7.5.13 by Sebastian Bergmann and contributors.)
+- PHPUnit (PHPUnit 7.5.14 by Sebastian Bergmann and contributors.)
 - Pollinate
-- Powershell (PowerShell 6.2.1)
+- Powershell (PowerShell 6.2.2)
 - rustup (1.18.3)
 - rust (1.36.0)
 - cargo (1.36.0)
@@ -133,12 +134,12 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - clippy (0.0.212)
 - rustdoc (1.36.0)
 - bindgen (0.50.0)
-- cbindgen (0.9.0
+- cbindgen (0.9.0)
 - Scala
 - Sphinx Open Source Search Server
 - Subversion (svn, version 1.9.3 (r1718519))
-- Terraform (Terraform v0.12.4)
-- Vcpkg 2019.06.26-unknownhash
+- Terraform (Terraform v0.12.5)
+- Vcpkg 2019.07.18-unknownhash
 - Google Repository 58
 - Google Play services 49
 - Google APIs 24
@@ -194,23 +195,22 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - Android NDK 20.0.5594570
 - Android ConstraintLayout 1.0.2
 - Android ConstraintLayour 1.0.1
-- Az Module (available through the [Azure PowerShell](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-powershell?view=azure-devops) task)
-  - Az Module (1.0.0)
-  - Az Module (1.6.0)
+- Az Module (1.0.0)
+- Az Module (1.6.0)
 - Cached container images
-  - jekyll/builder:latest (Digest: sha256:ed3b8070215701b7a21d538f1d55ae80817943bef1706739ca7a1b57ac52ac37)
+  - jekyll/builder:latest (Digest: sha256:be63d17346270a56e7f8d15f559023e7121d5a268ca3f00346f227bf511511f5)
   - mcr.microsoft.com/azure-pipelines/node8-typescript:latest (Digest: sha256:e52e60b9f71183969830a3664279b5d8c799b4b0ec2c25a0686f7c02f6a9669a)
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
-   - Python 2.7.16
-   - Python 3.4.10
-   - Python 3.5.7
-   - Python 3.6.9
-   - Python 3.7.4
+  - Python 2.7.16
+  - Python 3.4.10
+  - Python 3.5.7
+  - Python 3.6.9
+  - Python 3.7.4
 - Ruby (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
-   - Ruby 2.3.7
-   - Ruby 2.4.6
-   - Ruby 2.5.5
-   - Ruby 2.6.2
+  - Ruby 2.3.7
+  - Ruby 2.4.6
+  - Ruby 2.5.5
+  - Ruby 2.6.2
 - Python (Python 2.7.12)
 - pip (pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7))
 - Python3 (Python 3.5.2)
