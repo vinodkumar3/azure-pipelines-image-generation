@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 18.09.7<br/>
+_Version:_ 19.03.1<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -25,21 +25,20 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.2.1
-<br/>
+_Version:_ 6.2.2<br/>
 
 ## Docker images
 
 The following container images have been cached:
+* mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2019 (Digest: sha256:f11bd973d2ff133f8337fdb63d841f904ef15d0cc0e0de67f705869de7e266bc)
 * mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019 (Digest: sha256:8c850cb553f66ef7ca94ecf53f6bfe92a3f4bdaf990f9172a1aabdf21e8cac74)
-* mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2019 (Digest: sha256:264b6fc7f4842c42725fa78c3deedf360b0288c5dbf937364553dccef3a6df86)
 * mcr.microsoft.com/windows/servercore:ltsc2019 (Digest: sha256:3227eebe00f79b326c1c672190940d8ba9d552f0e40cc4b9135995e46ba1e588)
 * mcr.microsoft.com/windows/nanoserver:1809 (Digest: sha256:f4e90ea2a4fa220edd3db4ab1e22b287c3a7bd9ee2d07c71f92f126b42161634)
 * microsoft/aspnetcore-build:1.0-2.0 (Digest: sha256:9ecc7c5a8a7a11dca5f08c860165646cb30d084606360a3a72b9cbe447241c0c)
 
 ## Visual Studio 2019 Enterprise
 
-_Version:_ VisualStudio/16.1.6+29102.190<br/>
+_Version:_ VisualStudio/16.2.0+29123.88<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 
 The following workloads and components are installed with Visual Studio 2019:
@@ -289,8 +288,7 @@ _Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-19
 
 #### 2.1.0
 
-This version is installed and is available via Get-Module -ListAvailable
-
+This version is installed and is available via Get-Module -ListAvailable
 #### 3.8.0
 
 This version is saved but not installed
@@ -319,7 +317,7 @@ _Description:_ .NET has been configured to use TLS 1.2 by default
 
 ## Azure CLI
 
-_Version:_ 2.0.68
+_Version:_ 2.0.70
 _Environment:_
 * PATH: contains location of az.cmd
 
@@ -372,24 +370,24 @@ _Environment:_
 _Environment:_
 * GOROOT_1_10_X64: root directory of the Go 1.10.8 installation
 
-#### 1.11.9
+#### 1.11.12
 
 _Environment:_
-* GOROOT_1_11_X64: root directory of the Go 1.11.9 installation
+* GOROOT_1_11_X64: root directory of the Go 1.11.12 installation
 
-#### 1.12.4
+#### 1.12.7
 
 _Environment:_
-* PATH: contains the location of go.exe version 1.12.4
-* GOROOT: root directory of the Go 1.12.4 installation
-* GOROOT_1_12_X64: root directory of the Go 1.12.4 installation
+* PATH: contains the location of go.exe version 1.12.7
+* GOROOT: root directory of the Go 1.12.7 installation
+* GOROOT_1_12_X64: root directory of the Go 1.12.7 installation
 
 
 ## Boost
 
-####
+#### 
 
-* PATH: contains the location of Boost version
+* PATH: contains the location of Boost version 
 * BOOST_ROOT: root directory of the Boost version  installation
 * BOOST_ROOT_1_69_0: root directory of the Boost version  installation
 
@@ -425,12 +423,12 @@ _Environment:_
 ## Google Chrome
 
 _version:_
-75.0.3770.100
+75.0.3770.142
 
 ## Mozilla Firefox
 
 _version:_
-68.0
+68.0.1
 
 ## Selenium Web Drivers
 
@@ -438,7 +436,7 @@ _version:_
 #### Chrome Driver
 
 _version:_
-75.0.3770.90
+75.0.3770.140
 
 _Environment:_
 * ChromeWebDriver: location of chromedriver.exe
@@ -462,7 +460,7 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 10.16.0<br/>
+_Version:_ 10.16.1<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
@@ -475,25 +473,25 @@ _Environment:_
 
 ## npm
 
-_Version:_ 6.10.1<br/>
+_Version:_ 6.10.2<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
 ## Java Development Kit
 
-#### 1.8.0_212
+#### 1.8.0_222
 
 _Environment:_
 * JAVA_HOME: location of JDK
 * PATH: contains bin folder of JDK
 
-#### 1.7.0_222
+#### 1.7.0_232
 
-_Location:_ C:\Program Files\Java\zulu-7-azure-jdk_7.29.0.5-7.0.222-win_x64
+_Location:_ C:\Program Files\Java\zulu-7-azure-jdk_7.31.0.5-7.0.232-win_x64
 
-#### 11.0.3
+#### 11.0.4
 
-_Location:_ C:\Program Files\Java\zulu-11-azure-jdk_11.31.11-11.0.3-win_x64
+_Location:_ C:\Program Files\Java\zulu-11-azure-jdk_11.33.15-11.0.4-win_x64
 
 ## Ant
 
@@ -518,7 +516,7 @@ _Environment:_
 
 ## Cmake
 
-_Version:_ 3.14.5<br/>
+_Version:_ 3.15.1<br/>
 _Environment:_
 * PATH: contains location of cmake.exe
 
@@ -540,7 +538,7 @@ _SDK:_
 * 2.2.102 C:\Program Files\dotnet\sdk\2.2.102
 * 2.2.101 C:\Program Files\dotnet\sdk\2.2.101
 * 2.2.100 C:\Program Files\dotnet\sdk\2.2.100
-* 2.1.701 C:\Program Files\dotnet\sdk\2.1.701
+* 2.1.801 C:\Program Files\dotnet\sdk\2.1.801
 * 2.1.505 C:\Program Files\dotnet\sdk\2.1.505
 * 2.1.504 C:\Program Files\dotnet\sdk\2.1.504
 * 2.1.503 C:\Program Files\dotnet\sdk\2.1.503
@@ -641,7 +639,7 @@ _Version:_ Version 3.5.3<br/>
 
 ## Miniconda
 
-_Version:_ conda 4.6.14<br/>
+_Version:_ conda 4.7.10<br/>
 _Environment:_
 * CONDA: contains location of the root of the Miniconda installation
 
@@ -672,7 +670,7 @@ _Version:_ v5.26.2<br/>
 
 ## GitVersion
 
-_Version:_ 4.0.0.0<br/>
+_Version:_ 5.0.0.0<br/>
 
 ## OpenSSL
 
@@ -684,7 +682,7 @@ _Version:_ 6.46.0<br/>
 
 ## Vcpkg
 
-_Version:_ 2019.06.26-nohash<br/>
+_Version:_ 2019.07.18-nohash<br/>
 _Environment:_
 * PATH: contains location of the vcpkg directory
 * VCPKG_INSTALLATION_ROOT: root directory of the vcpkg installation
