@@ -323,7 +323,7 @@ _Environment:_
 
 ## Azure DevOps Cli extension
 
-_Version:_ azure-devops                      0.11.0
+_Version:_ azure-devops                      0.12.0
 
 ## Python
 
@@ -473,7 +473,7 @@ _Environment:_
 
 ## npm
 
-_Version:_ 6.10.2<br/>
+_Version:_ 6.10.3<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -639,7 +639,7 @@ _Version:_ Version 3.5.3<br/>
 
 ## Miniconda
 
-_Version:_ conda 4.7.10<br/>
+_Version:_ conda 4.6.14<br/>
 _Environment:_
 * CONDA: contains location of the root of the Miniconda installation
 
