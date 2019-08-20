@@ -1,6 +1,6 @@
 # Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure Pipelines **Windows Container 1803** pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v157.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -30,17 +30,17 @@ _Version:_ 6.2.2<br/>
 ## Docker images
 
 The following container images have been cached:
-* microsoft/dotnet-framework:4.7.2-sdk-windowsservercore-1803 (Digest: sha256:af2ba65cf68152c7b745e3253137ece34ead87df9e451755ae8226c1acacb38a)
-* microsoft/aspnet:4.7.2-windowsservercore-1803 (Digest: sha256:42bc7ff1ac8872933a0db8d1ae2a3a26f25c27e30186cf546a72ff475d3c7019)
-* microsoft/windowsservercore:1803 (Digest: sha256:4374dbc78737bfec459fe6e2047466faa7c21a03aec362ce61735692ed54e598)
+* microsoft/aspnet:4.7.2-windowsservercore-1803 (Digest: sha256:3f9cc564b911978530fa0326a3fda977e371ee4ef7c4170e305a664adad65faa)
+* microsoft/dotnet-framework:4.7.2-sdk-windowsservercore-1803 (Digest: sha256:342f58c3440bdf06da14b1bb391b3341691123310067046855392dfa8500c78d)
+* microsoft/nanoserver:1803 (Digest: sha256:19b76c64bce0f16f7e79517132fc66e3b8c4f6ba20b6c2b53fbc9d28b272e876)
+* microsoft/windowsservercore:1803 (Digest: sha256:38ee28ebce7f1dda2af019138eb5287f047b1280a2d755ec6f963d4e8abec115)
 * mcr.microsoft.com/windows/servercore:1803 (Digest: sha256:4374dbc78737bfec459fe6e2047466faa7c21a03aec362ce61735692ed54e598)
-* microsoft/nanoserver:1803 (Digest: sha256:bc5c1878a69c4538d55bc74e50b7dbafafff1a373120e624e8bad646a0a505dc)
 * mcr.microsoft.com/windows/nanoserver:1803 (Digest: sha256:bc5c1878a69c4538d55bc74e50b7dbafafff1a373120e624e8bad646a0a505dc)
 * microsoft/aspnetcore-build:2.0-nanoserver-1803 (Digest: sha256:82ad5218bb554d0b44ca54c21aba78b5ae10b92cead389d71328614b99fc47af)
 
 ## Node.js
 
-_Version:_ 10.16.1<br/>
+_Version:_ 10.16.3<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
@@ -53,7 +53,7 @@ _Environment:_
 
 ## npm
 
-_Version:_ 6.10.2<br/>
+_Version:_ 6.10.3<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
