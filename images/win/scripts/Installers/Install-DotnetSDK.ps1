@@ -10,13 +10,32 @@ New-Item -Path C:\Temp -Force -ItemType Directory
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor "Tls12"
 
-Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dotnet/core/master/release-notes/releases.json' -UseBasicParsing -OutFile 'dotnet-releases.json'
-$dotnetReleases = Get-Content -Path 'dotnet-releases.json' | ConvertFrom-Json
+function GetSdkReleases()
+{
+    Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dotnet/core/master/release-notes/releases-index.json' -UseBasicParsing -OutFile 'releases-index.json'
+    $dotnetChannels = Get-Content -Path 'releases-index.json' | ConvertFrom-Json
 
-#Filtering dotnet sdk and runtime versions which does not have "-" in their name, based on naming pattern they are either preview or rc versions
-$dotnetReleases = $dotnetReleases | Where-Object {!$_."version-sdk".Contains('-') } | Sort-Object {[Version] $_."version-sdk"}
+    # Consider all channels except preview channels.
+    # Sort the channels in ascending order
+    $dotnetChannels = $dotnetChannels.'releases-index' | Where-Object { !$_."support-phase".Equals('preview') } | Sort-Object { [Version] $_."channel-version" }
 
-Invoke-WebRequest -Uri 'https://dot.net/v1/dotnet-install.ps1' -UseBasicParsing -OutFile 'dotnet-install.ps1'
+    [System.Collections.ArrayList]$dotnetReleases = @();
+
+    foreach ($dotnetChannel in $dotnetChannels)
+    {
+        $channelVersion = $dotnetChannel.'channel-version';
+        Invoke-WebRequest -Uri $dotnetChannel.'releases.json' -UseBasicParsing -OutFile "releases-$channelVersion.json"
+        $currentReleases = Get-Content -Path "releases-$channelVersion.json" | ConvertFrom-Json
+        # Consider all version except preview and rc. They contain '-' in their version number.
+        # Sort the versions in ascending order
+        $currentReleases = $currentReleases.'releases' | Where-Object { !$_."sdk"."version".Contains('-') } | Sort-Object { [Version] $_."sdk"."version" }
+        ForEach ($release in $currentReleases) {
+            $dotnetReleases += $release
+        }
+    }
+
+    return $dotnetReleases
+}
 
 $templates = @(
     'console',
@@ -26,14 +45,17 @@ $templates = @(
     'webapi'
 )
 
-$dotnetReleases | ForEach-Object {
-    $release = $_
-    $sdkVersion = $release.'version-sdk'
-    if(!(Test-Path -Path "C:\Program Files\dotnet\sdk\$sdkVersion")) {
+function InstallVersion (
+    $sdkVersion
+)
+{
+    if (!(Test-Path -Path "C:\Program Files\dotnet\sdk\$sdkVersion"))
+    {
         Write-Host "Installing dotnet $sdkVersion"
         .\dotnet-install.ps1 -Architecture x64 -Version $sdkVersion -InstallDir $(Join-Path -Path $env:ProgramFiles -ChildPath 'dotnet')
     }
-    else {
+    else
+    {
         Write-Host "Sdk version $sdkVersion already installed"
     }
 
@@ -50,15 +72,50 @@ $dotnetReleases | ForEach-Object {
     }
 }
 
-Add-MachinePathItem "C:\Program Files\dotnet"
-# Run script at startup for all users
-$cmdDotNetPath = @"
+function DownloadSdksFromReleases ($dotnetReleases)
+{
+    Invoke-WebRequest -Uri 'https://dot.net/v1/dotnet-install.ps1' -UseBasicParsing -OutFile 'dotnet-install.ps1'
+
+    ForEach ($release in $dotnetReleases)
+    {
+        $sdkVersion = $release.'sdk'.'version'
+        InstallVersion -sdkVersion $sdkVersion
+
+        if ($release.'sdks'.Count -gt 0)
+        {
+            Write-Host 'Found sdks property in release: ' + $release.'release-version' + 'with sdks count: ' + $release.'sdks'.Count
+
+            # sort the sdks on version and remove preview/rc version from download list.
+            $sdks = $release.'sdks' | Where-Object { !$_.'version'.Contains('-') } | Sort-Object { [Version] $_.'version' }
+            ForEach ($sdk in $sdks)
+            {
+                InstallVersion -sdkVersion $sdk.'version'
+            }
+        }
+    }
+}
+
+function RunPostInstallaitonSteps()
+{
+    Add-MachinePathItem "C:\Program Files\dotnet"
+    # Run script at startup for all users
+    $cmdDotNetPath = @"
 @echo off
 SETX PATH "%USERPROFILE%\.dotnet\tools;%PATH%"
 "@
 
-$cmdPath = "C:\Program Files\dotnet\userpath.bat"
-$cmdDotNetPath | Out-File -Encoding ascii -FilePath $cmdPath
+    $cmdPath = "C:\Program Files\dotnet\userpath.bat"
+    $cmdDotNetPath | Out-File -Encoding ascii -FilePath $cmdPath
 
-# Update Run key to run a script at logon
-Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Run" -Name "DOTNETUSERPATH" -Value $cmdPath
+    # Update Run key to run a script at logon
+    Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Run" -Name "DOTNETUSERPATH" -Value $cmdPath
+}
+
+function BeginInstallation ()
+{
+    $dotnetReleases = GetSdkReleases
+    DownloadSdksFromReleases -dotnetReleases $dotnetReleases
+    RunPostInstallaitonSteps
+}
+
+BeginInstallation
