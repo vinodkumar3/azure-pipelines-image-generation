@@ -10,33 +10,6 @@ New-Item -Path C:\Temp -Force -ItemType Directory
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor "Tls12"
 
-function GetSdkReleases()
-{
-    Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dotnet/core/master/release-notes/releases-index.json' -UseBasicParsing -OutFile 'releases-index.json'
-    $dotnetChannels = Get-Content -Path 'releases-index.json' | ConvertFrom-Json
-
-    # Consider all channels except preview channels.
-    # Sort the channels in ascending order
-    $dotnetChannels = $dotnetChannels.'releases-index' | Where-Object { !$_."support-phase".Equals('preview') } | Sort-Object { [Version] $_."channel-version" }
-
-    [System.Collections.ArrayList]$dotnetReleases = @();
-
-    foreach ($dotnetChannel in $dotnetChannels)
-    {
-        $channelVersion = $dotnetChannel.'channel-version';
-        Invoke-WebRequest -Uri $dotnetChannel.'releases.json' -UseBasicParsing -OutFile "releases-$channelVersion.json"
-        $currentReleases = Get-Content -Path "releases-$channelVersion.json" | ConvertFrom-Json
-        # Consider all version except preview and rc. They contain '-' in their version number.
-        # Sort the versions in ascending order
-        $currentReleases = $currentReleases.'releases' | Where-Object { !$_."sdk"."version".Contains('-') } | Sort-Object { [Version] $_."sdk"."version" }
-        ForEach ($release in $currentReleases) {
-            $dotnetReleases += $release
-        }
-    }
-
-    return $dotnetReleases
-}
-
 $templates = @(
     'console',
     'mstest',
@@ -45,7 +18,7 @@ $templates = @(
     'webapi'
 )
 
-function InstallVersion (
+function InstallSDKVersion (
     $sdkVersion
 )
 {
@@ -72,30 +45,50 @@ function InstallVersion (
     }
 }
 
-function DownloadSdksFromReleases ($dotnetReleases)
+function InstallAllValidSdks()
 {
+    Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dotnet/core/master/release-notes/releases-index.json' -UseBasicParsing -OutFile 'releases-index.json'
+    $dotnetChannels = Get-Content -Path 'releases-index.json' | ConvertFrom-Json
+
+    # Consider all channels except preview channels.
+    # Sort the channels in ascending order
+    $dotnetChannels = $dotnetChannels.'releases-index' | Where-Object { !$_."support-phase".Equals('preview') -and !$_."support-phase".Equals('eol') -and $_."channel-version" -lt "3.0" } | Sort-Object { [Version] $_."channel-version" }
+
+    # Download installation script.
     Invoke-WebRequest -Uri 'https://dot.net/v1/dotnet-install.ps1' -UseBasicParsing -OutFile 'dotnet-install.ps1'
 
-    ForEach ($release in $dotnetReleases)
+    ForEach ($dotnetChannel in $dotnetChannels)
     {
-        $sdkVersion = $release.'sdk'.'version'
-        InstallVersion -sdkVersion $sdkVersion
-
-        if ($release.'sdks'.Count -gt 0)
+        $channelVersion = $dotnetChannel.'channel-version';
+        Invoke-WebRequest -Uri $dotnetChannel.'releases.json' -UseBasicParsing -OutFile "releases-$channelVersion.json"
+        $currentReleases = Get-Content -Path "releases-$channelVersion.json" | ConvertFrom-Json
+        $currentReleases = $currentReleases.'releases' | Where-Object { !$_.'release-version'.Contains('-') } | Sort-Object { [Version] $_.'release-version' }
+        ForEach ($release in $currentReleases)
         {
-            Write-Host 'Found sdks property in release: ' + $release.'release-version' + 'with sdks count: ' + $release.'sdks'.Count
-
-            # sort the sdks on version and remove preview/rc version from download list.
-            $sdks = $release.'sdks' | Where-Object { !$_.'version'.Contains('-') } | Sort-Object { [Version] $_.'version' }
-            ForEach ($sdk in $sdks)
+            if ($release.'sdks'.Count -gt 0)
             {
-                InstallVersion -sdkVersion $sdk.'version'
+                Write-Host 'Found sdks property in release: ' + $release.'release-version' + 'with sdks count: ' + $release.'sdks'.Count
+
+                # sort the sdks on version and remove preview/rc version from download list.
+                $sdks = $release.'sdks' | Where-Object { !$_.'version'.Contains('-') } | Sort-Object { [Version] $_.'version' }
+                ForEach ($sdk in $sdks)
+                {
+                    InstallSDKVersion -sdkVersion $sdk.'version'
+                }
+            }
+
+            if (!$release.'sdk'.'version'.Contains('-'))
+            {
+                $sdkVersion = $release.'sdk'.'version'
+                InstallSDKVersion -sdkVersion $sdkVersion
             }
         }
     }
+
+    return $dotnetReleases
 }
 
-function RunPostInstallaitonSteps()
+function RunPostInstallationSteps()
 {
     Add-MachinePathItem "C:\Program Files\dotnet"
     # Run script at startup for all users
@@ -111,11 +104,5 @@ SETX PATH "%USERPROFILE%\.dotnet\tools;%PATH%"
     Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Run" -Name "DOTNETUSERPATH" -Value $cmdPath
 }
 
-function BeginInstallation ()
-{
-    $dotnetReleases = GetSdkReleases
-    DownloadSdksFromReleases -dotnetReleases $dotnetReleases
-    RunPostInstallaitonSteps
-}
-
-BeginInstallation
+InstallAllValidSdks
+RunPostInstallationSteps
