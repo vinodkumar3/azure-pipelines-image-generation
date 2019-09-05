@@ -84,8 +84,6 @@ function InstallAllValidSdks()
             }
         }
     }
-
-    return $dotnetReleases
 }
 
 function RunPostInstallationSteps()
