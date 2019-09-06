@@ -50,7 +50,7 @@ function InstallAllValidSdks()
     Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dotnet/core/master/release-notes/releases-index.json' -UseBasicParsing -OutFile 'releases-index.json'
     $dotnetChannels = Get-Content -Path 'releases-index.json' | ConvertFrom-Json
 
-    # Consider all channels except preview channels.
+    # Consider all channels except preview/eol channels.
     # Sort the channels in ascending order
     $dotnetChannels = $dotnetChannels.'releases-index' | Where-Object { !$_."support-phase".Equals('preview') -and !$_."support-phase".Equals('eol') -and $_."channel-version" -lt "3.0" } | Sort-Object { [Version] $_."channel-version" }
 
@@ -62,6 +62,7 @@ function InstallAllValidSdks()
         $channelVersion = $dotnetChannel.'channel-version';
         Invoke-WebRequest -Uri $dotnetChannel.'releases.json' -UseBasicParsing -OutFile "releases-$channelVersion.json"
         $currentReleases = Get-Content -Path "releases-$channelVersion.json" | ConvertFrom-Json
+        # filtering out the preview/rc releases
         $currentReleases = $currentReleases.'releases' | Where-Object { !$_.'release-version'.Contains('-') } | Sort-Object { [Version] $_.'release-version' }
         ForEach ($release in $currentReleases)
         {
@@ -69,15 +70,20 @@ function InstallAllValidSdks()
             {
                 Write-Host 'Found sdks property in release: ' + $release.'release-version' + 'with sdks count: ' + $release.'sdks'.Count
 
-                # sort the sdks on version and remove preview/rc version from download list.
-                $sdks = $release.'sdks' | Where-Object { !$_.'version'.Contains('-') } | Sort-Object { [Version] $_.'version' }
+
+                # Remove duplicate entries & preview/rc version from download list
+                # Sort the sdks on version
+                $sdks = @($release.'sdk');
+                $sdks += $release.'sdks' | Where-Object { !$_.'version'.Contains('-') -and !$_.'version'.Equals($release.'sdk'.'version') }
+                $sdks = $sdks | Sort-Object { [Version] $_.'version' }
+
+                $sdks.Contains($release.'sdk')
                 ForEach ($sdk in $sdks)
                 {
                     InstallSDKVersion -sdkVersion $sdk.'version'
                 }
             }
-
-            if (!$release.'sdk'.'version'.Contains('-'))
+            elseif (!$release.'sdk'.'version'.Contains('-'))
             {
                 $sdkVersion = $release.'sdk'.'version'
                 InstallSDKVersion -sdkVersion $sdkVersion
