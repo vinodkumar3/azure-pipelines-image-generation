@@ -29,13 +29,13 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 	v6.17.1
 	v8.16.1
 	v10.16.3
-	v12.9.1
+	v12.10.0
 - PowerShell 6.2.2
 - Python 2.7.16
 - Python 3.7.4
 - Ruby 2.6.4p104
 - .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 1.1.12, 1.1.13, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.504, 2.1.505, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502, 2.1.504, 2.2.101, 2.2.102, 2.2.103, 2.2.104, 2.2.105
-- Go 1.12.9
+- Go 1.13
 
 ### Package Management
 
@@ -52,12 +52,12 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Project Management
 
-- Apache Maven 3.6.1
-- Gradle 5.6.1
+- Apache Maven 3.6.2
+- Gradle 5.6.2
 
 ### Utilities
 
-- curl 7.65.3 (libcurl/7.65.3 SecureTransport zlib/1.2.11)
+- curl 7.66.0 (x86_64-apple-darwin17.7.0) libcurl/7.66.0 SecureTransport zlib/1.2.11
 - Git 2.23.0
 - Git LFS 2.8.0
 - GNU Wget 1.20.3
@@ -106,7 +106,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Nomad CLI IPA 0.14.3
 - xcpretty 0.3.0
 - xctool 0.3.5
-- xcversion 2.6.0
+- xcversion 2.6.1
 
 ### Installed SDKs
 | SDK                       | SDK name    | Xcode Version |
@@ -229,7 +229,7 @@ xcversion simulators --install='iOS 8.4'
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 29.0.2 |
+| platform-tools        | Android SDK Platform-tools, revision 29.0.3 |
 
 ### Android SDK Platforms
 
@@ -318,7 +318,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Visual Studio for Mac
 
-- 8.2.5.5
+- 8.2.6.26
 
 ### Mono
 
@@ -373,7 +373,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Xamarin.Mac SDK
 
-- 5.16.0.5
+- 5.16.1.17
 - 5.8.0.0
 - 5.6.0.25
 - 5.3.1.28
