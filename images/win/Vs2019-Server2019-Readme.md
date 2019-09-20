@@ -1,6 +1,6 @@
 # Azure Pipelines Hosted Windows 2019 with VS2019 image
 
-The following software is installed on machines in the Azure Pipelines **Hosted Windows 2019 with VS2019** pool.
+The following software is installed on machines in the Azure Pipelines **Hosted Windows 2019 with VS2019** (v20190919.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 19.03.1<br/>
+_Version:_ 19.03.2<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -25,20 +25,21 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.2.2<br/>
+_Version:_ 6.2.3
+<br/>
 
 ## Docker images
 
 The following container images have been cached:
-* mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2019 (Digest: sha256:f11bd973d2ff133f8337fdb63d841f904ef15d0cc0e0de67f705869de7e266bc)
-* mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019 (Digest: sha256:8c850cb553f66ef7ca94ecf53f6bfe92a3f4bdaf990f9172a1aabdf21e8cac74)
-* mcr.microsoft.com/windows/servercore:ltsc2019 (Digest: sha256:3227eebe00f79b326c1c672190940d8ba9d552f0e40cc4b9135995e46ba1e588)
-* mcr.microsoft.com/windows/nanoserver:1809 (Digest: sha256:f4e90ea2a4fa220edd3db4ab1e22b287c3a7bd9ee2d07c71f92f126b42161634)
+* mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019 (Digest: sha256:50c19b07287630f988f79f7aac1ea4a41606ffc3daef1d49b05e478d78eb9498)
+* mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2019 (Digest: sha256:90276f9c807c0a296697c51ef521ecdf4024a0ff21c25dda2d0821a6f3f1cc2b)
+* mcr.microsoft.com/windows/servercore:ltsc2019 (Digest: sha256:d7e7e3702cbc4d8ea29001a02c1c852d0229a0679d94e017a41c43dbaa01db20)
+* mcr.microsoft.com/windows/nanoserver:1809 (Digest: sha256:408c7ec68f510485ccca904d9ab69c3ad165126b44786d9f2fffbbc4d2d9646b)
 * microsoft/aspnetcore-build:1.0-2.0 (Digest: sha256:9ecc7c5a8a7a11dca5f08c860165646cb30d084606360a3a72b9cbe447241c0c)
 
 ## Visual Studio 2019 Enterprise
 
-_Version:_ VisualStudio/16.2.0+29123.88<br/>
+_Version:_ VisualStudio/16.2.5+29306.81<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 
 The following workloads and components are installed with Visual Studio 2019:
@@ -114,6 +115,7 @@ The following workloads and components are installed with Visual Studio 2019:
 ## WIX Tools
 
 _Toolset Version:_ 3.11.2318<br/>
+_WIX Toolset Visual Studio Extension Version:_ 1.0.0.4<br/>
 _Environment:_
 * WIX: Installation root of WIX
 
@@ -135,6 +137,14 @@ _Runtime Version:_ 6.4.617.9590
 _Version:_ 1.1.1809.18001<br/>
 
 ## Android SDK Build Tools
+
+#### 29.0.2
+
+_Location:_ C:\Program Files (x86)\Android\android-sdk\build-tools\29.0.2
+
+#### 29.0.0
+
+_Location:_ C:\Program Files (x86)\Android\android-sdk\build-tools\29.0.0
 
 #### 28.0.3
 
@@ -247,6 +257,10 @@ _Location:_ C:\Program Files (x86)\Android\android-sdk\build-tools\19.1.0
 
 ## Android SDK Platforms
 
+#### 10 (API 29)
+
+_Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-29
+
 #### 9 (API 28)
 
 _Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-28
@@ -288,7 +302,8 @@ _Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-19
 
 #### 2.1.0
 
-This version is installed and is available via Get-Module -ListAvailable
+This version is installed and is available via Get-Module -ListAvailable
+
 #### 3.8.0
 
 This version is saved but not installed
@@ -317,7 +332,7 @@ _Description:_ .NET has been configured to use TLS 1.2 by default
 
 ## Azure CLI
 
-_Version:_ 2.0.70
+_Version:_ 2.0.73
 _Environment:_
 * PATH: contains location of az.cmd
 
@@ -337,7 +352,7 @@ _Version:_ 2.7.13 (x86)<br/>_Version:_ 3.5.3 (x86)<br/><br/>
 
 ## Ruby
 
-_Version:_ 2.4.5 (x64)<br/>_Version:_ 2.5.3 (x64)<br/>_Version:_ 2.6.1 (x64)<br/><br/>
+_Version:_ 2.4.6 (x64)<br/>_Version:_ 2.5.5 (x64)<br/>_Version:_ 2.6.3 (x64)<br/><br/>
 > Note: These versions of Ruby are available through the [Use Ruby Version](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/use-ruby-version) task.
 
 ## Python (64 bit)
@@ -352,13 +367,13 @@ _Location:_ C:/hostedtoolcache/windows/Python/2.7*/x64
 
 ## Git
 
-_Version:_ 2.22.0<br/>
+_Version:_ 2.23.0<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git Large File Storage (LFS)
 
-_Version:_ 2.7.2<br/>
+_Version:_ 2.8.0<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
@@ -381,35 +396,40 @@ _Environment:_
 * PATH: contains the location of go.exe version 1.12.7
 * GOROOT: root directory of the Go 1.12.7 installation
 * GOROOT_1_12_X64: root directory of the Go 1.12.7 installation
+#### 1.13
+
+_Environment:_
+* GOROOT_1_13_X64: root directory of the Go 1.13 installation
+
 
 
 ## Boost
 
-#### 
+####
 
-* PATH: contains the location of Boost version 
+* PATH: contains the location of Boost version
 * BOOST_ROOT: root directory of the Boost version  installation
 * BOOST_ROOT_1_69_0: root directory of the Boost version  installation
 
 
 ## PHP (x64)
 
-#### 7.3.7
+#### 7.3.9
 
 _Environment:_
-* PATH: contains the location of php.exe version 7.3.7
-* PHPROOT: root directory of the PHP 7.3.7 installation
+* PATH: contains the location of php.exe version 7.3.9
+* PHPROOT: root directory of the PHP 7.3.9 installation
 
 ## Ruby (x64)
 
-#### 2.5.3p105
+#### 2.5.5p157
 _Environment:_
-* Location: C:\hostedtoolcache\windows\Ruby\2.5.3\x64\bin
-* PATH: contains the location of ruby.exe version 2.5.3p105
+* Location: C:\hostedtoolcache\windows\Ruby\2.5.5\x64\bin
+* PATH: contains the location of ruby.exe version 2.5.5p157
 
 ## Rust (64-bit)
 
-#### 1.36.0
+#### 1.37.0
 _Location:_ C:\Rust\.cargo\bin
 _Environment:_
 * PATH: contains the location of rustc.exe
@@ -423,12 +443,12 @@ _Environment:_
 ## Google Chrome
 
 _version:_
-75.0.3770.142
+76.0.3809.132
 
 ## Mozilla Firefox
 
 _version:_
-68.0.1
+69.0
 
 ## Selenium Web Drivers
 
@@ -436,7 +456,7 @@ _version:_
 #### Chrome Driver
 
 _version:_
-75.0.3770.140
+76.0.3809.132
 
 _Environment:_
 * ChromeWebDriver: location of chromedriver.exe
@@ -460,7 +480,7 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 10.16.1<br/>
+_Version:_ 10.16.3<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
@@ -473,7 +493,7 @@ _Environment:_
 
 ## npm
 
-_Version:_ 6.10.3<br/>
+_Version:_ 6.9.0<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -510,13 +530,13 @@ _Environment:_
 
 ## Gradle
 
-_Version:_ 5.5.1<br/>
+_Version:_ 5.6.2<br/>
 _Environment:_
 * PATH: contains location of gradle
 
 ## Cmake
 
-_Version:_ 3.15.1<br/>
+_Version:_ 3.15.3<br/>
 _Environment:_
 * PATH: contains location of cmake.exe
 
@@ -538,7 +558,7 @@ _SDK:_
 * 2.2.102 C:\Program Files\dotnet\sdk\2.2.102
 * 2.2.101 C:\Program Files\dotnet\sdk\2.2.101
 * 2.2.100 C:\Program Files\dotnet\sdk\2.2.100
-* 2.1.801 C:\Program Files\dotnet\sdk\2.1.801
+* 2.1.802 C:\Program Files\dotnet\sdk\2.1.802
 * 2.1.505 C:\Program Files\dotnet\sdk\2.1.505
 * 2.1.504 C:\Program Files\dotnet\sdk\2.1.504
 * 2.1.503 C:\Program Files\dotnet\sdk\2.1.503
@@ -589,7 +609,7 @@ _Runtime:_
 * 2.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.4
 * 2.1.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.3
 * 2.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.2
-* 2.1.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.12
+* 2.1.13 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.13
 * 2.1.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.1
 * 2.1.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.0
 * 2.0.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.9
@@ -635,7 +655,7 @@ _Environment:_
 
 ## TypeScript
 
-_Version:_ Version 3.5.3<br/>
+_Version:_ Version 3.6.3<br/>
 
 ## Miniconda
 
@@ -645,7 +665,7 @@ _Environment:_
 
 ## Azure CosmosDb Emulator
 
-_Version:_ 2.4.5.0<br/>
+_Version:_ 2.5.6.0<br/>
 _Location:_ C:\Program Files\Azure Cosmos DB Emulator\
 
 ## 7zip
@@ -658,7 +678,7 @@ _Version:_ <br/>
 
 ## jq
 
-_Version:_ jq-1.5<br/>
+_Version:_ jq-1.6<br/>
 
 ## Inno Setup
 
@@ -670,7 +690,7 @@ _Version:_ v5.26.2<br/>
 
 ## GitVersion
 
-_Version:_ 5.0.0.0<br/>
+_Version:_ 5.0.1.0<br/>
 
 ## OpenSSL
 
@@ -678,11 +698,11 @@ _Version:_ 1.1.1c at C:\Program Files\Git\usr\bin\openssl.exe<br/>_Version:_ 1.1
 
 ## Cloud Foundry CLI
 
-_Version:_ 6.46.0<br/>
+_Version:_ 6.46.1<br/>
 
 ## Vcpkg
 
-_Version:_ 2019.07.18-nohash<br/>
+_Version:_ 2019.09.12-nohash<br/>
 _Environment:_
 * PATH: contains location of the vcpkg directory
 * VCPKG_INSTALLATION_ROOT: root directory of the vcpkg installation
