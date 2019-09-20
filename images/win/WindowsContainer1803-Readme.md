@@ -25,7 +25,8 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.2.2<br/>
+_Version:_ 6.2.2
+<br/>
 
 ## Docker images
 
