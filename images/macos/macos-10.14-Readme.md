@@ -89,7 +89,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 | Version                | Build   | Path                            |
 |------------------------|---------|---------------------------------|
-| 11.0 GM seed 2         | 11A420a | /Applications/Xcode_11.app      |
+| 11.0                   | 11A420a | /Applications/Xcode_11.app      |
 | 10.3                   | 10G8    | /Applications/Xcode_10.3.app    |
 | 10.2.1                 | 10E1001 | /Applications/Xcode_10.2.1.app  |
 | 10.2                   | 10E125  | /Applications/Xcode_10.2.app    |
