@@ -26,7 +26,7 @@ Function InstallTool {
         [System.IO.FileInfo]$ExecutablePath
     )
 
-    Set-Location -Path $ExecutablePath.DirectoryName | Write-Host
+    Set-Location -Path $ExecutablePath.DirectoryName -PassThru | Write-Host
     if (Test-Path 'tool.zip') {
         Expand-Archive 'tool.zip' -DestinationPath '.'
     }
