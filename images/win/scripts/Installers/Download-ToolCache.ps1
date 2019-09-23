@@ -29,15 +29,15 @@ setx AGENT_TOOLSDIRECTORY $ToolsDirectory /M
 $env:AGENT_TOOLSDIRECTORY = $ToolsDirectory
  
 $PythonVersionsToolcacheInstall = @(
-	"toolcache-python-windows-x64@2.7",
-	"toolcache-python-windows-x86@2.7",
-	"toolcache-python-windows-x64@3.4",
-	"toolcache-python-windows-x86@3.4",
-	"toolcache-python-windows-x64@3.5",
-	"toolcache-python-windows-x86@3.5",
-	"toolcache-python-windows-x64@3.6",
-	"toolcache-python-windows-x86@3.6",
-	"toolcache-python-windows-x64@3.7",
+	"toolcache-python-windows-x64@2.7"
+	"toolcache-python-windows-x86@2.7"
+	"toolcache-python-windows-x64@3.4"
+	"toolcache-python-windows-x86@3.4"
+	"toolcache-python-windows-x64@3.5"
+	"toolcache-python-windows-x86@3.5"
+	"toolcache-python-windows-x64@3.6"
+	"toolcache-python-windows-x86@3.6"
+	"toolcache-python-windows-x64@3.7"
 	"toolcache-python-windows-x86@3.7"
 )
 
