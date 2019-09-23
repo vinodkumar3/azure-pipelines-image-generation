@@ -77,7 +77,6 @@ function InstallAllValidSdks()
                 $sdks += $release.'sdks' | Where-Object { !$_.'version'.Contains('-') -and !$_.'version'.Equals($release.'sdk'.'version') }
                 $sdks = $sdks | Sort-Object { [Version] $_.'version' }
 
-                $sdks.Contains($release.'sdk')
                 ForEach ($sdk in $sdks)
                 {
                     InstallSDKVersion -sdkVersion $sdk.'version'
