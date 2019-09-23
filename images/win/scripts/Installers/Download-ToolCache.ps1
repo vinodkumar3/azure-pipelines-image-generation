@@ -20,10 +20,43 @@ Function Install-NpmPackage {
     }
 }
 
+Function InstallTool {
+    [CmdletBinding()]
+    param(
+        [System.IO.FileInfo]$ExecutablePath
+    )
+
+    Set-Location -Path $ExecutablePath.DirectoryName | Write-Host
+    if (Test-Path 'tool.zip') {
+        Expand-Archive 'tool.zip' -DestinationPath '.'
+    }
+    cmd.exe /c 'install_to_tools_cache.bat'
+}
+
+# ToolCache Blob
+$SourceUrl = "https://vstsagenttools.blob.core.windows.net/tools"
+
 # HostedToolCache Path
 $Dest = "C:/"
 $Path = "hostedtoolcache/windows"
 $ToolsDirectory = $Dest + $Path
+
+# Add AzCopy to the Path
+$env:Path = "C:\Program Files (x86)\Microsoft SDKs\Azure\AzCopy;" + $env:Path
+Write-Host "Started AzCopy from $SourceUrl to $Dest"
+AzCopy /Source:$SourceUrl /Dest:$Dest /S /V /Pattern:$Path
+
+# Temporary remove Python
+Remove-Item -Path C:\hostedtoolcache\windows\Python -Force -Recurse
+
+# Install ToolCache
+Push-Location -Path $ToolsDirectory
+
+Get-ChildItem -Recurse -Depth 4 -Filter install_to_tools_cache.bat | ForEach-Object {
+    InstallTool -ExecutablePath $_
+}
+
+Pop-Location
 
 # Define AGENT_TOOLSDIRECTORY environment variable
 $env:AGENT_TOOLSDIRECTORY = $ToolsDirectory
