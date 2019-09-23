@@ -15,6 +15,7 @@ Function Install-NpmPackage {
 	)
 	
 	foreach($packageName in $Name) {
+		Write-Host "Installing npm $packageName package"
 		$null = npm install $packageName --registry=$NpmRegistry *>&1
 	}
 }
@@ -40,8 +41,10 @@ $PythonVersionsToolcacheInstall = @(
 	"toolcache-python-windows-x86@3.7"
 )
 
-Install-NpmPackage -Packages $PythonVersionsToolcacheInstall
+Install-NpmPackage -Name $PythonVersionsToolcacheInstall
 
 #junction point from the previous Python2 directory to the toolcache Python2
 $python2Dir = (Get-Item -Path ($ToolsDirectory + '/Python/2.7*/x64')).FullName
 cmd.exe /c mklink /d "C:\Python27amd64" "$python2Dir"
+
+
