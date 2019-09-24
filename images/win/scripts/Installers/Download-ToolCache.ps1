@@ -16,7 +16,7 @@ Function Install-NpmPackage {
 
     foreach($packageName in $Name) {
         Write-Host "Installing npm '$packageName' package from '$NpmRegistry'"
-        $null = npm install $packageName --registry=$NpmRegistry *>&1
+        npm install $packageName --registry=$NpmRegistry
     }
 }
 
