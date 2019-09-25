@@ -5,6 +5,9 @@
 ##         Run right after cleanup before we sysprep
 ################################################################################
 
+Write-Host "Make sure windefend is going to start"
+Start-Service windefend -ErrorAction Continue
+
 Write-Host "Waiting for windefend to report as running"
 $service = Get-Service "Windefend"
 $service.WaitForStatus("Running","00:10:00")
