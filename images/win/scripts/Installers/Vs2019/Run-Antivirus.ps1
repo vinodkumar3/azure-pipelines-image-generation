@@ -5,6 +5,10 @@
 ##         Run right after cleanup before we sysprep
 ################################################################################
 
+Write-Host "Waiting for windefend to report as running"
+$service = Get-Service "Windefend"
+$service.WaitForStatus("Running","00:10:00")
+
 Write-Host "Run antivirus"
 Push-Location "C:\Program Files\Windows Defender"
 
