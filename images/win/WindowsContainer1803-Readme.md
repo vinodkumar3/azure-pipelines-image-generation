@@ -1,6 +1,6 @@
 # Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure Pipelines **Windows Container 1803** pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20190922.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 19.03.1<br/>
+_Version:_ 19.03.2<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -25,22 +25,23 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.2.2<br/>
+_Version:_ 6.2.3
+<br/>
 
 ## Docker images
 
 The following container images have been cached:
-* microsoft/dotnet-framework:4.7.2-sdk-windowsservercore-1803 (Digest: sha256:af2ba65cf68152c7b745e3253137ece34ead87df9e451755ae8226c1acacb38a)
-* microsoft/aspnet:4.7.2-windowsservercore-1803 (Digest: sha256:42bc7ff1ac8872933a0db8d1ae2a3a26f25c27e30186cf546a72ff475d3c7019)
-* microsoft/windowsservercore:1803 (Digest: sha256:4374dbc78737bfec459fe6e2047466faa7c21a03aec362ce61735692ed54e598)
+* microsoft/aspnet:4.7.2-windowsservercore-1803 (Digest: sha256:9e88c2ccdd4d9a229af5ab6334ce75559d2b63138db9ef8782c1c81d15659c2b)
+* microsoft/dotnet-framework:4.7.2-sdk-windowsservercore-1803 (Digest: sha256:fef13fdacc0148667bfda17d8b828e8145b6452e5f0e32624893d71518e85192)
+* microsoft/windowsservercore:1803 (Digest: sha256:9b22618ec9b832f7e74c5461b67761423fea83dd10bf627fe715e232aad0dc1e)
+* microsoft/nanoserver:1803 (Digest: sha256:47aa6f7f8ff1a02acc34b9f22689e9c89b3387efdd7c0f2cf6da9db810c0d4de)
 * mcr.microsoft.com/windows/servercore:1803 (Digest: sha256:4374dbc78737bfec459fe6e2047466faa7c21a03aec362ce61735692ed54e598)
-* microsoft/nanoserver:1803 (Digest: sha256:bc5c1878a69c4538d55bc74e50b7dbafafff1a373120e624e8bad646a0a505dc)
 * mcr.microsoft.com/windows/nanoserver:1803 (Digest: sha256:bc5c1878a69c4538d55bc74e50b7dbafafff1a373120e624e8bad646a0a505dc)
 * microsoft/aspnetcore-build:2.0-nanoserver-1803 (Digest: sha256:82ad5218bb554d0b44ca54c21aba78b5ae10b92cead389d71328614b99fc47af)
 
 ## Node.js
 
-_Version:_ 10.16.1<br/>
+_Version:_ 10.16.3<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
@@ -53,7 +54,7 @@ _Environment:_
 
 ## npm
 
-_Version:_ 6.10.2<br/>
+_Version:_ 6.9.0<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -154,13 +155,13 @@ _Runtime:_
 
 ## Git
 
-_Version:_ 2.22.0<br/>
+_Version:_ 2.23.0<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git Large File Storage (LFS)
 
-_Version:_ 2.7.2<br/>
+_Version:_ 2.8.0<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
