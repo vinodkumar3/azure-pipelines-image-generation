@@ -30,7 +30,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 	v8.16.1
 	v10.16.3
 	v12.10.0
-- PowerShell 6.2.2
+- PowerShell 6.2.3
 - Python 2.7.16
 - Python 3.7.4
 - Ruby 2.6.4p104
@@ -66,7 +66,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Tools
 
-- fastlane 2.130.0
+- fastlane 2.131.0
 - App Center CLI 1.2.2
 - Azure-CLI 2.0.72
 
@@ -229,7 +229,7 @@ xcversion simulators --install='iOS 8.4'
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 29.0.3 |
+| platform-tools        | Android SDK Platform-tools, revision 29.0.4 |
 
 ### Android SDK Platforms
 
@@ -294,7 +294,7 @@ xcversion simulators --install='iOS 8.4'
 | lldb                  | 3.1.4508709                               |
 | ndk-bundle            | 18.1.5063045                              |
 | ProGuard              | 5.3.3                                     |
-| Android Emulator      | 29.1.12                                   |
+| Android Emulator      | 29.2.0                                    |
 
 ### Google APIs
 
