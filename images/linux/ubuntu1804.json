@@ -156,7 +156,7 @@
                 "{{template_dir}}/scripts/installers/1804/powershellcore.sh",
                 "{{template_dir}}/scripts/installers/ruby.sh",
                 "{{template_dir}}/scripts/installers/rust.sh",
-                "{{template_dir}}/scripts/installers/scala.sh",
+                "{{template_dir}}/scripts/installers/sbt.sh",
                 "{{template_dir}}/scripts/installers/sphinx.sh",
                 "{{template_dir}}/scripts/installers/subversion.sh",
                 "{{template_dir}}/scripts/installers/terraform.sh",
