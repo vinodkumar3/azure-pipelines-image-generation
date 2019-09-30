@@ -89,7 +89,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 | Version                | Build   | Path                            |
 |------------------------|---------|---------------------------------|
-| 11.0                   | 11A420b | /Applications/Xcode_11.app      |
+| 11.0                   | 11A421b | /Applications/Xcode_11.app      |
 | 10.3                   | 10G8    | /Applications/Xcode_10.3.app    |
 | 10.2.1                 | 10E1001 | /Applications/Xcode_10.2.1.app  |
 | 10.2                   | 10E125  | /Applications/Xcode_10.2.app    |
@@ -222,7 +222,7 @@ xcversion simulators --install='iOS 8.4'
 | android-26            | Android SDK Platform 26, Revision 2       |
 | android-27            | Android SDK Platform 27, Revision 3       |
 | android-28            | Android SDK Platform 28, Revision 6       |
-| android-29            | Android SDK Platform 29, Revision 3       |
+| android-29            | Android SDK Platform 29, Revision 4       |
 
 ### Android SDK Build-tools
 
@@ -314,7 +314,7 @@ xcversion simulators --install='iOS 8.4'
 ### Xamarin.iOS SDK
 
 - 12.14.0.114
-- 12.10.0.157
+- 12.10.0.158
 - 12.8.0.2
 - 12.6.0.25
 - 12.2.1.16
@@ -334,7 +334,7 @@ xcversion simulators --install='iOS 8.4'
 ### Xamarin.Android SDK
 
 - 9.4.1.0
-- 9.3.0-23
+- 9.3.0-24
 - 9.2.3-0
 - 9.1.8-0
 - 9.0.0-20
@@ -351,7 +351,7 @@ xcversion simulators --install='iOS 8.4'
 ### Xamarin.Mac SDK
 
 - 5.16.1.17
-- 5.10.0.157
+- 5.10.0.158
 - 5.8.0.0
 - 5.6.0.25
 - 5.3.1.28
