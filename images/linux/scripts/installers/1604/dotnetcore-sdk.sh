@@ -8,7 +8,7 @@
 source $HELPER_SCRIPTS/apt.sh
 source $HELPER_SCRIPTS/document.sh
 
-LATEST_DOTNET_PACKAGE=dotnet-sdk-2.1
+LATEST_DOTNET_PACKAGE=dotnet-sdk-3.0
 
 LSB_RELEASE=$(lsb_release -rs)
 
