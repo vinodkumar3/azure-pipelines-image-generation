@@ -2,12 +2,6 @@
 
 The following software is installed on machines in the Azure Pipelines **macOS-10.14** VM image ('Hosted macOS' pool).
 
-## Image Changes
-
-The following Java versions are available on the VM image: 7, 8, 11, 12. Java 9 and 10 were deprecated.
-
-Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overloaded by complex licensing, end-user restrictions, and lack of long-term support. In this image change, we replaced the JDKs with tested, certified, LTS builds of OpenJDK from Azul Systems. Java developers can now build and run production Java applications using Azul Systems Zulu Enterprise builds of OpenJDK without incurring additional support costs. This new offering is designed to make Microsoft hosted Java builds and deployments worry-free by incorporating quarterly security updates and bug fixes as well as critical out-of-band updates and patches as needed.
-
 #### Xcode 10.3 set by default
 
 ## Operating System
@@ -22,6 +16,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Java 1.8: OpenJDK RE (Zulu 8.40.0.25-CA-macosx) (build 1.8.0_222-b10) (default)
 - Java 11: OpenJDK RE (Zulu11.33+15-CA) (build 11.0.4+11-LTS)
 - Java 12: OpenJDK RE (Zulu12.3+11-CA) (build 12.0.2+3)
+- Java 13: OpenJDK Runtime Environment (Zulu13.27+9-CA) (build 13+33)
 - Node.js 6.17.0
 - NVM 0.33.11
 - NVM - Installed node versions:
@@ -267,7 +262,7 @@ xcversion simulators --install='iOS 8.4'
 | lldb                  | 2.3.3614996                               |
 | ndk-bundle            | 18.1.5063045                              |
 | ProGuard              | 5.3.3                                     |
-| Android Emulator      | 29.1.12                                   |
+| Android Emulator      | 29.2.1                                    |
 
 ### Google APIs
 
@@ -291,11 +286,12 @@ xcversion simulators --install='iOS 8.4'
 
 ### Visual Studio for Mac
 
-- 8.2.6.26
+- 8.3.0.1805
 
 
 ### Mono
 
+- 6.4.0
 - 6.0.0
 - 5.18.1
 - 5.16.1
@@ -311,6 +307,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Xamarin.iOS SDK
 
+- 13.2.0.42
 - 12.14.0.114
 - 12.10.0.157
 - 12.8.0.2
@@ -331,6 +328,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Xamarin.Android SDK
 
+- 10.0.0.43
 - 9.4.1.0
 - 9.3.0-23
 - 9.2.3-0
@@ -348,7 +346,8 @@ xcversion simulators --install='iOS 8.4'
 
 ### Xamarin.Mac SDK
 
-- 5.16.1.17
+- 6.2.0.42
+- 5.16.1.24
 - 5.10.0.157
 - 5.8.0.0
 - 5.6.0.25
