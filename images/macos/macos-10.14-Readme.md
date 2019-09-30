@@ -12,7 +12,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ## Operating System
 
-- OS X 10.14.6 (18G95) **Mojave**
+- OS X 10.14.7 (18G96) **Mojave**
 
 ## Installed Software
 
@@ -28,10 +28,10 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 	v6.17.1
 	v8.16.1
 	v10.16.3
-	v12.10.0
+	v12.10.1
 - PowerShell 6.2.3
 - Python 2.7.16
-- Python 3.7.4
+- Python 3.7.5
 - Ruby 2.6.4p104
 - .NET Core SDK 1.0.1 1.0.4 1.1.10 1.1.11 1.1.12 1.1.13 1.1.4 1.1.5 1.1.7 1.1.8 1.1.9 2.0.0 2.0.3 2.1.100 2.1.101 2.1.102 2.1.103 2.1.104 2.1.105 2.1.2 2.1.200 2.1.201 2.1.202 2.1.300 2.1.301 2.1.302 2.1.4 2.1.400 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105
 - Go 1.13
@@ -44,7 +44,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - CocoaPods 1.7.5
 - Homebrew 2.1.11
 - NPM 3.10.10
-- Yarn 1.17.3
+- Yarn 1.17.5
 - NuGet 4.7.0.5148
 - pip 19.1.1
 - Miniconda 4.7.10
@@ -61,7 +61,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Git LFS 2.8.0
 - GNU Wget 1.20.3
 - Subversion (SVN) 1.12.2
-- GNU parallel 20190822
+- GNU parallel 20190922
 
 ### Tools
 
@@ -76,7 +76,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
   - 3.4.10
   - 3.5.7
   - 3.6.9
-  - 3.7.4
+  - 3.7.5
   - pypy2
   - pypy3
 - Ruby (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
@@ -89,7 +89,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 | Version                | Build   | Path                            |
 |------------------------|---------|---------------------------------|
-| 11.0                   | 11A420a | /Applications/Xcode_11.app      |
+| 11.0                   | 11A420b | /Applications/Xcode_11.app      |
 | 10.3                   | 10G8    | /Applications/Xcode_10.3.app    |
 | 10.2.1                 | 10E1001 | /Applications/Xcode_10.2.1.app  |
 | 10.2                   | 10E125  | /Applications/Xcode_10.2.app    |
@@ -102,7 +102,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Nomad CLI 3.0.3
 - Nomad CLI IPA 0.14.3
 - xcpretty 0.3.0
-- xctool 0.3.6
+- xctool 0.3.7
 - xcversion 2.6.1
 
 ### Installed SDKs
@@ -196,13 +196,13 @@ xcversion simulators --install='iOS 8.4'
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| tools                 | Android SDK Tools, revision 26.1.1          |
+| tools                 | Android SDK Tools, revision 26.1.3          |
 
 ### Android SDK Platform-tools
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 29.0.4 |
+| platform-tools        | Android SDK Platform-tools, revision 29.1.4 |
 
 ### Android SDK Platforms
 
@@ -258,6 +258,7 @@ xcversion simulators --install='iOS 8.4'
 | build-tools-29.0.0    | Android SDK Build-tools, Revision 29.0.0  |
 | build-tools-29.0.1    | Android SDK Build-tools, Revision 29.0.1  |
 | build-tools-29.0.2    | Android SDK Build-tools, Revision 29.0.2  |
+| build-tools-29.0.3    | Android SDK Build-tools, Revision 29.0.3  |
 
 ### Utils
 
@@ -291,12 +292,13 @@ xcversion simulators --install='iOS 8.4'
 
 ### Visual Studio for Mac
 
-- 8.2.6.26
+- 8.3.6.26
 
 
 ### Mono
 
 - 6.0.0
+- 6.4.0
 - 5.18.1
 - 5.16.1
 - 5.12.0
@@ -367,4 +369,4 @@ xcversion simulators --install='iOS 8.4'
 
 ### Unit Test Framework
 
-- NUnit: 3.6.1
+- NUnit: 3.6.2
