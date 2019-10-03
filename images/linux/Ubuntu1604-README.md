@@ -143,7 +143,7 @@ the
 - Scala
 - Sphinx Open Source Search Server
 - Subversion (svn, version 1.9.3 (r1718519))
-- Terraform (Terraform v0.12.6)
+- Terraform (Terraform v0.12.9)
 - Vcpkg 2019.07.19-unknownhash
 - Zeit Now CLI (16.1.1)
 - Google Repository 58
