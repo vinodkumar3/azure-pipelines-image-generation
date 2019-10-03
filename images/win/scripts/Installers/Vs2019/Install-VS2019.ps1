@@ -112,6 +112,7 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Microsoft.VisualStudio.Component.Windows10SDK.18362 ' + `
               '--add Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices ' + `
               '--add Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools ' + `
+              '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang ' + `
               '--add Microsoft.VisualStudio.ComponentGroup.Web.CloudTools ' + `
               '--add Microsoft.VisualStudio.Workload.Azure ' + `
               '--add Microsoft.VisualStudio.Workload.Data ' + `
