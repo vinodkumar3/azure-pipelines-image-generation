@@ -23,6 +23,7 @@ Update-MpSignature
 .\MpCmdRun.exe -Scan -ScanType 2 -SignatureUpdate
 Pop-Location
 
+Update-MpSignature
 Write-Host "Set antivirus parmeters"
 Set-MpPreference -ScanAvgCPULoadFactor 5 `
                  -ExclusionPath "D:\", "C:\"
