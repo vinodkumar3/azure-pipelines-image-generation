@@ -20,7 +20,7 @@ Set-MpPreference -ScanAvgCPULoadFactor 100
 
 Update-MpSignature
 # Full Scan
-.\MpCmdRun.exe -Scan -ScanType 2
+.\MpCmdRun.exe -Scan -ScanType 2 -SignatureUpdate
 Pop-Location
 
 Write-Host "Set antivirus parmeters"
