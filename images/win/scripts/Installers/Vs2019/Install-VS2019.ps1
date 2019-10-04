@@ -96,6 +96,7 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Microsoft.VisualStudio.Component.VC.CLI.Support ' + `
               '--add Microsoft.VisualStudio.Component.VC.CMake.Project ' + `
               '--add Microsoft.VisualStudio.Component.VC.DiagnosticTools ' + `
+              '--add Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset ' + `
               '--add Microsoft.VisualStudio.Component.VC.MFC.ARM ' + `
               '--add Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre ' + `
               '--add Microsoft.VisualStudio.Component.VC.MFC.ARM64 ' + `
