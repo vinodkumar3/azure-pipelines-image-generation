@@ -18,9 +18,8 @@ Push-Location "C:\Program Files\Windows Defender"
 # Tell Defender to use 100% of the CPU during the scan
 Set-MpPreference -ScanAvgCPULoadFactor 100
 
-Update-MpSignature
 # Full Scan
-.\MpCmdRun.exe -Scan -ScanType 2 -SignatureUpdate
+.\MpCmdRun.exe -Scan -ScanType 2
 Pop-Location
 
 Update-MpSignature
