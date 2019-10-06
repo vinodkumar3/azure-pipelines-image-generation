@@ -148,8 +148,11 @@ Function GenerateResourcesAndImage {
     $spClientId = $sp.ApplicationId
     $spObjectId = $sp.Id
     Start-Sleep -Seconds $SecondsToWaitForServicePrincipalSetup
+    Start-Sleep -Seconds $SecondsToWaitForServicePrincipalSetup
+    Start-Sleep -Seconds $SecondsToWaitForServicePrincipalSetup
 
     New-AzureRmRoleAssignment -RoleDefinitionName Contributor -ServicePrincipalName $spAppId
+    Start-Sleep -Seconds $SecondsToWaitForServicePrincipalSetup
     Start-Sleep -Seconds $SecondsToWaitForServicePrincipalSetup
     $sub = Get-AzureRmSubscription -SubscriptionId $SubscriptionId
     $tenantId = $sub.TenantId
