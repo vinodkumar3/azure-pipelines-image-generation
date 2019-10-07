@@ -22,6 +22,7 @@ Set-MpPreference -ScanAvgCPULoadFactor 100
 .\MpCmdRun.exe -Scan -ScanType 2
 Pop-Location
 
+Update-MpSignature
 Write-Host "Set antivirus parmeters"
 Set-MpPreference -ScanAvgCPULoadFactor 5 `
                  -ExclusionPath "D:\", "C:\"
