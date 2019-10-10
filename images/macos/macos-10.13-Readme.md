@@ -36,7 +36,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Bundler 2.0.2
 - Carthage 0.33.0
 - CocoaPods 1.8.1
-- Homebrew 2.1.11
+- Homebrew 2.1.12
 - NPM 3.10.10
 - Yarn 1.19.0
 - NuGet 4.7.0.5148
@@ -56,7 +56,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Git LFS 2.8.0
 - GNU Wget 1.20.3
 - Subversion (SVN) 1.12.2
-- GNU parallel 20190822
+- GNU parallel 20190922
 
 ### Tools
 
