@@ -485,6 +485,12 @@
             ]
         },
         {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-KubernetesCli.ps1"
+            ]
+        },
+        {
             "type": "windows-restart",
             "restart_timeout": "10m"
         },
@@ -710,6 +716,12 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-Vcpkg.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-KubernetesCli.ps1"
             ]
         },
         {
