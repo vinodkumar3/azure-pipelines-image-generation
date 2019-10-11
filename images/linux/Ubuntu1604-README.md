@@ -78,6 +78,7 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - .NET Core SDK 2.2.103
 - .NET Core SDK 2.2.104
 - .NET Core SDK 2.2.105
+- .NET Core SDK 3.0.100
 - Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.4.4)
 - Firefox (Mozilla Firefox 68.0.2)
 - GNU C++ 7.4.0
