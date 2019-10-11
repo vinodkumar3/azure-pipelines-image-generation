@@ -25,7 +25,8 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.2.2<br/>
+_Version:_ 6.2.2
+<br/>
 
 ## Docker images
 
@@ -288,7 +289,8 @@ _Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-19
 
 #### 2.1.0
 
-This version is installed and is available via Get-Module -ListAvailable
+This version is installed and is available via Get-Module -ListAvailable
+
 #### 3.8.0
 
 This version is saved but not installed
@@ -385,9 +387,9 @@ _Environment:_
 
 ## Boost
 
-#### 
+####
 
-* PATH: contains the location of Boost version 
+* PATH: contains the location of Boost version
 * BOOST_ROOT: root directory of the Boost version  installation
 * BOOST_ROOT_1_69_0: root directory of the Boost version  installation
 
@@ -532,6 +534,7 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
+* 3.0.100 C:\Program Files\dotnet\sdk\3.0.100
 * 2.2.105 C:\Program Files\dotnet\sdk\2.2.105
 * 2.2.104 C:\Program Files\dotnet\sdk\2.2.104
 * 2.2.103 C:\Program Files\dotnet\sdk\2.2.103
@@ -577,6 +580,7 @@ _SDK:_
 * 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
+* 3.0.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.0.0
 * 2.2.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.3
 * 2.2.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.2
 * 2.2.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.1
