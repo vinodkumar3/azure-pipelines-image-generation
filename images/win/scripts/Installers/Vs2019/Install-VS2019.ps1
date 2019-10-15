@@ -96,6 +96,7 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Microsoft.VisualStudio.Component.VC.CLI.Support ' + `
               '--add Microsoft.VisualStudio.Component.VC.CMake.Project ' + `
               '--add Microsoft.VisualStudio.Component.VC.DiagnosticTools ' + `
+              '--add Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset ' + `
               '--add Microsoft.VisualStudio.Component.VC.MFC.ARM ' + `
               '--add Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre ' + `
               '--add Microsoft.VisualStudio.Component.VC.MFC.ARM64 ' + `
@@ -112,6 +113,7 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Microsoft.VisualStudio.Component.Windows10SDK.18362 ' + `
               '--add Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices ' + `
               '--add Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools ' + `
+              '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang ' + `
               '--add Microsoft.VisualStudio.ComponentGroup.Web.CloudTools ' + `
               '--add Microsoft.VisualStudio.Workload.Azure ' + `
               '--add Microsoft.VisualStudio.Workload.Data ' + `
