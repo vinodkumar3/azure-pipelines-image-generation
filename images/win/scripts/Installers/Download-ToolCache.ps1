@@ -46,8 +46,9 @@ $env:Path = "C:\Program Files (x86)\Microsoft SDKs\Azure\AzCopy;" + $env:Path
 Write-Host "Started AzCopy from $SourceUrl to $Dest"
 AzCopy /Source:$SourceUrl /Dest:$Dest /S /V /Pattern:$Path
 
-# Temporary remove Python
+# Temporary remove Python and Python
 Remove-Item -Path C:\hostedtoolcache\windows\Python -Force -Recurse
+Remove-Item -Path C:\hostedtoolcache\windows\Ruby -Force -Recurse
 
 # Install ToolCache
 Push-Location -Path $ToolsDirectory
@@ -76,7 +77,17 @@ $PythonVersionsToolcacheInstall = @(
     "toolcache-python-windows-x86@3.7"
 )
 
+$RubyVersionsToolcacheInstall = @(
+    "toolcache-ruby-windows-x64@2.4"
+    "toolcache-ruby-windows-x86@2.4"
+    "toolcache-ruby-windows-x64@2.5"
+    "toolcache-ruby-windows-x86@2.5"
+    "toolcache-ruby-windows-x64@2.6"
+    "toolcache-ruby-windows-x86@2.6"
+)
+
 Install-NpmPackage -Name $PythonVersionsToolcacheInstall
+Install-NpmPackage -Name $RubyVersionsToolcacheInstall
 
 #junction point from the previous Python2 directory to the toolcache Python2
 $python2Dir = (Get-Item -Path ($ToolsDirectory + '/Python/2.7*/x64')).FullName
