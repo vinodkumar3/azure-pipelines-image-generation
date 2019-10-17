@@ -34,6 +34,7 @@ set -e
 echo "Determing if .NET Core ($LATEST_DOTNET_PACKAGE) is installed"
 if ! IsInstalled $LATEST_DOTNET_PACKAGE; then
     echo "Could not find .NET Core ($LATEST_DOTNET_PACKAGE), installing..."
+    add-apt-repository universe
     curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
     mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
     sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod bionic main" > /etc/apt/sources.list.d/dotnetdev.list'
