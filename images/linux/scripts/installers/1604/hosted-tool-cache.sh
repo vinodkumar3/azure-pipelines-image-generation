@@ -34,7 +34,7 @@ done;
 chmod -R 777 $AGENT_TOOLSDIRECTORY
 
 echo "Installing npm-toolcache..."
-RUBY_VERSIONS=( '2.3' '2.4' '2.5' '2.6' )
+RUBY_VERSIONS=( '2.4' '2.5' '2.6' )
 
 for RUBY_VERSION in ${RUBY_VERSIONS[@]}; do
     echo "Install ruby-$RUBY_VERSION"
