@@ -34,18 +34,18 @@ set -e
 echo "Determing if .NET Core ($LATEST_DOTNET_PACKAGE) is installed"
 if ! IsInstalled $LATEST_DOTNET_PACKAGE; then
     echo "Could not find .NET Core ($LATEST_DOTNET_PACKAGE), installing..."
-    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-    mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-    sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod bionic main" > /etc/apt/sources.list.d/dotnetdev.list'
+    wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+    dpkg -i packages-microsoft-prod.deb
+    apt-get update
     apt-get install apt-transport-https
     apt-get update
-    apt-get install $LATEST_DOTNET_PACKAGE -y
+    apt-get install $LATEST_DOTNET_PACKAGE
 else
     echo ".NET Core ($LATEST_DOTNET_PACKAGE) is already installed"
 fi
 
 # Get list of all released SDKs from channels which are not end-of-life or preview
-release_urls=("https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/2.1/releases.json" "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/2.2/releases.json" "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/3.0/releases.json")
+release_urls=("https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/2.1/releases.json" "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/2.2/releases.json" "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/2.1/releases.json")
 sdks=()
 for release_url in ${release_urls[@]}; do
     echo "${release_url}"
