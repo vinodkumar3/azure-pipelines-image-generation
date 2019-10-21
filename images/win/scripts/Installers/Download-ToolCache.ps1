@@ -79,11 +79,8 @@ $PythonVersionsToolcacheInstall = @(
 
 $RubyVersionsToolcacheInstall = @(
     "toolcache-ruby-windows-x64@2.4"
-    "toolcache-ruby-windows-x86@2.4"
     "toolcache-ruby-windows-x64@2.5"
-    "toolcache-ruby-windows-x86@2.5"
     "toolcache-ruby-windows-x64@2.6"
-    "toolcache-ruby-windows-x86@2.6"
 )
 
 Install-NpmPackage -Name $PythonVersionsToolcacheInstall
