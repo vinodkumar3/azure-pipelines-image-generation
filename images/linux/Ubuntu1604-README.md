@@ -144,8 +144,8 @@ the
 - Sphinx Open Source Search Server
 - Subversion (svn, version 1.9.3 (r1718519))
 - Terraform (Terraform v0.12.9)
-- Vcpkg 2019.07.19-unknownhash
-- Zeit Now CLI (16.1.1)
+- Vcpkg 2019.09.12-unknownhash
+- Zeit Now CLI (16.3.0)
 - Google Repository 58
 - Google Play services 49
 - Google APIs 24
