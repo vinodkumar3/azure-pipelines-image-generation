@@ -1,6 +1,6 @@
 # Azure Pipelines Windows Container 1803 image
 
-The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v157.1) pool.
+The following software is installed on machines in the Azure Pipelines **Windows Container 1803** (v20190930.2) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 19.03.1<br/>
+_Version:_ 19.03.2<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -25,15 +25,15 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.2.2<br/>
+_Version:_ 6.2.3<br/>
 
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnet:4.7.2-windowsservercore-1803 (Digest: sha256:3f9cc564b911978530fa0326a3fda977e371ee4ef7c4170e305a664adad65faa)
-* microsoft/dotnet-framework:4.7.2-sdk-windowsservercore-1803 (Digest: sha256:342f58c3440bdf06da14b1bb391b3341691123310067046855392dfa8500c78d)
-* microsoft/nanoserver:1803 (Digest: sha256:19b76c64bce0f16f7e79517132fc66e3b8c4f6ba20b6c2b53fbc9d28b272e876)
-* microsoft/windowsservercore:1803 (Digest: sha256:38ee28ebce7f1dda2af019138eb5287f047b1280a2d755ec6f963d4e8abec115)
+* microsoft/aspnet:4.7.2-windowsservercore-1803 (Digest: sha256:75bcfa62a231715c8864271db05f126cec9c86b3fd3c9d3048e48144eeddc314)
+* microsoft/dotnet-framework:4.7.2-sdk-windowsservercore-1803 (Digest: sha256:4002d333d9adb3ab00cfc01e9ee11f2bb8ceacd9612eea916a7d68fa70b5f05c)
+* microsoft/windowsservercore:1803 (Digest: sha256:9b22618ec9b832f7e74c5461b67761423fea83dd10bf627fe715e232aad0dc1e)
+* microsoft/nanoserver:1803 (Digest: sha256:47aa6f7f8ff1a02acc34b9f22689e9c89b3387efdd7c0f2cf6da9db810c0d4de)
 * mcr.microsoft.com/windows/servercore:1803 (Digest: sha256:4374dbc78737bfec459fe6e2047466faa7c21a03aec362ce61735692ed54e598)
 * mcr.microsoft.com/windows/nanoserver:1803 (Digest: sha256:bc5c1878a69c4538d55bc74e50b7dbafafff1a373120e624e8bad646a0a505dc)
 * microsoft/aspnetcore-build:2.0-nanoserver-1803 (Digest: sha256:82ad5218bb554d0b44ca54c21aba78b5ae10b92cead389d71328614b99fc47af)
@@ -47,13 +47,13 @@ _Environment:_
 * Gulp CLI version: 2.2.0 Local version: Unknown<br/>
 * Grunt grunt-cli v1.3.2<br/>
 * Bower 1.8.8<br/>
-* Yarn 1.17.3<br/>
+* Yarn 1.19.0<br/>
 
 > Note: You can install and use another version of Node.js on Microsoft-hosted agent pools using the [Node tool installer](https://docs.microsoft.com/vsts/pipelines/tasks/tool/node-js) task.
 
 ## npm
 
-_Version:_ 6.10.3<br/>
+_Version:_ 6.9.0<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -154,13 +154,13 @@ _Runtime:_
 
 ## Git
 
-_Version:_ 2.22.0<br/>
+_Version:_ 2.23.0<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git Large File Storage (LFS)
 
-_Version:_ 2.7.2<br/>
+_Version:_ 2.8.0<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
