@@ -17,4 +17,4 @@ apt-get -y install sbt
 
 # Document what was added to the image
 echo "Lastly, documenting what we added to the metadata file"
-DocumentInstalledItem "sbt"
+DocumentInstalledItem "sbt ($(sbt --script-version))"
