@@ -21,9 +21,9 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - NVM 0.33.11
 - NVM - Installed node versions:
 	v6.17.1
-	v8.16.1
+	v8.16.2
 	v10.16.3
-	v12.11.1
+	v12.12.0
 - PowerShell 6.2.3
 - Python 2.7.16
 - Python 3.7.4
@@ -35,13 +35,13 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 - Bundler 2.0.2
 - Carthage 0.33.0
-- CocoaPods 1.8.1
-- Homebrew 2.1.12
+- CocoaPods 1.8.3
+- Homebrew 2.1.13
 - NPM 3.10.10
-- Yarn 1.19.0
+- Yarn 1.19.1
 - NuGet 4.7.0.5148
 - pip 19.1.1(python 2.7)
-- pip 19.1.1(python 3.7)
+- pip 19.2.3(python 3.7)
 - Miniconda 4.7.10
 
 ### Project Management
@@ -312,7 +312,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Visual Studio for Mac
 
-- 8.3.1.18
+- 8.3.3.8
 
 ### Mono
 
@@ -332,7 +332,8 @@ xcversion simulators --install='iOS 8.4'
 
 ### Xamarin.iOS SDK
 
-- 13.2.0.42
+- 13.4.0.2
+- 13.2.0.47
 - 12.14.0.114
 - 12.8.0.2
 - 12.6.0.25
@@ -352,7 +353,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Xamarin.Android SDK
 
-- 10.0.0.43
+- 10.0.3.0
 - 9.4.1.0
 - 9.3.0-23
 - 9.2.3-0
@@ -370,7 +371,8 @@ xcversion simulators --install='iOS 8.4'
 
 ### Xamarin.Mac SDK
 
-- 6.2.0.42
+- 6.4.0.2
+- 6.2.0.47
 - 5.16.1.24
 - 5.8.0.0
 - 5.6.0.25
