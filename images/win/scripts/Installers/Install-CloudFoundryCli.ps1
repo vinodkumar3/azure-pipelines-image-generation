@@ -8,7 +8,7 @@ Import-Module -Name ImageHelpers
 
 # Download the latest cf cli exe
 # Pin the version to the latest windows supported one, windows is not supported after version 6.46.1 according to the release notes
-Invoke-WebRequest -UseBasicParsing -Uri "https://packages.cloudfoundry.org/stable?release=windows64&version=6.46.1&source=github-rel" -OutFile cf-cli.zip
+Invoke-WebRequest -UseBasicParsing -Uri "https://packages.cloudfoundry.org/stable?release=windows64-exe&version=6.46.1&source=github-rel" -OutFile cf-cli.zip
 
 # Create directory for cf cli
 $cf_cli_path = "C:\cf-cli"
