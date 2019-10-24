@@ -32,6 +32,9 @@ function InstallSDKVersion (
         Write-Host "Sdk version $sdkVersion already installed"
     }
 
+    # Fix for issue 1276.  This will be fixed in 3.1.
+    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dotnet/sdk/82bc30c99f1325dfaa7ad450be96857a4fca2845/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.Sdk.ImportPublishProfile.targets" -outfile "C:\Program Files\dotnet\sdk\$sdkVersion\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportPublishProfile.targets"
+
     # warm up dotnet for first time experience
     $templates | ForEach-Object {
         $template = $_
