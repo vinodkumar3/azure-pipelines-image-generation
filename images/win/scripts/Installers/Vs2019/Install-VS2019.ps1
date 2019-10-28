@@ -141,21 +141,32 @@ $VSBootstrapperURL = 'https://aka.ms/vs/16/release/vs_Enterprise.exe'
 
 $ErrorActionPreference = 'Stop'
 
+$vsProgramData = Get-Item -Path "C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances"
+$previousInstanceFolders = Get-ChildItem -Path $vsProgramData.FullName
+
 # Install VS
 $exitCode = InstallVS -WorkLoads $WorkLoads -Sku $Sku -VSBootstrapperURL $VSBootstrapperURL
 
-# Find the version of VS installed for this instance
-# Only supports a single instance
-$vsProgramData = Get-Item -Path "C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances"
-$instanceFolders = Get-ChildItem -Path $vsProgramData.FullName
+$postInstanceFolders = Get-ChildItem -Path $vsProgramData.FullName
+$newInstanceFolder = $null
 
-if($instanceFolders -is [array])
+# Find the one install of VS we didnt know about before.
+foreach($instanceFolder in $postInstanceFolders)
 {
-    Write-Host "More than one instance installed"
+  if (-not $previousInstanceFolders.FullName -contains $instanceFolder.FullName)
+  {
+    $newInstanceFolder = $instanceFolder
+    break;
+  }
+}
+
+if ($null -eq $newInstanceFolder)
+{
+    Write-Host "Unable to find instance folder."
     exit 1
 }
 
-$catalogContent = Get-Content -Path ($instanceFolders.FullName + '\catalog.json')
+$catalogContent = Get-Content -Path ($newInstanceFolder.FullName + '\catalog.json')
 $catalog = $catalogContent | ConvertFrom-Json
 $version = $catalog.info.id
 Write-Host "Visual Studio version" $version "installed"
