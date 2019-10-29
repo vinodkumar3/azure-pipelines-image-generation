@@ -150,12 +150,13 @@ Write-Host "Existing VS Instance Folders: $($previousInstanceFolders.FullName)"
 $exitCode = InstallVS -WorkLoads $WorkLoads -Sku $Sku -VSBootstrapperURL $VSBootstrapperURL
 
 $postInstanceFolders = Get-ChildItem -Path $vsProgramData.FullName
-Write-Host "Post VS Instance Folders: $($previousInstanceFolders.FullName)"
+Write-Host "Post VS Instance Folders: $($postInstanceFolders.FullName)"
 $newInstanceFolder = $null
 
 # Find the one install of VS we didnt know about before.
 foreach($instanceFolder in $postInstanceFolders)
 {
+  Write-Host "$($previousInstanceFolders.FullName) -contains $($instanceFolder.FullName) => $($previousInstanceFolders.FullName -contains $instanceFolder.FullName)"
   if (-not $previousInstanceFolders.FullName -contains $instanceFolder.FullName)
   {
     $newInstanceFolder = $instanceFolder
