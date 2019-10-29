@@ -144,10 +144,13 @@ $ErrorActionPreference = 'Stop'
 $vsProgramData = Get-Item -Path "C:\ProgramData\Microsoft\VisualStudio\Packages\_Instances"
 $previousInstanceFolders = Get-ChildItem -Path $vsProgramData.FullName
 
+Write-Host "Existing VS Instance Folders: $($previousInstanceFolders.FullName)"
+
 # Install VS
 $exitCode = InstallVS -WorkLoads $WorkLoads -Sku $Sku -VSBootstrapperURL $VSBootstrapperURL
 
 $postInstanceFolders = Get-ChildItem -Path $vsProgramData.FullName
+Write-Host "Post VS Instance Folders: $($previousInstanceFolders.FullName)"
 $newInstanceFolder = $null
 
 # Find the one install of VS we didnt know about before.
