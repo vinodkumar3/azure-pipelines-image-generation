@@ -6,7 +6,7 @@
 
 if((Get-Command -Name 'sbt'))
 {
-    Write-Host "sbt $(sbt --script-version) is on the path"
+    Write-Host "sbt is on the path"
 }
 else
 {
@@ -14,15 +14,5 @@ else
     exit 1
 }
 
-$sbtVersion = $(sbt --script-version)
-
-# Adding description of the software to Markdown
-$SoftwareName = "sbt"
-
-$Description = @"
-_Version:_ $sbtVersion<br/>
-_Environment:_
-* PATH: contains location of sbt.bat
-"@
-
-Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
+# This works around issue where sbt --script-version does some copies and breaks the build
+Add-SoftwareDetailsToMarkdown -SoftwareName "sbt" -DescriptionMarkdown ""
