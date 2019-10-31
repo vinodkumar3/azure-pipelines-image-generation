@@ -2,11 +2,7 @@
 
 The following software is installed on machines in the Azure Pipelines **macOS-10.14** VM image ('Hosted macOS' pool).
 
-## Upcoming Image Changes
-
-- Xcode 11.1 will be set as default in next two weeks
-
-#### Xcode 10.3 set by default
+#### Xcode 11.1 set by default
 
 ## Operating System
 
@@ -16,43 +12,43 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Language and Runtime
 
-- Java 1.7: OpenJDK RE (Zulu 7.31.0.5-CA-macosx) (build 1.7.0_232-b6)
-- Java 1.8: OpenJDK RE (Zulu 8.40.0.25-CA-macosx) (build 1.8.0_222-b10) (default)
-- Java 11: OpenJDK RE (Zulu11.33+15-CA) (build 11.0.4+11-LTS)
-- Java 12: OpenJDK RE (Zulu12.3+11-CA) (build 12.0.2+3)
-- Java 13: OpenJDK Runtime Environment (Zulu13.27+9-CA) (build 13+33)
+- Java 1.7: OpenJDK Runtime Environment (Zulu 7.34.0.5-CA-macosx) (build 1.7.0_242-b7)
+- Java 1.8: OpenJDK Runtime Environment (Zulu 8.42.0.21-CA-macosx) (build 1.8.0_232-b18) (default)
+- Java 11: OpenJDK Runtime Environment Zulu11.35+13-CA (build 11.0.5+10-LTS)
+- Java 12: OpenJDK Runtime Environment Zulu12.3+11-CA (build 12.0.2+3)
+- Java 13: OpenJDK Runtime Environment Zulu13.28+11-CA (build 13.0.1+10-MTS)
 - Node.js 6.17.0
 - NVM 0.33.11
 - NVM - Installed node versions:
 	v6.17.1
 	v8.16.2
-	v10.16.3
-	v12.12.0
+	v10.17.0
+	v12.13.0
 - PowerShell 6.2.3
 - Python 2.7.16
 - Python 3.7.4
 - Ruby 2.6.5p114
 - .NET Core SDK 1.0.1 1.0.4 1.1.10 1.1.11 1.1.12 1.1.13 1.1.4 1.1.5 1.1.7 1.1.8 1.1.9 2.0.0 2.0.3 2.1.100 2.1.101 2.1.102 2.1.103 2.1.104 2.1.105 2.1.2 2.1.200 2.1.201 2.1.202 2.1.300 2.1.301 2.1.302 2.1.4 2.1.400 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105
-- Go 1.13.1
+- Go 1.13.3
 
 
 ### Package Management
 
 - Bundler 2.0.2
-- Carthage 0.33.0
-- CocoaPods 1.8.3
-- Homebrew 2.1.13
+- Carthage 0.34.0
+- CocoaPods 1.8.4
+- Homebrew 2.1.15
 - NPM 3.10.10
 - Yarn 1.19.1
 - NuGet 4.7.0.5148
 - pip 19.1.1(python 2.7)
 - pip 19.2.3(python 3.7)
-- Miniconda 4.7.10
+- Miniconda 4.7.12
 
 ### Project Management
 
 - Apache Maven 3.6.2
-- Gradle 5.6.2
+- Gradle 5.6.3
 
 ### Utilities
 
@@ -65,9 +61,9 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Tools
 
-- fastlane 2.133.0
+- fastlane 2.134.0
 - App Center CLI 1.2.2
-- Azure-CLI 2.0.74
+- Azure-CLI 2.0.75
 
 ### Pre-cached tools
 
@@ -76,7 +72,8 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
   - 3.4.10
   - 3.5.7
   - 3.6.9
-  - 3.7.4
+  - 3.7.5
+  - 3.8.0
   - pypy2
   - pypy3
 - Ruby (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
@@ -308,7 +305,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Visual Studio for Mac
 
-- 8.3.3.8
+- 8.3.4.8
 
 
 ### Mono
