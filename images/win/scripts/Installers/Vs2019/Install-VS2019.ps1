@@ -117,6 +117,7 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Microsoft.VisualStudio.ComponentGroup.Web.CloudTools ' + `
               '--add Microsoft.VisualStudio.Workload.Azure ' + `
               '--add Microsoft.VisualStudio.Workload.Data ' + `
+              '--add Microsoft.VisualStudio.Workload.DataBuildTools ' + `
               '--add Microsoft.VisualStudio.Workload.DataScience ' + `
               '--add Microsoft.VisualStudio.Workload.ManagedDesktop ' + `
               '--add Microsoft.VisualStudio.Workload.ManagedGame ' + `
