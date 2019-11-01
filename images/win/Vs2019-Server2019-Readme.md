@@ -25,7 +25,8 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.2.2<br/>
+_Version:_ 6.2.2
+<br/>
 
 ## Docker images
 
@@ -96,6 +97,7 @@ The following workloads and components are installed with Visual Studio 2019:
 * Microsoft.VisualStudio.Workload.Azure
 * Microsoft.VisualStudio.Workload.Data
 * Microsoft.VisualStudio.Workload.DataScience
+* Microsoft.VisualStudio.Workload.DataBuildTools
 * Microsoft.VisualStudio.Workload.ManagedDesktop
 * Microsoft.VisualStudio.Workload.ManagedGame
 * Microsoft.VisualStudio.Workload.NativeCrossPlat
@@ -288,7 +290,8 @@ _Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-19
 
 #### 2.1.0
 
-This version is installed and is available via Get-Module -ListAvailable
+This version is installed and is available via Get-Module -ListAvailable
+
 #### 3.8.0
 
 This version is saved but not installed
@@ -385,9 +388,9 @@ _Environment:_
 
 ## Boost
 
-#### 
+####
 
-* PATH: contains the location of Boost version 
+* PATH: contains the location of Boost version
 * BOOST_ROOT: root directory of the Boost version  installation
 * BOOST_ROOT_1_69_0: root directory of the Boost version  installation
 
