@@ -20,8 +20,7 @@
         "commit_file": "C:\\image\\commit.txt",
         "metadata_file": "C:\\image\\metadata.txt",
         "helper_script_folder": "C:\\Program Files\\WindowsPowerShell\\Modules\\",
-        "commit_id": "LATEST",
-        "commit_url": "LATEST",
+        "commit_url": "",
         "install_user": "installer",
         "install_password": null,
         "capture_name_prefix": "packer",
@@ -64,7 +63,6 @@
             "type": "powershell",
             "inline":[
                 "New-Item -Path {{user `image_folder`}} -ItemType Directory -Force",
-                "Write-Output {{user `commit_id`}} > {{user `commit_file`}}",
                 "Write-Output {{user `commit_url`}} > {{user `commit_file` }}",
                 "Write-Host (Get-Content -Path {{user `commit_file`}})"
             ]
