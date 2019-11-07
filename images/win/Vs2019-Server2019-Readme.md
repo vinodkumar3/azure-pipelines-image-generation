@@ -1,6 +1,6 @@
 # Azure Pipelines Hosted Windows 2019 with VS2019 image
 
-The following software is installed on machines in the Azure Pipelines **Hosted Windows 2019 with VS2019** (v20191028.1) pool.
+The following software is installed on machines in the Azure Pipelines **Hosted Windows 2019 with VS2019** (v20191009.1) pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 19.03.4<br/>
+_Version:_ 19.03.3<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -25,7 +25,8 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.2.3<br/>
+_Version:_ 6.2.3
+<br/>
 
 ## Docker images
 
@@ -38,7 +39,7 @@ The following container images have been cached:
 
 ## Visual Studio 2019 Enterprise
 
-_Version:_ VisualStudio/16.3.6+29418.71<br/>
+_Version:_ VisualStudio/16.3.3+29403.142<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 
 The following workloads and components are installed with Visual Studio 2019:
@@ -76,7 +77,6 @@ The following workloads and components are installed with Visual Studio 2019:
 * Microsoft.VisualStudio.Component.VC.CLI.Support
 * Microsoft.VisualStudio.Component.VC.CMake.Project
 * Microsoft.VisualStudio.Component.VC.DiagnosticTools
-* Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset
 * Microsoft.VisualStudio.Component.VC.MFC.ARM
 * Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre
 * Microsoft.VisualStudio.Component.VC.MFC.ARM64
@@ -93,7 +93,6 @@ The following workloads and components are installed with Visual Studio 2019:
 * Microsoft.VisualStudio.Component.Windows10SDK.18362
 * Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices
 * Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools
-* Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang
 * Microsoft.VisualStudio.ComponentGroup.Web.CloudTools
 * Microsoft.VisualStudio.Workload.Azure
 * Microsoft.VisualStudio.Workload.Data
@@ -303,7 +302,8 @@ _Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-19
 
 #### 2.1.0
 
-This version is installed and is available via Get-Module -ListAvailable
+This version is installed and is available via Get-Module -ListAvailable
+
 #### 3.8.0
 
 This version is saved but not installed
@@ -332,7 +332,7 @@ _Description:_ .NET has been configured to use TLS 1.2 by default
 
 ## Azure CLI
 
-_Version:_ 2.0.75
+_Version:_ 2.0.74
 _Environment:_
 * PATH: contains location of az.cmd
 
@@ -342,7 +342,7 @@ _Version:_ azure-devops                      0.13.0
 
 ## Python
 
-_Version:_ 2.7.16 (x64)<br/>_Version:_ 2.7.16 (x86)<br/>_Version:_ 3.4.4 (x64)<br/>_Version:_ 3.4.4 (x86)<br/>_Version:_ 3.5.4 (x64)<br/>_Version:_ 3.5.4 (x86)<br/>_Version:_ 3.6.8 (x64)<br/>_Version:_ 3.6.8 (x86)<br/>_Version:_ 3.7.5 (x64)<br/>_Version:_ 3.7.5 (x86)<br/>_Version:_ 3.8.0 (x64)<br/>_Version:_ 3.8.0 (x86)<br/><br/>
+_Version:_ 2.7.16 (x64)<br/>_Version:_ 2.7.16 (x86)<br/>_Version:_ 3.4.4 (x64)<br/>_Version:_ 3.4.4 (x86)<br/>_Version:_ 3.5.4 (x64)<br/>_Version:_ 3.5.4 (x86)<br/>_Version:_ 3.6.8 (x64)<br/>_Version:_ 3.6.8 (x86)<br/>_Version:_ 3.7.4 (x64)<br/>_Version:_ 3.7.4 (x86)<br/><br/>
 > Note: These versions of Python are available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task.
 
 ## PyPy
@@ -357,7 +357,7 @@ _Version:_ 2.4.6 (x64)<br/>_Version:_ 2.5.5 (x64)<br/>_Version:_ 2.6.3 (x64)<br/
 
 ## Python (64 bit)
 
-#### Python 3.7.5
+#### Python 3.7.4
 _Environment:_
 * PATH: contains location of python.exe
 
@@ -405,20 +405,20 @@ _Environment:_
 
 ## Boost
 
-#### 
+####
 
-* PATH: contains the location of Boost version 
+* PATH: contains the location of Boost version
 * BOOST_ROOT: root directory of the Boost version  installation
 * BOOST_ROOT_1_69_0: root directory of the Boost version  installation
 
 
 ## PHP (x64)
 
-#### 7.3.11
+#### 7.3.10
 
 _Environment:_
-* PATH: contains the location of php.exe version 7.3.11
-* PHPROOT: root directory of the PHP 7.3.11 installation
+* PATH: contains the location of php.exe version 7.3.10
+* PHPROOT: root directory of the PHP 7.3.10 installation
 
 ## Ruby (x64)
 
@@ -443,12 +443,12 @@ _Environment:_
 ## Google Chrome
 
 _version:_
-77.0.3865.120
+77.0.3865.90
 
 ## Mozilla Firefox
 
 _version:_
-69.0.3
+69.0.1
 
 ## Selenium Web Drivers
 
@@ -480,7 +480,7 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 12.13.0<br/>
+_Version:_ 10.16.3<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
@@ -493,7 +493,7 @@ _Environment:_
 
 ## npm
 
-_Version:_ 6.12.0<br/>
+_Version:_ 6.9.0<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -636,7 +636,7 @@ _Environment:_
 
 ## TypeScript
 
-_Version:_ Version 3.6.4<br/>
+_Version:_ Version 3.6.3<br/>
 
 ## Miniconda
 
@@ -646,7 +646,7 @@ _Environment:_
 
 ## Azure CosmosDb Emulator
 
-_Version:_ 2.7.0.0<br/>
+_Version:_ 2.5.7.0<br/>
 _Location:_ C:\Program Files\Azure Cosmos DB Emulator\
 
 ## 7zip
@@ -663,7 +663,7 @@ _Version:_ jq-1.6<br/>
 
 ## Inno Setup
 
-_Version:_ 6.0.3<br/>
+_Version:_ 6.0.2<br/>
 
 ## Perl
 
@@ -671,7 +671,7 @@ _Version:_ v5.26.2<br/>
 
 ## GitVersion
 
-_Version:_ 5.1.1.0<br/>
+_Version:_ 5.0.1.0<br/>
 
 ## OpenSSL
 
@@ -679,7 +679,7 @@ _Version:_ 1.1.1c at C:\Program Files\Git\usr\bin\openssl.exe<br/>_Version:_ 1.1
 
 ## Cloud Foundry CLI
 
-_Version:_ 6.47.1<br/>
+_Version:_ 6.46.1<br/>
 
 ## Vcpkg
 
@@ -687,15 +687,3 @@ _Version:_ 2019.09.12-nohash<br/>
 _Environment:_
 * PATH: contains location of the vcpkg directory
 * VCPKG_INSTALLATION_ROOT: root directory of the vcpkg installation
-
-## Kubectl
-
-_Version:_ Client Version: v1.16.2<br/>
-_Environment:_
-* PATH: contains location of kubectl.exe
-
-## Kind
-
-_Version:_ v0.5.1<br/>
-_Environment:_
-* PATH: contains location of kind.exe
