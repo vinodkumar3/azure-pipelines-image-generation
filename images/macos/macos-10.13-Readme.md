@@ -6,7 +6,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ## Operating System
 
-- OS X 10.13.6 (17G8037) **High Sierra**
+- OS X 10.13.6 (17G9016) **High Sierra**
 
 ## Installed Software
 
@@ -26,10 +26,10 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 	v12.13.0
 - PowerShell 6.2.3
 - Python 2.7.17
-- Python 3.7.4
+- Python 3.7.5
 - Ruby 2.6.5p114
 - .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 1.1.12, 1.1.13, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.504, 2.1.505, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502, 2.1.504, 2.2.101, 2.2.102, 2.2.103, 2.2.104, 2.2.105
-- Go 1.13.3
+- Go 1.13.4
 
 ### Package Management
 
@@ -41,13 +41,13 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Yarn 1.19.1
 - NuGet 4.7.0.5148
 - pip 19.3.1(python 2.7)
-- pip 19.2.3(python 3.7)
+- pip 19.3.1(python 3.7)
 - Miniconda 4.7.12
 
 ### Project Management
 
 - Apache Maven 3.6.2
-- Gradle 5.6.3
+- Gradle 5.6.4
 
 ### Utilities
 
@@ -67,7 +67,6 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 ### Pre-cached tools
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
   - 2.7.16
-  - 3.4.10
   - 3.5.7
   - 3.6.9
   - 3.7.5
@@ -75,7 +74,6 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
   - pypy2
   - pypy3
 - Ruby (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
-  - 2.3.8
   - 2.4.6
   - 2.5.5
   - 2.6.3
@@ -101,7 +99,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Nomad CLI IPA 0.14.3
 - xcpretty 0.3.0
 - xctool 0.3.5
-- xcversion 2.6.1
+- xcversion 2.6.2
 
 ### Installed SDKs
 | SDK                       | SDK name    | Xcode Version |
@@ -224,7 +222,7 @@ xcversion simulators --install='iOS 8.4'
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 29.0.4 |
+| platform-tools        | Android SDK Platform-tools, revision 29.0.5 |
 
 ### Android SDK Platforms
 
@@ -313,7 +311,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Visual Studio for Mac
 
-- 8.3.4.8
+- 8.3.5.13
 
 ### Mono
 
