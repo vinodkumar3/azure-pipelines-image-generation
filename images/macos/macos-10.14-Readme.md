@@ -6,7 +6,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ## Operating System
 
-- OS X 10.14.6 (18G103) **Mojave**
+- OS X 10.14.6 (18G1012) **Mojave**
 
 ## Installed Software
 
@@ -25,11 +25,11 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 	v10.17.0
 	v12.13.0
 - PowerShell 6.2.3
-- Python 2.7.16
-- Python 3.7.4
+- Python 2.7.17
+- Python 3.7.5
 - Ruby 2.6.5p114
 - .NET Core SDK 1.0.1 1.0.4 1.1.10 1.1.11 1.1.12 1.1.13 1.1.4 1.1.5 1.1.7 1.1.8 1.1.9 2.0.0 2.0.3 2.1.100 2.1.101 2.1.102 2.1.103 2.1.104 2.1.105 2.1.2 2.1.200 2.1.201 2.1.202 2.1.300 2.1.301 2.1.302 2.1.4 2.1.400 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105
-- Go 1.13.3
+- Go 1.13.4
 
 
 ### Package Management
@@ -41,14 +41,14 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - NPM 3.10.10
 - Yarn 1.19.1
 - NuGet 4.7.0.5148
-- pip 19.1.1(python 2.7)
-- pip 19.2.3(python 3.7)
+- pip 19.3.1(python 2.7)
+- pip 19.3.1(python 3.7)
 - Miniconda 4.7.12
 
 ### Project Management
 
 - Apache Maven 3.6.2
-- Gradle 5.6.3
+- Gradle 5.6.4
 
 ### Utilities
 
@@ -69,7 +69,6 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
   - 2.7.16
-  - 3.4.10
   - 3.5.7
   - 3.6.9
   - 3.7.5
@@ -77,7 +76,6 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
   - pypy2
   - pypy3
 - Ruby (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
-  - 2.3.8
   - 2.4.6
   - 2.5.5
   - 2.6.3
@@ -86,7 +84,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 | Version                | Build   | Path                            |
 |------------------------|---------|---------------------------------|
-| 11.2_beta 2            | 11B44   | /Applications/Xcode_11.2.app    |
+| 11.2                   | 11B52   | /Applications/Xcode_11.2.app    |
 | 11.1                   | 11A1027 | /Applications/Xcode_11.1.app    |
 | 11.0                   | 11A420a | /Applications/Xcode_11.app      |
 | 10.3                   | 10G8    | /Applications/Xcode_10.3.app    |
@@ -102,7 +100,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Nomad CLI IPA 0.14.3
 - xcpretty 0.3.0
 - xctool 0.3.6
-- xcversion 2.6.1
+- xcversion 2.6.2
 
 ### Installed SDKs
 
@@ -110,7 +108,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 |---------------------------|-------------|--------------|
 | macOS 10.13               | macosx10.13 | 9.4.1        |
 | macOS 10.14               | macosx10.14 | 10.0, 10.1, 10.2, 10.2.1, 10.3 |
-| macOS 10.15               | macosx10.15 | 11.0, 11.1, 11.2_beta 2  |
+| macOS 10.15               | macosx10.15 | 11.0, 11.1, 11.2  |
 | iOS 11.4                  | iphoneos11.4 | 9.4.1       |
 | iOS 12.0                  | iphoneos12.0 | 10.0        |
 | iOS 12.1                  | iphoneos12.1 | 10.1        |
@@ -118,7 +116,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 | iOS 12.4                  | iphoneos12.4 | 10.3        |
 | iOS 13.0                  | iphoneos13.0 | 11.0        |
 | iOS 13.1                  | iphoneos13.1 | 11.1        |
-| iOS 13.2                  | iphoneos13.2 | 11.2_beta 2      |
+| iOS 13.2                  | iphoneos13.2 | 11.2        |
 | iOS Simulator 11.4        | iphonesimulator11.4 | 9.4.1    |
 | iOS Simulator 12.0        | iphonesimulator12.0 | 10.0     |
 | iOS Simulator 12.1        | iphonesimulator12.1 | 10.1     |
@@ -126,36 +124,36 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 | iOS Simulator 12.4        | iphonesimulator12.4 | 10.3     |
 | iOS Simulator 13.0        | iphonesimulator13.0 | 11.0     |
 | iOS Simulator 13.1        | iphonesimulator13.1 | 11.1     |
-| iOS Simulator 13.2        | iphonesimulator13.2 | 11.2_beta 2    |
+| iOS Simulator 13.2        | iphonesimulator13.2 | 11.2    |
 | tvOS 11.4                 | appletvos11.4 | 9.4.1          |
 | tvOS 12.0                 | appletvos12.0 | 10.0           |
 | tvOS 12.1                 | appletvos12.1 | 10.1           |
 | tvOS 12.2                 | appletvos12.2 | 10.2, 10.2.1   |
 | tvOS 12.4                 | appletvos12.4 | 10.3           |
 | tvOS 13.0                 | appletvos13.0 | 11.0, 11.1     |
-| tvOS 13.2                 | appletvos13.2 | 11.2_beta 2      |
+| tvOS 13.2                 | appletvos13.2 | 11.2      |
 | tvOS Simulator 11.4       | appletvsimulator11.4 | 9.4.1   |
 | tvOS Simulator 12.0       | appletvsimulator12.0 | 10.0    |
 | tvOS Simulator 12.1       | appletvsimulator12.1 | 10.1    |
 | tvOS Simulator 12.2       | appletvsimulator12.2 | 10.2, 10.2.1 |
 | tvOS Simulator 12.4       | appletvsimulator12.4 | 10.3    |
 | tvOS Simulator 13.0       | appletvsimulator13.0 | 11.0, 11.1 |
-| tvOS Simulator 13.2       | appletvsimulator13.2 | 11.2_beta 2 |
+| tvOS Simulator 13.2       | appletvsimulator13.2 | 11.2 |
 | watchOS 4.3               | watchos4.3 | 9.4.1         |
 | watchOS 5.0               | watchos5.0 | 10.0          |
 | watchOS 5.1               | watchos5.1 | 10.1          |
 | watchOS 5.2               | watchos5.2 | 10.2, 10.2.1  |
 | watchOS 5.3               | watchos5.3 | 10.3          |
 | watchOS 6.0               | watchos6.0 | 11.0, 11.1    |
-| watchOS 6.1               | watchos6.1 | 11.2_beta 2    |
+| watchOS 6.1               | watchos6.1 | 11.2    |
 | watchOS Simulator 4.3     | watchsimulator4.3 | 9.4.1         |
 | watchOS Simulator 5.0     | watchsimulator5.0 | 10.0          |
 | watchOS Simulator 5.1     | watchsimulator5.1 | 10.1          |
 | watchOS Simulator 5.2     | watchsimulator5.2 | 10.2, 10.2.1  |
 | watchOS Simulator 5.3     | watchsimulator5.3 | 10.3          |
 | watchOS Simulator 6.0     | watchsimulator6.0 | 11.0, 11.1    |
-| watchOS Simulator 6.1     | watchsimulator6.1 | 11.2_beta 2     |
-| DriverKit 19.0            | driverkit.macosx19.0 | 11.0, 11.1, 11.2_beta 2 |
+| watchOS Simulator 6.1     | watchsimulator6.1 | 11.2          |
+| DriverKit 19.0            | driverkit.macosx19.0 | 11.0, 11.1, 11.2 |
 
 
 ### Installed Simulators
@@ -164,22 +162,22 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 | OS      | Xcode Version                   | Simulators |
 |---------|---------------------------------|------------|
-| iOS 8.4 (12H141) | 9.4.1, 10.0, 10.1, 10.2, 10.2.1, 11, 11.1, 11.2_beta 2 | iPhone 4s<br>iPhone 5<br>iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPad 2<br>iPad Retina<br>iPad Air |
-| iOS 9.0 (13A344) | 9.4.1, 10.0, 10.1, 10.2, 10.2.1, 11, 11.1, 11.2_beta 2 | iPhone 4s<br>iPhone 5<br>iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPhone 6s<br>iPhone 6s Plus<br>iPad 2<br>iPad Retina<br>iPad Air<br>iPad Air 2 |
-| iOS 9.1 (13B143)<br>iOS 9.2 (13C75)<br>iOS 9.3 (13E233) | 9.4.1, 10.0, 10.1, 10.2, 10.2.1, 11, 11.1, 11.2_beta 2 | iPhone 4s<br>iPhone 5<br>iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPhone 6s<br>iPhone 6s Plus<br>iPad 2<br>iPad Retina<br>iPad Air<br>iPad Air 2<br>iPad Pro |
-| iOS 10.0 (14A345) | 9.4.1, 10.0, 10.1, 10.2, 10.2.1, 11, 11.1, 11.2_beta 2 | iPhone 5<br>iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPhone 6s<br>iPhone 6s Plus<br>iPhone SE<br>iPad Air<br>iPad Air 2<br>iPad Pro (9.7 inch)<br>iPad Pro (12.9 inch) |
-| iOS 10.1 (14B72)<br>iOS 10.2 (14C89) | 9.4.1, 10.0, 10.1, 10.2, 10.2.1, 11, 11.1, 11.2_beta 2 | iPhone 5<br>iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPhone 6s<br>iPhone 6s Plus<br>iPhone 7<br>iPhone 7 Plus<br>iPhone SE<br>iPad Air<br>iPad Air 2<br>iPad Pro (9.7 inch)<br>iPad Pro (12.9 inch) |
+| iOS 8.4 (12H141) | 9.4.1, 10.0, 10.1, 10.2, 10.2.1, 11, 11.1, 11.2 | iPhone 4s<br>iPhone 5<br>iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPad 2<br>iPad Retina<br>iPad Air |
+| iOS 9.0 (13A344) | 9.4.1, 10.0, 10.1, 10.2, 10.2.1, 11, 11.1, 11.2 | iPhone 4s<br>iPhone 5<br>iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPhone 6s<br>iPhone 6s Plus<br>iPad 2<br>iPad Retina<br>iPad Air<br>iPad Air 2 |
+| iOS 9.1 (13B143)<br>iOS 9.2 (13C75)<br>iOS 9.3 (13E233) | 9.4.1, 10.0, 10.1, 10.2, 10.2.1, 11, 11.1, 11.2 | iPhone 4s<br>iPhone 5<br>iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPhone 6s<br>iPhone 6s Plus<br>iPad 2<br>iPad Retina<br>iPad Air<br>iPad Air 2<br>iPad Pro |
+| iOS 10.0 (14A345) | 9.4.1, 10.0, 10.1, 10.2, 10.2.1, 11, 11.1, 11.2 | iPhone 5<br>iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPhone 6s<br>iPhone 6s Plus<br>iPhone SE<br>iPad Air<br>iPad Air 2<br>iPad Pro (9.7 inch)<br>iPad Pro (12.9 inch) |
+| iOS 10.1 (14B72)<br>iOS 10.2 (14C89) | 9.4.1, 10.0, 10.1, 10.2, 10.2.1, 11, 11.1, 11.2 | iPhone 5<br>iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPhone 6s<br>iPhone 6s Plus<br>iPhone 7<br>iPhone 7 Plus<br>iPhone SE<br>iPad Air<br>iPad Air 2<br>iPad Pro (9.7 inch)<br>iPad Pro (12.9 inch) |
 | iOS 11.4 (15F79) | 9.4.1 | iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPhone 6s<br>iPhone 6s Plus<br>iPhone 7<br>iPhone 7 Plus<br>iPhone SE<br>iPhone 8<br>iPhone 8 Plus<br>iPhone X<br>iPad Air<br>iPad Air 2<br>iPad (5th generation)<br>iPad Pro (9.7-inch)<br>iPad Pro (12.9-inch)<br>iPad Pro (12.9-inch) (2nd generation)<br>iPad Pro (10.5-inch) |
 | iOS 12.0 (16A5288q) | 10.0 | iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPhone 6s<br>iPhone 6s Plus<br>iPhone 7<br>iPhone 7 Plus<br>iPhone SE<br>iPhone 8<br>iPhone 8 Plus<br>iPhone X<br>iPhone XR<br>iPhone XS<br>iPhone XS Max<br>iPad Air<br>iPad Air 2<br>iPad (5th generation)<br>iPad Pro (9.7-inch)<br>iPad Pro (10.5-inch)<br>iPad Pro (11-inch)<br>iPad Pro (12.9-inch)<br>iPad Pro (12.9-inch) (2nd generation)<br>iPad (6th generation) |
 | iOS 12.1 (16B91) | 10.1 | iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPhone 6s<br>iPhone 6s Plus<br>iPhone 7<br>iPhone 7 Plus<br>iPhone SE<br>iPhone 8<br>iPhone 8 Plus<br>iPhone X<br>iPhone X<br>iPhone XS<br>iPhone XS Max<br>iPhone XR<br>iPad Air<br>iPad Air 2<br>iPad (5th generation)<br>iPad Pro (9.7-inch)<br>iPad Pro (12.9-inch)<br>iPad Pro (12.9-inch) (2nd generation)<br>iPad Pro (10.5-inch)<br>iPad (6th generation)<br>iPad Pro (11-inch)<br>iPad Pro (12.9-inch) (3rd generation) |
 | iOS 12.2 (16E226)<br>iOS 12.4 (16G73) | 10.2, 10.2.1<br>10.3  | iPhone 5s<br>iPhone 6<br>iPhone 6 Plus<br>iPhone 6s<br>iPhone 6s Plus<br>iPhone 7<br>iPhone 7 Plus<br>iPhone SE<br>iPhone 8<br>iPhone 8 Plus<br>iPhone X<br>iPhone X<br>iPhone XS<br>iPhone XS Max<br>iPhone XR<br>iPad Air<br>iPad Air 2<br>iPad Air (3rd generation)<br>iPad mini 2<br>iPad mini 3<br>iPad mini 4<br>iPad mini (5th generation)<br>iPad (5th generation)<br>iPad Pro (9.7-inch)<br>iPad Pro (12.9-inch)<br>iPad Pro (12.9-inch) (2nd generation)<br>iPad Pro (10.5-inch)<br>iPad (6th generation)<br>iPad Pro (11-inch)<br>iPad Pro (12.9-inch) (3rd generation) |
 | iOS 13.0 (17A577a) | 11         | iPhone 8<br>iPhone 8 Plus<br>iPhone 11<br>iPhone 11 Pro<br>iPhone 11 Pro Max<br>iPad Pro (9.7-inch)<br>iPad Pro<br>iPad Pro (12.9-inch) (3rd generation)<br>iPad Air (3rd generation) |
 | iOS 13.1 (17A844) | 11.1        | iPhone 8<br>iPhone 8 Plus<br>iPhone 11<br>iPhone 11 Pro<br>iPhone 11 Pro Max<br>iPad Pro (9.7-inch)<br>iPad Pro<br>iPad Pro (12.9-inch) (3rd generation)<br>iPad Air (3rd generation) |
-| iOS 13.2 (17B5068e) | 11.2_beta 2       | iPhone 8<br>iPhone 8 Plus<br>iPhone 11<br>iPhone 11 Pro<br>iPhone 11 Pro Max<br>iPad Pro (9.7-inch)<br>iPad Pro<br>iPad Pro (12.9-inch) (3rd generation)<br>iPad Air (3rd generation) |
-| tvOS 11.4 (15L576)<br>tvOS 12.0 (16J5283n)<br>tvOS 12.1 (16J602)<br>tvOS 12.2 (16L225)<br>tvOS 12.4 (16M567)<br>tvOS 13.0 (17J559)<br>tvOS 13.2 (17K5068b) | 9.4.1<br>10.0<br>10.1<br>10.2, 10.2.1<br>10.3<br>11.0<br>11.1        | Apple TV<br>Apple TV 4K<br>Apple TV 4K (at 1080p) |
+| iOS 13.2 (17B84) | 11.2       | iPhone 8<br>iPhone 8 Plus<br>iPhone 11<br>iPhone 11 Pro<br>iPhone 11 Pro Max<br>iPad Pro (9.7-inch)<br>iPad (7th generation)<br>iPad Pro<br>iPad Pro (12.9-inch) (3rd generation)<br>iPad Air (3rd generation) |
+| tvOS 11.4 (15L576)<br>tvOS 12.0 (16J5283n)<br>tvOS 12.1 (16J602)<br>tvOS 12.2 (16L225)<br>tvOS 12.4 (16M567)<br>tvOS 13.0 (17J559)<br>tvOS 13.2 (17K81) | 9.4.1<br>10.0<br>10.1<br>10.2, 10.2.1<br>10.3<br>11.0<br>11.1        | Apple TV<br>Apple TV 4K<br>Apple TV 4K (at 1080p) |
 | watchOS 4.3 (15T212) | 9.4.1        | Apple Watch 38mm<br>Apple Watch 42mm<br>Apple Watch Series 2 38mm<br>Apple Watch Series 2 42mm<br>Apple Watch Series 3 38mm<br>Apple Watch Series 3 42mm |
 | watchOS 5.0 (16R5283q)<br>watchOS 5.1 (16R591)<br>watchOS 5.2 (16T224)<br>watchOS 5.3 (16U567) | 10.0<br>10.1<br>10.2, 10.2.1<br>10.3      | Apple Watch Series 2 38mm<br>Apple Watch Series 2 42mm<br>Apple Watch Series 3 38mm<br>Apple Watch Series 3 42mm<br>Apple Watch Series 4 40mm<br>Apple Watch Series 4 44mm |
-| watchOS 6.0 (17R566)<br><br>watchOS 6.1 (17S5068e) | 11.0<br>11.1<br>11.2_beta 2       | Apple Watch Series 4 40mm<br>Apple Watch Series 4 44mm<br>Apple Watch Series 5 40mm<br>Apple Watch Series 5 44mm |
+| watchOS 6.0 (17R566)<br><br>watchOS 6.1 (17S83) | 11.0<br>11.1<br>11.2       | Apple Watch Series 4 40mm<br>Apple Watch Series 4 44mm<br>Apple Watch Series 5 40mm<br>Apple Watch Series 5 44mm |
 
 
 #### How to install additional simulators?
@@ -216,7 +214,7 @@ xcversion simulators --install='iOS 8.4'
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 29.0.4 |
+| platform-tools        | Android SDK Platform-tools, revision 29.0.5 |
 
 ### Android SDK Platforms
 
@@ -305,7 +303,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Visual Studio for Mac
 
-- 8.3.4.8
+- 8.3.5.13
 
 
 ### Mono
